@@ -19,8 +19,12 @@
   --color-bg: #031327;
   --color-nav: #002654;
   --color-white: rgb(245, 245, 252);
+  --color-border-white: rgb(231, 231, 241);
+  --color-ohio-red: #ff2400;
+  --color-ohio-blue: #0047ab;
 
   --transition: all 300ms ease-in-out;
+  --transition-fast: all 200ms ease-in-out;
 }
 
 a {
@@ -29,7 +33,7 @@ a {
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+  color: var(--color-ohio-red);
 }
 
 body {
@@ -40,6 +44,7 @@ body {
   align-items: center;
   min-width: 320px;
   min-height: 100vh;
+
 }
 
 h1 {
@@ -59,11 +64,11 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: var(--color-ohio-red);
 }
 button:focus,
 button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  /* outline: 4px auto -webkit-focus-ring-color; */
 }
 
 @media (prefers-color-scheme: light) {

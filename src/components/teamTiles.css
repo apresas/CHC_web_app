@@ -1,14 +1,10 @@
 .teamTiles_container {
     display: flex;
     align-items: center;
-    /* justify-content: center; */
     flex-direction: column;
-    /* width: 100vw; */
     width: 100%;
     max-width: 1280px;
-    /* height: 100%; */
     background-color: rgb(245, 245, 252);
-    /* padding: 0 2rem; */
     color: var(--color-bg);
     margin-top: 2rem;
     font-family: "Roboto";
@@ -20,8 +16,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* width: 100vw; */
-    padding: 1rem 1rem;
+    padding: 1rem 2.5rem;
     margin-bottom: 2rem;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.35);
     background: white;
@@ -53,19 +48,20 @@
     position: absolute;
     top: 3rem;
     background-color: white;
-    color: var(--color-nav);
+    /* color: var(--color-nav); */
+    color: lightslategray;
 }
 
 .divisions .red{
-    border: 3px solid red;
+    border: 3px solid var(--color-ohio-red);
 }
 
 .divisions .white {
-    border: 3px solid rgb(245, 245, 252);
+    border: 3px solid var(--color-border-white);
 }
 
 .divisions .blue {
-    border: 3px solid dodgerblue;
+    border: 3px solid var(--color-ohio-blue);
 }
 
 .division_button {
@@ -98,8 +94,6 @@
     font-size: 3rem;
     font-weight: 700;
     line-height: 1;
-    /* text-decoration: underline;
-    text-underline-position: under; */
 }
 .teams_tiles_sub {
     margin: 0;
@@ -113,15 +107,16 @@
     align-items: center;
     justify-content: center;
     background-color: white;
-    /* color: black; */
-    /* flex: 1;
-    aspect-ratio: 1/1; */
     height: 7.25rem;
     padding: 1rem;
     aspect-ratio: 1/1;
-
     border-radius: 7px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.35);
+    transition: var(--transition-fast);
+}
+
+.tiles:hover {
+    transform: scale(1.1);
 }
 
 .school_name_title{

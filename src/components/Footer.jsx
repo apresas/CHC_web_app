@@ -28,13 +28,16 @@ function Footer() {
             CHC.com
           </a>
           <a href="" className="footer_link">
-            Privacy Policy
+            Team Columbus
           </a>
           <a href="" className="footer_link">
-            Cookie Policy
+            League History
           </a>
           <a href="" className="footer_link">
-            Copyright Policy
+            Archives
+          </a>
+          <a href="" className="footer_link">
+            Links
           </a>
           <a href="" className="footer_link">
             About

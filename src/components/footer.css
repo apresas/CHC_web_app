@@ -40,7 +40,7 @@
 }
 
 .footer_icons:hover {
-    border-color:#535bf2;
+    border-color:var(--color-ohio-red);
 }
 
 .footer_links_container {

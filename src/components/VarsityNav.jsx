@@ -1,9 +1,28 @@
 // import React from 'react'
+import "./varsityNav.css";
 
 function VarsityNav() {
   return (
     <div className="varsity_nav_container">
-        Varsity
+      {/* Varsity */}
+      <a href="" className="navLinks">
+        Schdule
+      </a>
+      <a href="" className="navLinks">
+        League Info
+      </a>
+      <a href="" className="navLinks">
+        Rankings
+      </a>
+      <a href="" className="navLinks">
+        Post Season
+      </a>
+      <a href="" className="navLinks">
+        Player Awards
+      </a>
+      <a href="" className="navLinks">
+        All-Star Games
+      </a>
       {/* <a href="" className="navLinks">
         Schdule
       </a>

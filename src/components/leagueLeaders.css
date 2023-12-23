@@ -29,6 +29,16 @@ margin: 0;
     color: var(--color-bg);
 }
 
+.leagueLeaders_link:hover {
+    color: var(--color-ohio-red);
+    transition: var(--transition);
+}
+
+.leagueLeaders_title:hover .icon_container{
+    color: var(--color-ohio-red);
+    transition: var(--transition);
+}
+
 .icon_container {
 }
 
@@ -91,6 +101,19 @@ margin: 0;
 
 .leader_stats_points {
     margin: 0
+}
+
+.stats_button_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: lightslategray;
+    transition: var(--transition);
+    font-size: 1.25rem;
+}
+
+.stats_button_container:hover {
+    color: var(--color-ohio-red);
 }
 
 

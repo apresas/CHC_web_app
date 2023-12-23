@@ -3,6 +3,7 @@
   padding: 2rem;
   text-align: center; */
   height: 100vh;
+  overflow-x: hidden;
 }
 
 .app_container {
@@ -10,7 +11,8 @@
   flex-direction: column;
   align-items: center;
   /* justify-content: center; */
-  height: 100%;
+  /* height: 100%; */
+  overflow: hidden;
 }
 
 .header_container {
