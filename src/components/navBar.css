@@ -1,0 +1,33 @@
+.navbar_container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1280px;
+}
+
+.nav_logo {
+    height: 3.5rem;
+    justify-self: flex-start;
+}
+
+.nav_logo_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-left: 2rem;
+}
+
+.nav_logo_title {
+    font-size: 2.5rem;
+    font-family: "jersey m54";
+    line-height: 1;
+}
+
+.nav_links {
+    display: flex;
+    gap: 1rem;
+    font-family:"Bebas Neue";
+}
