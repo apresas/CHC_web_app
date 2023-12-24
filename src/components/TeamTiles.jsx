@@ -1,31 +1,30 @@
-import React, { useState } from "react";
+import { useState, useMemo } from "react";
 import "./teamTiles.css";
 import Teams from "../data/teams.json";
 import standings from "../data/standing.json";
 import { FiChevronsDown } from "react-icons/fi";
 import { GrStar } from "react-icons/gr";
-import { useTable } from "react-table";
+import { useTable, useSortBy } from "react-table";
 
 function TeamTiles() {
   const [open, setOpen] = useState(false);
   const [open1, setOpen1] = useState(false);
   const [open2, setOpen2] = useState(false);
-  const [position, setPosition] = useState();
-  const data = React.useMemo(() => standings, []);
+  const data = useMemo(() => standings, []);
   const winPerAccessor = (row) => {
     return Number(row.wins / row.gamesPlayed).toFixed(2);
   };
 
-  const positionAccessor = (index) => {
-    return index;
-  };
+  // const positionAccessor = (row) => {
+  //   return Number(row.position);
+  // };
 
-  const columns = React.useMemo(
+  const columns = useMemo(
     () => [
-      // {
-      //   Header: "",
-      //   accessor: "position",
-      // },
+      {
+        Header: "",
+        accessor: "position",
+      },
       {
         Header: "",
         accessor: "teamName",
@@ -77,7 +76,7 @@ function TeamTiles() {
   );
 
   const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } =
-    useTable({ columns, data });
+    useTable({ columns, data }, useSortBy);
 
   const openStandings = (id) => {
     if (id === 0) {
@@ -139,9 +138,9 @@ function TeamTiles() {
               <table className="standings_table blue" {...getTableProps()}>
                 <thead>
                   {headerGroups.map((headerGroup) => (
-                    <tr {...headerGroup.getHeaderGroupProps()}>
+                    <tr key={headerGroup.id} {...headerGroup.getHeaderGroupProps()}>
                       {headerGroup.headers.map((column) => (
-                        <th {...column.getHeaderProps()}>
+                        <th key={headerGroup.id}{...column.getHeaderProps()}>
                           {column.render("Header")}
                         </th>
                       ))}
@@ -156,13 +155,13 @@ function TeamTiles() {
                         ? -1
                         : 1
                     )
-                    .map((row, i) => {
+                    .map((row) => {
                       prepareRow(row);
                       return (
-                        <tr {...row.getRowProps()}>
+                        <tr key={row.id}{...row.getRowProps()}>
                           {row.cells.map((cell) => {
                             return (
-                              <td {...cell.getCellProps()}>
+                              <td key={cell.id} {...cell.getCellProps()}>
                                 {cell.render("Cell")}
                               </td>
                             );
@@ -215,9 +214,9 @@ function TeamTiles() {
               <table className="standings_table blue" {...getTableProps()}>
                 <thead>
                   {headerGroups.map((headerGroup) => (
-                    <tr {...headerGroup.getHeaderGroupProps()}>
+                    <tr key={headerGroup.id} {...headerGroup.getHeaderGroupProps()}>
                       {headerGroup.headers.map((column) => (
-                        <th {...column.getHeaderProps()}>
+                        <th key={headerGroup.id}{...column.getHeaderProps()}>
                           {column.render("Header")}
                         </th>
                       ))}
@@ -237,10 +236,10 @@ function TeamTiles() {
                       // console.log(row)
                       prepareRow(row, i);
                       return (
-                        <tr {...row.getRowProps()}>
+                        <tr key={row.id} {...row.getRowProps()}>
                           {row.cells.map((cell) => {
                             return (
-                              <td {...cell.getCellProps()}>
+                              <td key={cell.id} {...cell.getCellProps()}>
                                 {cell.render("Cell")}
                               </td>
                             );
@@ -293,9 +292,9 @@ function TeamTiles() {
               <table className="standings_table blue" {...getTableProps()}>
                 <thead>
                   {headerGroups.map((headerGroup) => (
-                    <tr {...headerGroup.getHeaderGroupProps()}>
+                    <tr key={headerGroup.id} {...headerGroup.getHeaderGroupProps()}>
                       {headerGroup.headers.map((column) => (
-                        <th {...column.getHeaderProps()}>
+                        <th key={headerGroup.id} {...column.getHeaderProps()}>
                           {column.render("Header")}
                         </th>
                       ))}
@@ -315,10 +314,10 @@ function TeamTiles() {
                       // console.log(row)
                       prepareRow(row, i);
                       return (
-                        <tr {...row.getRowProps()}>
+                        <tr key={row.id} {...row.getRowProps()}>
                           {row.cells.map((cell) => {
                             return (
-                              <td {...cell.getCellProps()}>
+                              <td key={cell.id} {...cell.getCellProps()}>
                                 {cell.render("Cell")}
                               </td>
                             );
