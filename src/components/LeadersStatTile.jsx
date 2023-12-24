@@ -7,7 +7,6 @@ function LeadersStatTile({ stats, type, division }) {
   const [testData, setTestData] = useState([{}]);
   console.log(stats);
 
-
   const onStatsHover = (stats, type) => {
     if (type === "POINTS") {
       setCurrentStats(stats);
@@ -21,11 +20,6 @@ function LeadersStatTile({ stats, type, division }) {
     // }
   };
 
-  useEffect(()=> {
-
-
-  }, [])
-
   useEffect(() => {
     let filterData = [];
     if (division === "WHITE") {
@@ -37,42 +31,37 @@ function LeadersStatTile({ stats, type, division }) {
           });
         setTestData(filterData);
       }
-
     }
     if (division === "RED") {
-        {
-          stats
-            .filter((stats) => stats.division === "Red")
-            .map((stat) => {
-              filterData.push(stat);
-            });
-          setTestData(filterData);
-        }
+      {
+        stats
+          .filter((stats) => stats.division === "Red")
+          .map((stat) => {
+            filterData.push(stat);
+          });
+        setTestData(filterData);
       }
-      if (division === "BLUE") {
-        {
-          stats
-            .filter((stats) => stats.division === "Blue")
-            .map((stat) => {
-              filterData.push(stat);
-            });
-          setTestData(filterData);
-        }
-  
+    }
+    if (division === "BLUE") {
+      {
+        stats
+          .filter((stats) => stats.division === "Blue")
+          .map((stat) => {
+            filterData.push(stat);
+          });
+        setTestData(filterData);
       }
-    
-
+    }
   }, [division]);
 
   useEffect(() => {
-    // let filterCurrent = {}
     {
-        testData.sort((a, b) => (a.points > b.points ? -1 : 1))
-          .filter((stat, index) => index === 0)
-          .map((stat) => setCurrentStats(stat));
-      }
-    //   setCurrentStats(filterCurrent)
-  }, [testData])
+      testData
+        .sort((a, b) => (a.points > b.points ? -1 : 1))
+        .filter((stat, index) => index === 0)
+        .map((stat) => setCurrentStats(stat));
+    }
+  }, [testData]);
   return (
     <div className="points_column">
       <div className="points_header">

@@ -21,10 +21,10 @@ function TeamTiles() {
 
   const columns = useMemo(
     () => [
-      {
-        Header: "",
-        accessor: "position",
-      },
+      // {
+      //   Header: "",
+      //   accessor: "position",
+      // },
       {
         Header: "",
         accessor: "teamName",
