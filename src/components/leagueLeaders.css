@@ -53,8 +53,10 @@ margin: 0;
 }
 
 .leader_stats_points {
-    list-style: none;
-    padding: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+    gap: 1rem;
 }
 
 .points_header {
@@ -89,10 +91,14 @@ margin: 0;
     display: grid;
     grid-template-columns: 1fr 10fr 1fr;
     align-self: center;
-    padding: 0.1rem 0.5rem;
+    padding: 0.25rem 0.85rem;
     background-color: lightslategray;
     border-radius: 20px;
     margin: 0.5rem 0;
+}
+
+.stats_item:hover {
+    background-color: white;
 }
 
 .stats_item p {

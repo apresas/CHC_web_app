@@ -1,0 +1,29 @@
+import React from 'react'
+import "./leaderStatsItem.css"
+
+function LeaderStatsItem({
+    stats,
+    index,
+    type
+}) {
+    const listIndex = index += 1;
+    let stat = 0
+    if(type === "GOALS"){
+        stat = stats.goals
+    } else if(type === "POINTS") {
+        stat = stats.points
+    } else if(type === "GAA") {
+        stat = stats.GAA
+    } else if(type === "SV") {
+        stat = stats.SV
+    }
+  return (
+    <div className='leader_stats_item'>
+        <div className="position_number">{listIndex}.</div>
+        <div className="leader_name">{stats.firstName} {stats.lastName}</div>
+        <div className="leader_stat">{`${stat}`}</div>
+    </div>
+  )
+}
+
+export default LeaderStatsItem

@@ -1,14 +1,84 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import "./teamTiles.css";
 import Teams from "../data/teams.json";
 import standings from "../data/standing.json";
 import { FiChevronsDown } from "react-icons/fi";
 import { GrStar } from "react-icons/gr";
+import { useTable } from "react-table";
 
 function TeamTiles() {
   const [open, setOpen] = useState(false);
   const [open1, setOpen1] = useState(false);
   const [open2, setOpen2] = useState(false);
+  const [position, setPosition] = useState();
+  const data = React.useMemo(() => standings, []);
+  const winPerAccessor = (row) => {
+    return Number(row.wins / row.gamesPlayed).toFixed(2);
+  };
+
+  const positionAccessor = (index) => {
+    return index;
+  };
+
+  const columns = React.useMemo(
+    () => [
+      // {
+      //   Header: "",
+      //   accessor: "position",
+      // },
+      {
+        Header: "",
+        accessor: "teamName",
+        Cell: (tableProps) => (
+          <div className="standing_teamName">
+            <img className="standing_logo" src={tableProps.row.original.logo} />
+            {tableProps.row.original.teamName}
+          </div>
+        ),
+      },
+      {
+        Header: "GP",
+        accessor: "gamesPlayed",
+      },
+      {
+        Header: "W",
+        accessor: "wins",
+      },
+      {
+        Header: "L",
+        accessor: "losses",
+      },
+      {
+        Header: "T",
+        accessor: "tie",
+      },
+      {
+        Header: "OTL",
+        accessor: "otLoses",
+      },
+      {
+        Header: "P",
+        accessor: "points",
+      },
+      {
+        Header: "W%",
+        accessor: winPerAccessor,
+      },
+      {
+        Header: "GF",
+        accessor: "goalsFor",
+      },
+      {
+        Header: "GA",
+        accessor: "goalsAgainst",
+      },
+    ],
+    []
+  );
+
+  const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } =
+    useTable({ columns, data });
+
   const openStandings = (id) => {
     if (id === 0) {
       setOpen(!open);
@@ -66,56 +136,37 @@ function TeamTiles() {
           {open ? (
             <div className="standings">
               <h3 className="standing_title">Standings</h3>
-              <table className="standings_table red">
+              <table className="standings_table blue" {...getTableProps()}>
                 <thead>
-                  <tr>
-                    <th></th>
-                    <th></th>
-                    <th>GP</th>
-                    <th>W</th>
-                    <th>L</th>
-                    <th>T</th>
-                    <th>OTL</th>
-                    <th className="points">P</th>
-                    <th>W%</th>
-                    <th>GF</th>
-                    <th>GA</th>
-                  </tr>
+                  {headerGroups.map((headerGroup) => (
+                    <tr {...headerGroup.getHeaderGroupProps()}>
+                      {headerGroup.headers.map((column) => (
+                        <th {...column.getHeaderProps()}>
+                          {column.render("Header")}
+                        </th>
+                      ))}
+                    </tr>
+                  ))}
                 </thead>
-                <tbody>
-                  {standings
-                    .map((stats) => {
-                      return stats;
-                    })
-                    .filter((stats) => stats.divison === "Red")
+                <tbody {...getTableBodyProps()}>
+                  {rows
+                    .filter((row) => row.original.divison === "Red")
                     .sort((a, b) =>
-                      parseInt(a.points) > parseInt(b.points) ? -1 : 1
+                      parseInt(a.original.points) > parseInt(b.original.points)
+                        ? -1
+                        : 1
                     )
-                    .map((stats, index) => {
-                      const winPerRaw =
-                        parseInt(stats.wins) / parseInt(stats.gamesPlayed);
-                      const winPer = winPerRaw.toFixed(2);
-                      const statIndex = (index += 1);
+                    .map((row, i) => {
+                      prepareRow(row);
                       return (
-                        <tr className="stats_row" key={stats.id}>
-                          <td className="position_data">{statIndex}.</td>
-                          <td className="title_data">
-                            <img
-                              className="standings_logo"
-                              src={stats.logo}
-                              alt="logo"
-                            />
-                            {stats.teamName}
-                          </td>
-                          <td className="stats_data">{stats.gamesPlayed}</td>
-                          <td className="stats_data">{stats.wins}</td>
-                          <td className="stats_data">{stats.losses}</td>
-                          <td className="stats_data">{stats.tie}</td>
-                          <td className="stats_data">{stats.otLoses}</td>
-                          <td className="stats_data points">{stats.points}</td>
-                          <td className="stats_data">{winPer}</td>
-                          <td className="stats_data">{stats.goalsFor}</td>
-                          <td className="stats_data">{stats.goalsAgainst}</td>
+                        <tr {...row.getRowProps()}>
+                          {row.cells.map((cell) => {
+                            return (
+                              <td {...cell.getCellProps()}>
+                                {cell.render("Cell")}
+                              </td>
+                            );
+                          })}
                         </tr>
                       );
                     })}
@@ -161,56 +212,39 @@ function TeamTiles() {
           {open1 ? (
             <div className="standings">
               <h3 className="standing_title">Standings</h3>
-              <table className="standings_table white">
+              <table className="standings_table blue" {...getTableProps()}>
                 <thead>
-                  <tr>
-                    <th></th>
-                    <th></th>
-                    <th>GP</th>
-                    <th>W</th>
-                    <th>L</th>
-                    <th>T</th>
-                    <th>OTL</th>
-                    <th className="points">P</th>
-                    <th>W%</th>
-                    <th>GF</th>
-                    <th>GA</th>
-                  </tr>
+                  {headerGroups.map((headerGroup) => (
+                    <tr {...headerGroup.getHeaderGroupProps()}>
+                      {headerGroup.headers.map((column) => (
+                        <th {...column.getHeaderProps()}>
+                          {column.render("Header")}
+                        </th>
+                      ))}
+                    </tr>
+                  ))}
                 </thead>
-                <tbody>
-                  {standings
-                    .map((stats) => {
-                      return stats;
-                    })
-                    .filter((stats) => stats.divison === "White")
+                <tbody {...getTableBodyProps()}>
+                  {rows
+                    .filter((row) => row.original.divison === "White")
                     .sort((a, b) =>
-                      parseInt(a.points) > parseInt(b.points) ? -1 : 1
+                      parseInt(a.original.points) > parseInt(b.original.points)
+                        ? -1
+                        : 1
                     )
-                    .map((stats, index) => {
-                      const winPerRaw =
-                        parseInt(stats.wins) / parseInt(stats.gamesPlayed);
-                      const winPer = winPerRaw.toFixed(2);
-                      const statIndex = (index += 1);
+                    .map((row, i) => {
+                      // setPosition(i)
+                      // console.log(row)
+                      prepareRow(row, i);
                       return (
-                        <tr className="stats_row" key={stats.id}>
-                          <td className="position_data">{statIndex}.</td>
-                          <td className="title_data">
-                            <img
-                              className="standings_logo"
-                              src={stats.logo}
-                              alt="logo"
-                            />
-                            {stats.teamName}
-                          </td>
-                          <td className="stats_data">{stats.gamesPlayed}</td>
-                          <td className="stats_data">{stats.wins}</td>
-                          <td className="stats_data">{stats.losses}</td>
-                          <td className="stats_data">{stats.tie}</td>
-                          <td className="stats_data">{stats.otLoses}</td>
-                          <td className="stats_data points">{stats.points}</td>
-                          <td className="stats_data">{winPer}</td>
-                          <td className="stats_data">{stats.goalsFor}</td>
-                          <td className="stats_data">{stats.goalsAgainst}</td>
+                        <tr {...row.getRowProps()}>
+                          {row.cells.map((cell) => {
+                            return (
+                              <td {...cell.getCellProps()}>
+                                {cell.render("Cell")}
+                              </td>
+                            );
+                          })}
                         </tr>
                       );
                     })}
@@ -256,56 +290,39 @@ function TeamTiles() {
           {open2 ? (
             <div className="standings">
               <h3 className="standing_title">Standings</h3>
-              <table className="standings_table blue">
+              <table className="standings_table blue" {...getTableProps()}>
                 <thead>
-                  <tr>
-                    <th></th>
-                    <th></th>
-                    <th>GP</th>
-                    <th>W</th>
-                    <th>L</th>
-                    <th>T</th>
-                    <th>OTL</th>
-                    <th className="points">P</th>
-                    <th>W%</th>
-                    <th>GF</th>
-                    <th>GA</th>
-                  </tr>
+                  {headerGroups.map((headerGroup) => (
+                    <tr {...headerGroup.getHeaderGroupProps()}>
+                      {headerGroup.headers.map((column) => (
+                        <th {...column.getHeaderProps()}>
+                          {column.render("Header")}
+                        </th>
+                      ))}
+                    </tr>
+                  ))}
                 </thead>
-                <tbody>
-                  {standings
-                    .map((stats) => {
-                      return stats;
-                    })
-                    .filter((stats) => stats.divison === "Blue")
+                <tbody {...getTableBodyProps()}>
+                  {rows
+                    .filter((row) => row.original.divison === "Blue")
                     .sort((a, b) =>
-                      parseInt(a.points) > parseInt(b.points) ? -1 : 1
+                      parseInt(a.original.points) > parseInt(b.original.points)
+                        ? -1
+                        : 1
                     )
-                    .map((stats, index) => {
-                      const winPerRaw =
-                        parseInt(stats.wins) / parseInt(stats.gamesPlayed);
-                      const winPer = winPerRaw.toFixed(2);
-                      const statIndex = (index += 1);
+                    .map((row, i) => {
+                      // setPosition(i)
+                      // console.log(row)
+                      prepareRow(row, i);
                       return (
-                        <tr className="stats_row" key={stats.id}>
-                          <td className="position_data">{statIndex}.</td>
-                          <td className="title_data">
-                            <img
-                              className="standings_logo"
-                              src={stats.logo}
-                              alt="logo"
-                            />
-                            {stats.teamName}
-                          </td>
-                          <td className="stats_data">{stats.gamesPlayed}</td>
-                          <td className="stats_data">{stats.wins}</td>
-                          <td className="stats_data">{stats.losses}</td>
-                          <td className="stats_data">{stats.tie}</td>
-                          <td className="stats_data">{stats.otLoses}</td>
-                          <td className="stats_data points">{stats.points}</td>
-                          <td className="stats_data">{winPer}</td>
-                          <td className="stats_data">{stats.goalsFor}</td>
-                          <td className="stats_data">{stats.goalsAgainst}</td>
+                        <tr {...row.getRowProps()}>
+                          {row.cells.map((cell) => {
+                            return (
+                              <td {...cell.getCellProps()}>
+                                {cell.render("Cell")}
+                              </td>
+                            );
+                          })}
                         </tr>
                       );
                     })}

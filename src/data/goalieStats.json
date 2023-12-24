@@ -1,0 +1,57 @@
+[
+  {
+    "goalieID": 0,
+    "firstName": "Caleb",
+    "lastName": "Ross",
+    "class": "2025",
+    "team": "Olentangy Liberty",
+    "logo": "../../src/assets/Logos/Liberty_logo.svg",
+    "GAA": 2.35,
+    "SV": 0.952,
+    "division": "Red"
+  },
+  {
+    "goalieID": 1,
+    "firstName": "Mason",
+    "lastName": "Herdon",
+    "class": "2024",
+    "team": "Upper Arlinngton",
+    "logo": "../../src/assets/Logos/UA_logo.svg",
+    "GAA": 2.51,
+    "SV": 0.938,
+    "division": "Red"
+  },
+  {
+    "goalieID": 2,
+    "firstName": "Noah",
+    "lastName": "Smith",
+    "class": "2025",
+    "team": "Archbishop Moeller",
+    "logo": "../../src/assets/Logos/Moeller_logo.svg",
+    "GAA": 2.45,
+    "SV": 0.915,
+    "division": "Red"
+  },
+  {
+    "goalieID": 3,
+    "firstName": "Dylan",
+    "lastName": "Fansler",
+    "class": "2026",
+    "team": "St. Charles",
+    "logo": "../../src/assets/Logos/SC_logo.svg",
+    "GAA": 2.43,
+    "SV": 0.909,
+    "division": "Red"
+  },
+  {
+    "goalieID": 4,
+    "firstName": "Nelson",
+    "lastName": "Kai",
+    "class": "2026",
+    "team": "Olentangy Berlin",
+    "logo": "../../src/assets/Logos/Berlin_logo.svg",
+    "GAA": 2.54,
+    "SV": 0.892,
+    "division": "Red"
+  }
+]
