@@ -94,7 +94,7 @@ function TeamTiles() {
   return (
     <div className="teamTiles_container">
       <div className="teams_title_container">
-        <h1 className="teams_tiles_title">CAPITAL HOCKEY CONFRENCE</h1>
+        <h1 className="teams_tiles_title">CAPITAL HOCKEY CONFERENCE</h1>
         <h3 className="teams_tiles_sub">
           Central Ohio Varsity High School Hockey
         </h3>

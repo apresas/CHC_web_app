@@ -38,10 +38,11 @@ function NavBar() {
         <div className="nav_logo_container">
           <img
             className="nav_logo"
-            src="../../src/assets/Logos/CHC_logo.svg"
+            src="../../src/assets/Logos/CHC_logo_V2.svg"
             alt="CHC Logo"
           />
-          <h1 className="nav_logo_title">CHC</h1>
+          {/* <h1 className="nav_logo_title">CHC</h1> */}
+          <img src="../../src/assets/Logos/CHC_Wordmark.svg" alt="Wordmark" className="wordmark" />
         </div>
         <div className="nav_links">
           <VarsityNav />

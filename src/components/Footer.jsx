@@ -46,7 +46,7 @@ function Footer() {
         <span className="footer_links_divider" />
         <div className="footer_legal_container">
           <div className="footer_logo_container">
-            <img src="../../src/assets/Logos/CHC_logo.svg" alt="CHC Logo" />
+            <img src="../../src/assets/Logos/CHC_logo_V2.svg" alt="CHC Logo" />
           </div>
           <span className="footer_section_divider" />
           <div className="footer_statement_container">
