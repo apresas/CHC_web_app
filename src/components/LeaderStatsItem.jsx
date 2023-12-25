@@ -19,6 +19,7 @@ function LeaderStatsItem({
     }
   return (
     <div className='leader_stats_item'>
+        <div className="select_item"></div>
         <div className="position_number">{listIndex}.</div>
         <div className="leader_name">{stats.firstName} {stats.lastName}</div>
         <div className="leader_stat">{`${stat}`}</div>

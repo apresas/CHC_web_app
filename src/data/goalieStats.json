@@ -53,5 +53,115 @@
     "GAA": 2.54,
     "SV": 0.892,
     "division": "Red"
+  },
+  {
+    "goalieID": 5,
+    "firstName": "Luke",
+    "lastName": "Risko",
+    "class": "2025",
+    "team": "Olentangy Orange",
+    "logo": "../../src/assets/Logos/Orange_logo.svg",
+    "GAA": 2.75,
+    "SV": 0.921,
+    "division": "White"
+  },
+  {
+    "goalieID": 6,
+    "firstName": "Joey",
+    "lastName": "Rusnak",
+    "class": "2024",
+    "team": "St. Xavier",
+    "logo": "../../src/assets/Logos/Xavier_logo.svg",
+    "GAA": 2.57,
+    "SV": 0.911,
+    "division": "White"
+  },
+  {
+    "goalieID": 7,
+    "firstName": "Evan",
+    "lastName": "Merna",
+    "class": "2024",
+    "team": "Thomas Worthington",
+    "logo": "../../src/assets/Logos/Thomas_logo.svg",
+    "GAA": 2.82,
+    "SV": 0.903,
+    "division": "White"
+  },
+  {
+    "goalieID": 8,
+    "firstName": "J.M.",
+    "lastName": "Beuselinch",
+    "class": "2026",
+    "team": "Dublin Jermome",
+    "logo": "../../src/assets/Logos/Jerome_logo.svg",
+    "GAA": 2.88,
+    "SV": 0.899,
+    "division": "White"
+  },
+  {
+    "goalieID": 9,
+    "firstName": "Stu",
+    "lastName": "Heckathorne",
+    "class": "2025",
+    "team": "Gahanna",
+    "logo": "../../src/assets/Logos/Gahanna_logo.svg",
+    "GAA": 3.01,
+    "SV": 0.896,
+    "division": "White"
+  },
+  {
+    "goalieID": 9,
+    "firstName": "Alec",
+    "lastName": "O'Sullivan",
+    "class": "2026",
+    "team": "Dublin Coffman",
+    "logo": "../../src/assets/Logos/Coffman_logo.svg",
+    "GAA": 2.11,
+    "SV": 0.953,
+    "division": "Blue"
+  },
+  {
+    "goalieID": 10,
+    "firstName": "Ben",
+    "lastName": "Sebesy",
+    "class": "2024",
+    "team": "Springboro",
+    "logo": "../../src/assets/Logos/Springboro_logo.svg",
+    "GAA": 3.36,
+    "SV": 0.889,
+    "division": "Blue"
+  },
+  {
+    "goalieID": 11,
+    "firstName": "Andrew",
+    "lastName": "Daniels",
+    "class": "2024",
+    "team": "Worthington Kilborne",
+    "logo": "../../src/assets/Logos/Kilborne_logo.svg",
+    "GAA": 3.43,
+    "SV": 0.869,
+    "division": "Blue"
+  },
+  {
+    "goalieID": 12,
+    "firstName": "Landon",
+    "lastName": "Schroeder",
+    "class": "2026",
+    "team": "Springboro",
+    "logo": "../../src/assets/Logos/Springboro_logo.svg",
+    "GAA": 3.48,
+    "SV": 0.863,
+    "division": "Blue"
+  },
+  {
+    "goalieID": 13,
+    "firstName": "Sean",
+    "lastName": "McConnell",
+    "class": "2027",
+    "team": "Watterson",
+    "logo": "../../src/assets/Logos/Watterson_logo.svg",
+    "GAA": 3.52,
+    "SV": 0.819,
+    "division": "Blue"
   }
 ]

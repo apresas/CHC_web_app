@@ -5,12 +5,26 @@ import { FiChevronsDown } from "react-icons/fi";
 function LeadersStatTile({ stats, type, division }) {
   const [currentStats, setCurrentStats] = useState({});
   const [testData, setTestData] = useState([{}]);
-  console.log(stats);
+  const [typeTitle, setTypeTitle] = useState("");
+  const [typeAttribute, setTypeAttribute] = useState("");
+  const [total, setTotal] = useState();
+  // console.log(stats);
 
   const onStatsHover = (stats, type) => {
     if (type === "POINTS") {
-      setCurrentStats(stats);
+      setTotal(stats.points);
     }
+    if (type === "GOALS") {
+      setTotal(stats.goals);
+    }
+    if (type === "GAA") {
+      setTotal(stats.GAA);
+    }
+    if (type === "SV") {
+      setTotal(stats.SV);
+    }
+    setCurrentStats(stats);
+    // console.log(stats.goals)
     // else if (type === "GOALS") {
     //   setCurrentGoalsLeader(stats);
     // } else if (type === "GAA") {
@@ -19,6 +33,22 @@ function LeadersStatTile({ stats, type, division }) {
     //   setCurrentSVLeader(stats);
     // }
   };
+
+  useEffect(() => {
+    if (type === "POINTS") {
+      setTypeTitle("Points");
+      setTypeAttribute("points");
+    } else if (type === "GOALS") {
+      setTypeTitle("Goals");
+      setTypeAttribute("goals");
+    } else if (type === "GAA") {
+      setTypeTitle(type);
+      setTypeAttribute("GAA");
+    } else if (type === "SV") {
+      setTypeTitle("SV%");
+      setTypeAttribute("SV");
+    }
+  }, [type]);
 
   useEffect(() => {
     let filterData = [];
@@ -55,51 +85,94 @@ function LeadersStatTile({ stats, type, division }) {
   }, [division]);
 
   useEffect(() => {
-    {
-      testData
-        .sort((a, b) => (a.points > b.points ? -1 : 1))
-        .filter((stat, index) => index === 0)
-        .map((stat) => setCurrentStats(stat));
+    if (type === "POINTS") {
+      {
+        testData
+          .sort((a, b) => (a.points > b.points ? -1 : 1))
+          .filter((stat, index) => index === 0)
+          .map((stat) => {
+            setTotal(stat.points);
+            setCurrentStats(stat);
+          });
+      }
     }
-  }, [testData]);
+    if (type === "GOALS") {
+      {
+        testData
+          .sort((a, b) => (a.goals > b.goals ? -1 : 1))
+          .filter((stat, index) => index === 0)
+          .map((stat) => {
+            setTotal(stat.goals);
+            setCurrentStats(stat);
+          });
+      }
+    }
+    if (type === "GAA") {
+      {
+        testData
+          .sort((a, b) => (a.GAA > b.GAA ? 1 : -1))
+          .filter((stat, index) => index === 0)
+          .map((stat) => {
+            setTotal(stat.GAA);
+            setCurrentStats(stat);
+          });
+      }
+    }
+    if (type === "SV") {
+      {
+        testData
+          .sort((a, b) => (a.SV > b.SV ? -1 : 1))
+          .filter((stat, index) => index === 0)
+          .map((stat) => {
+            setTotal(stat.SV);
+            setCurrentStats(stat);
+          });
+      }
+    }
+  }, [testData, type]);
+
   return (
     <div className="points_column">
       <div className="points_header">
         <img className="stats_logo" src={currentStats.logo} alt="team logo" />
         <div className="stats_player_info">
-          <h4 className="stats_points_title">Points</h4>
-          <h4 className="stats_name_title">
-            {currentStats.firstName} {currentStats.lastName}
-          </h4>
-          <small>Class: {currentStats.class}</small>
+          <h4 className="stats_points_title">{typeTitle}</h4>
+          <div className="stats_name_title">
+            {currentStats.firstName}
+          </div>
+          <div className="stats_name_title">
+            {currentStats.lastName}
+          </div>
+          {/* <small>Class: {currentStats.class}</small> */}
         </div>
         <div className="columns_total">
-          <h2 className="stats_point_total">{currentStats.points}</h2>
-          <small>POINTS</small>
+          <h2 className="stats_point_total">{total}</h2>
+          <small>{type}</small>
         </div>
       </div>
       <div className="leader_stats_points">
         {testData
-          .sort((a, b) => (a.points > b.points ? -1 : 1))
-          .map((stats, index) => (
+          .sort((a, b) => (a.typeAttribute > b.typeAttribute ? -1 : 1))
+          .map((stats, index) => {
+            return(
             <div
               key={stats.key}
               onMouseEnter={() => {
-                onStatsHover(stats, "POINTS");
+                onStatsHover(stats, type);
               }}
             >
               <LeaderStatsItem
                 key={stats.playerID}
                 stats={stats}
                 index={index}
-                type={"POINTS"}
+                type={type}
               />
             </div>
-          ))}
+          )}).splice(0,5)}
       </div>
-      <div className="stats_button_container">
+      {/* <div className="stats_button_container">
         <FiChevronsDown />
-      </div>
+      </div> */}
     </div>
   );
 }

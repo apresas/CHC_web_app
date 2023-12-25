@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: center;
     background-color: var(--color-bg);
+    font-family: "Roboto";
 }
 
 .footer_content_container {
@@ -34,7 +35,7 @@
     justify-content: center;
     border-radius: 50%;
     border: 2px solid lightslategray;
-    padding: 0.35rem;
+    padding: 0.5rem;
     color: lightslategray;
     transition: var(--transition);
 }
@@ -52,6 +53,8 @@
 .footer_link {
     color: lightslategray;
     transition: var(--transition);
+    font-family: "Bebas Neue";
+    font-size: 1rem;
 }
 
 .footer_legal_container {

@@ -10,573 +10,90 @@ import LeaderStatsItem from "./LeaderStatsItem";
 import LeadersStatTile from "./LeadersStatTile";
 
 function LeagueLeaders() {
-  // const [playerStats, setPlayerStats] = useState();
-  // const [goalieStats, setGoalieStats] = useState();
-  const [leaderStats, setLeaderStats] = useState(LeaderStats);
-  const [goalieLeaderStats, setGoalieLeaderStats] =
-    useState(GoalieLeadersStats);
-  const [currentPointsLeader, setCurrentPointsLeader] = useState({});
-  const [currentGoalsLeader, setCurrentGoalsLeader] = useState({});
-  const [currentGAALeader, setCurrentGAALeader] = useState({});
-  const [currentSVLeader, setCurrentSVLeader] = useState({});
-  const [testData, setTestData] = useState(TestData);
-
-  const onStatsHover = (stats, type) => {
-    if (type === "POINTS") {
-      setCurrentPointsLeader(stats);
-    } else if (type === "GOALS") {
-      setCurrentGoalsLeader(stats);
-    } else if (type === "GAA") {
-      setCurrentGAALeader(stats);
-    } else if (type === "SV") {
-      setCurrentSVLeader(stats);
-    }
-  };
-
-  useEffect(() => {
-    {
-      LeaderStats.sort((a, b) => (a.points > b.points ? -1 : 1))
-        .filter((stat, index) => index === 0)
-        .map((stat) => setCurrentPointsLeader(stat));
-    }
-    {
-      LeaderStats.sort((a, b) => (a.goals > b.goals ? -1 : 1))
-        .filter((stats, index) => index === 0)
-        .map((stat) => setCurrentGoalsLeader(stat));
-    }
-    {
-      goalieLeaderStats
-        .sort((a, b) => (a.GAA > b.GAA ? 1 : -1))
-        .filter((stats, index) => index === 0)
-        .map((stat) => setCurrentGAALeader(stat));
-    }
-    {
-      goalieLeaderStats
-        .sort((a, b) => (a.SV > b.SV ? -1 : 1))
-        .filter((stats, index) => index === 0)
-        .map((stat) => setCurrentSVLeader(stat));
-    }
-    {
-      TestData.filter((stats) => stats.division === "White").map((stat) => setTestData(stat))
-    }
-  }, []);
-
   return (
     <div className="leagueLeaders_container">
       <div className="leagueLeaders_content_container">
         <h2 className="leagueLeaders_title">
           <a className="leagueLeaders_link" href="">
             2023-24 League Leaders
+            <div className="icon_container">
+              <FiChevronRight />
+            </div>
           </a>
-          <div className="icon_container">
-            <FiChevronRight />
-          </div>
         </h2>
         <h3 className="leagueLeaders_dvision_title">Red Division</h3>
         <div className="stats_tile">
-        <LeadersStatTile stats={LeaderStats} division="RED" type="POINTS" />
-          <div className="stats_division">
-            <div className="points_column">
-              <div className="points_header">
-                <img
-                  className="stats_logo"
-                  src={currentGoalsLeader.logo}
-                  alt="team logo"
-                />
-                <div className="stats_player_info">
-                  <h4 className="stats_points_title">Goals</h4>
-                  <h4 className="stats_name_title">
-                    {currentGoalsLeader.firstName} {currentGoalsLeader.lastName}
-                  </h4>{" "}
-                  <small>Class: {currentGoalsLeader.class}</small>
-                </div>
-                <div className="columns_total">
-                  <h2 className="stats_point_total">
-                    {currentGoalsLeader.goals}
-                  </h2>{" "}
-                  <small>GOALS</small>
-                </div>
-              </div>
-              <div className="leader_stats_points">
-                {leaderStats
-                  .sort((a, b) => (a.goals > b.goals ? -1 : 1))
-                  .map((stats, index) => (
-                    <div
-                      key={stats.key}
-                      onMouseEnter={() => {
-                        onStatsHover(stats, "GOALS");
-                      }}
-                    >
-                      <LeaderStatsItem
-                        key={stats.playerID}
-                        stats={stats}
-                        index={index}
-                        type={"GOALS"}
-                      />
-                    </div>
-                  ))}
-              </div>{" "}
-              <div className="stats_button_container">
-                <FiChevronsDown />
-              </div>
-            </div>
-          </div>
-          <div className="stats_division">
-            <div className="points_column">
-              <div className="points_header">
-                <img
-                  className="stats_logo"
-                  src={currentGAALeader.logo}
-                  alt="team logo"
-                />
-                <div className="stats_player_info">
-                  <h4 className="stats_points_title">GAA</h4>
-                  <h4 className="stats_name_title">
-                    {currentGAALeader.firstName} {currentGAALeader.lastName}
-                  </h4>{" "}
-                  <small>Class: {currentGAALeader.class}</small>
-                </div>
-                <div className="columns_total">
-                  <h2 className="stats_point_total">{currentGAALeader.GAA}</h2>{" "}
-                  <small>GAA</small>
-                </div>
-              </div>
-              <div className="leader_stats_points">
-                {goalieLeaderStats
-                  .sort((a, b) => (a.GAA > b.GAA ? 1 : -1))
-                  .map((stats, index) => (
-                    <div
-                      key={stats.key}
-                      onMouseEnter={() => {
-                        onStatsHover(stats, "GAA");
-                      }}
-                    >
-                      <LeaderStatsItem
-                        key={stats.playerID}
-                        stats={stats}
-                        index={index}
-                        type={"GAA"}
-                      />
-                    </div>
-                  ))}
-              </div>
-              <div className="stats_button_container">
-                <FiChevronsDown />
-              </div>
-            </div>
-          </div>
-          <div className="stats_division">
-            <div className="points_column">
-              <div className="points_header">
-                <img
-                  className="stats_logo"
-                  src={currentSVLeader.logo}
-                  alt="team logo"
-                />
-                <div className="stats_player_info">
-                  <h4 className="stats_points_title">SV%</h4>
-                  <h4 className="stats_name_title">
-                    {currentSVLeader.firstName} {currentSVLeader.lastName}
-                  </h4>{" "}
-                  <small>Class: {currentSVLeader.class}</small>
-                </div>
-                <div className="columns_total">
-                  <h2 className="stats_point_total">{currentSVLeader.SV}</h2>{" "}
-                  <small>SV%</small>
-                </div>
-              </div>
-              <div className="leader_stats_points">
-                {goalieLeaderStats
-                  .sort((a, b) => (a.SV > b.SV ? -1 : 1))
-                  .map((stats, index) => (
-                    <div
-                      key={stats.key}
-                      onMouseEnter={() => {
-                        onStatsHover(stats, "SV");
-                      }}
-                    >
-                      <LeaderStatsItem
-                        key={stats.playerID}
-                        stats={stats}
-                        index={index}
-                        type={"SV"}
-                      />
-                    </div>
-                  ))}
-              </div>
-              <div className="stats_button_container">
-                <FiChevronsDown />
-              </div>
-            </div>
+          <LeadersStatTile stats={LeaderStats} division="RED" type="POINTS" />
+          <LeadersStatTile stats={LeaderStats} division="RED" type="GOALS" />
+          <LeadersStatTile
+            stats={GoalieLeadersStats}
+            division="RED"
+            type="GAA"
+          />
+          <LeadersStatTile
+            stats={GoalieLeadersStats}
+            division="RED"
+            type="SV"
+          />
+        </div>
+        <div className="stats_btn_container">
+          <div
+            className="stats_btn"
+            onClick={() => {
+              console.log("clicked");
+            }}
+          >
+            <FiChevronsDown style={{ fontSize: "1.5rem" }} />
           </div>
         </div>
         <h3 className="leagueLeaders_dvision_title">White Division</h3>
         <div className="stats_tile">
-          <div className="stats_division">
-            <div className="points_column">
-              <div className="points_header">
-                <img
-                  className="stats_logo"
-                  src={currentPointsLeader.logo}
-                  alt="team logo"
-                />
-                <div className="stats_player_info">
-                  <h4 className="stats_points_title">Points</h4>
-                  <h4 className="stats_name_title">
-                    {currentPointsLeader.firstName}{" "}
-                    {currentPointsLeader.lastName}
-                  </h4>
-                  <small>Class: {currentPointsLeader.class}</small>
-                </div>
-                <div className="columns_total">
-                  <h2 className="stats_point_total">
-                    {currentPointsLeader.points}
-                  </h2>
-                  <small>POINTS</small>
-                </div>
-              </div>
-              <div className="leader_stats_points">
-                {leaderStats
-                  .sort((a, b) => (a.points > b.points ? -1 : 1))
-                  .map((stats, index) => (
-                    <div
-                      key={stats.key}
-                      onMouseEnter={() => {
-                        onStatsHover(stats, "POINTS");
-                      }}
-                    >
-                      <LeaderStatsItem
-                        key={stats.playerID}
-                        stats={stats}
-                        index={index}
-                        type={"POINTS"}
-                      />
-                    </div>
-                  ))}
-              </div>
-              <div className="stats_button_container">
-                <FiChevronsDown />
-              </div>
-            </div>
+          <LeadersStatTile stats={LeaderStats} division="WHITE" type="POINTS" />
+          <LeadersStatTile stats={LeaderStats} division="WHITE" type="GOALS" />
+          <LeadersStatTile
+            stats={GoalieLeadersStats}
+            division="WHITE"
+            type="GAA"
+          />
+          <LeadersStatTile
+            stats={GoalieLeadersStats}
+            division="WHITE"
+            type="SV"
+          />
+        </div>
+        <div className="stats_btn_container">
+          <div
+            className="stats_btn"
+            onClick={() => {
+              console.log("clicked");
+            }}
+          >
+            <FiChevronsDown style={{ fontSize: "1.5rem" }} />
           </div>
-          <div className="stats_division">
-            <div className="points_column">
-              <div className="points_header">
-                <img
-                  className="stats_logo"
-                  src={currentGoalsLeader.logo}
-                  alt="team logo"
-                />
-                <div className="stats_player_info">
-                  <h4 className="stats_points_title">Goals</h4>
-                  <h4 className="stats_name_title">
-                    {currentGoalsLeader.firstName} {currentGoalsLeader.lastName}
-                  </h4>{" "}
-                  <small>Class: {currentGoalsLeader.class}</small>
-                </div>
-                <div className="columns_total">
-                  <h2 className="stats_point_total">
-                    {currentGoalsLeader.goals}
-                  </h2>{" "}
-                  <small>GOALS</small>
-                </div>
-              </div>
-              <div className="leader_stats_points">
-                {leaderStats
-                  .sort((a, b) => (a.goals > b.goals ? -1 : 1))
-                  .map((stats, index) => (
-                    <div
-                      key={stats.key}
-                      onMouseEnter={() => {
-                        onStatsHover(stats, "GOALS");
-                      }}
-                    >
-                      <LeaderStatsItem
-                        key={stats.playerID}
-                        stats={stats}
-                        index={index}
-                        type={"GOALS"}
-                      />
-                    </div>
-                  ))}
-              </div>{" "}
-              <div className="stats_button_container">
-                <FiChevronsDown />
-              </div>
-            </div>
-          </div>
-          <div className="stats_division">
-            <div className="points_column">
-              <div className="points_header">
-                <img
-                  className="stats_logo"
-                  src={currentGAALeader.logo}
-                  alt="team logo"
-                />
-                <div className="stats_player_info">
-                  <h4 className="stats_points_title">GAA</h4>
-                  <h4 className="stats_name_title">
-                    {currentGAALeader.firstName} {currentGAALeader.lastName}
-                  </h4>{" "}
-                  <small>Class: {currentGAALeader.class}</small>
-                </div>
-                <div className="columns_total">
-                  <h2 className="stats_point_total">{currentGAALeader.GAA}</h2>{" "}
-                  <small>GAA</small>
-                </div>
-              </div>
-              <div className="leader_stats_points">
-                {goalieLeaderStats
-                  .sort((a, b) => (a.GAA > b.GAA ? 1 : -1))
-                  .map((stats, index) => (
-                    <div
-                      key={stats.key}
-                      onMouseEnter={() => {
-                        onStatsHover(stats, "GAA");
-                      }}
-                    >
-                      <LeaderStatsItem
-                        key={stats.playerID}
-                        stats={stats}
-                        index={index}
-                        type={"GAA"}
-                      />
-                    </div>
-                  ))}
-              </div>
-              <div className="stats_button_container">
-                <FiChevronsDown />
-              </div>
-            </div>
-          </div>
-          <div className="stats_division">
-            <div className="points_column">
-              <div className="points_header">
-                <img
-                  className="stats_logo"
-                  src={currentSVLeader.logo}
-                  alt="team logo"
-                />
-                <div className="stats_player_info">
-                  <h4 className="stats_points_title">SV%</h4>
-                  <h4 className="stats_name_title">
-                    {currentSVLeader.firstName} {currentSVLeader.lastName}
-                  </h4>{" "}
-                  <small>Class: {currentSVLeader.class}</small>
-                </div>
-                <div className="columns_total">
-                  <h2 className="stats_point_total">{currentSVLeader.SV}</h2>{" "}
-                  <small>SV%</small>
-                </div>
-              </div>
-              <div className="leader_stats_points">
-                {goalieLeaderStats
-                  .sort((a, b) => (a.SV > b.SV ? -1 : 1))
-                  .map((stats, index) => (
-                    <div
-                      key={stats.key}
-                      onMouseEnter={() => {
-                        onStatsHover(stats, "SV");
-                      }}
-                    >
-                      <LeaderStatsItem
-                        key={stats.playerID}
-                        stats={stats}
-                        index={index}
-                        type={"SV"}
-                      />
-                    </div>
-                  ))}
-              </div>
-              <div className="stats_button_container">
-                <FiChevronsDown />
-              </div>
-            </div>
-          </div>
-        </div>{" "}
+        </div>
         <h3 className="leagueLeaders_dvision_title">Blue Division</h3>
         <div className="stats_tile">
-          <div className="stats_division">
-            <div className="points_column">
-              <div className="points_header">
-                <img
-                  className="stats_logo"
-                  src={currentPointsLeader.logo}
-                  alt="team logo"
-                />
-                <div className="stats_player_info">
-                  <h4 className="stats_points_title">Points</h4>
-                  <h4 className="stats_name_title">
-                    {currentPointsLeader.firstName}{" "}
-                    {currentPointsLeader.lastName}
-                  </h4>
-                  <small>Class: {currentPointsLeader.class}</small>
-                </div>
-                <div className="columns_total">
-                  <h2 className="stats_point_total">
-                    {currentPointsLeader.points}
-                  </h2>
-                  <small>POINTS</small>
-                </div>
-              </div>
-              <div className="leader_stats_points">
-                {leaderStats
-                  .sort((a, b) => (a.points > b.points ? -1 : 1))
-                  .map((stats, index) => (
-                    <div
-                      key={stats.key}
-                      onMouseEnter={() => {
-                        onStatsHover(stats, "POINTS");
-                      }}
-                    >
-                      <LeaderStatsItem
-                        key={stats.playerID}
-                        stats={stats}
-                        index={index}
-                        type={"POINTS"}
-                      />
-                    </div>
-                  ))}
-              </div>
-              <div className="stats_button_container">
-                <FiChevronsDown />
-              </div>
-            </div>
-          </div>
-          <div className="stats_division">
-            <div className="points_column">
-              <div className="points_header">
-                <img
-                  className="stats_logo"
-                  src={currentGoalsLeader.logo}
-                  alt="team logo"
-                />
-                <div className="stats_player_info">
-                  <h4 className="stats_points_title">Goals</h4>
-                  <h4 className="stats_name_title">
-                    {currentGoalsLeader.firstName} {currentGoalsLeader.lastName}
-                  </h4>{" "}
-                  <small>Class: {currentGoalsLeader.class}</small>
-                </div>
-                <div className="columns_total">
-                  <h2 className="stats_point_total">
-                    {currentGoalsLeader.goals}
-                  </h2>{" "}
-                  <small>GOALS</small>
-                </div>
-              </div>
-              <div className="leader_stats_points">
-                {leaderStats
-                  .sort((a, b) => (a.goals > b.goals ? -1 : 1))
-                  .map((stats, index) => (
-                    <div
-                      key={stats.key}
-                      onMouseEnter={() => {
-                        onStatsHover(stats, "GOALS");
-                      }}
-                    >
-                      <LeaderStatsItem
-                        key={stats.playerID}
-                        stats={stats}
-                        index={index}
-                        type={"GOALS"}
-                      />
-                    </div>
-                  ))}
-              </div>{" "}
-              <div className="stats_button_container">
-                <FiChevronsDown />
-              </div>
-            </div>
-          </div>
-          <div className="stats_division">
-            <div className="points_column">
-              <div className="points_header">
-                <img
-                  className="stats_logo"
-                  src={currentGAALeader.logo}
-                  alt="team logo"
-                />
-                <div className="stats_player_info">
-                  <h4 className="stats_points_title">GAA</h4>
-                  <h4 className="stats_name_title">
-                    {currentGAALeader.firstName} {currentGAALeader.lastName}
-                  </h4>{" "}
-                  <small>Class: {currentGAALeader.class}</small>
-                </div>
-                <div className="columns_total">
-                  <h2 className="stats_point_total">{currentGAALeader.GAA}</h2>{" "}
-                  <small>GAA</small>
-                </div>
-              </div>
-              <div className="leader_stats_points">
-                {goalieLeaderStats
-                  .sort((a, b) => (a.GAA > b.GAA ? 1 : -1))
-                  .map((stats, index) => (
-                    <div
-                      key={stats.key}
-                      onMouseEnter={() => {
-                        onStatsHover(stats, "GAA");
-                      }}
-                    >
-                      <LeaderStatsItem
-                        key={stats.playerID}
-                        stats={stats}
-                        index={index}
-                        type={"GAA"}
-                      />
-                    </div>
-                  ))}
-              </div>
-              <div className="stats_button_container">
-                <FiChevronsDown />
-              </div>
-            </div>
-          </div>
-          <div className="stats_division">
-            <div className="points_column">
-              <div className="points_header">
-                <img
-                  className="stats_logo"
-                  src={currentSVLeader.logo}
-                  alt="team logo"
-                />
-                <div className="stats_player_info">
-                  <h4 className="stats_points_title">SV%</h4>
-                  <h4 className="stats_name_title">
-                    {currentSVLeader.firstName} {currentSVLeader.lastName}
-                  </h4>{" "}
-                  <small>Class: {currentSVLeader.class}</small>
-                </div>
-                <div className="columns_total">
-                  <h2 className="stats_point_total">{currentSVLeader.SV}</h2>{" "}
-                  <small>SV%</small>
-                </div>
-              </div>
-              <div className="leader_stats_points">
-                {goalieLeaderStats
-                  .sort((a, b) => (a.SV > b.SV ? -1 : 1))
-                  .map((stats, index) => (
-                    <div
-                      key={stats.key}
-                      onMouseEnter={() => {
-                        onStatsHover(stats, "SV");
-                      }}
-                    >
-                      <LeaderStatsItem
-                        key={stats.playerID}
-                        stats={stats}
-                        index={index}
-                        type={"SV"}
-                      />
-                    </div>
-                  ))}
-              </div>
-              <div className="stats_button_container">
-                <FiChevronsDown />
-              </div>
-                <LeadersStatTile stats={TestData} division="RED" />
-            </div>
+          <LeadersStatTile stats={LeaderStats} division="BLUE" type="POINTS" />
+          <LeadersStatTile stats={LeaderStats} division="BLUE" type="GOALS" />
+          <LeadersStatTile
+            stats={GoalieLeadersStats}
+            division="BLUE"
+            type="GAA"
+          />
+          <LeadersStatTile
+            stats={GoalieLeadersStats}
+            division="BLUE"
+            type="SV"
+          />
+        </div>
+        <div className="stats_btn_container">
+          <div
+            className="stats_btn"
+            onClick={() => {
+              console.log("clicked");
+            }}
+          >
+            <FiChevronsDown style={{ fontSize: "1.5rem" }} />
           </div>
         </div>
       </div>

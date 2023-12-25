@@ -1,7 +1,7 @@
 .navbar_container {
     display: flex;
     align-items: center;
-    gap: 15rem;
+    gap: 14rem;
     max-width: 1280px;
 }
 
@@ -16,6 +16,7 @@
     justify-content: center;
     gap: 0.5rem;
     margin-left: 2rem;
+    cursor: pointer;
 }
 
 .nav_logo_title {
@@ -29,6 +30,10 @@
     display: flex;
     gap: 1rem;
     font-family:"Bebas Neue";
+}
+
+.nav_links a {
+  letter-spacing: 0.02rem;
 }
 
 .dropdown {
@@ -67,6 +72,7 @@
     background-color: lightslategray;
     position: relative;
     font-family:"Bebas Neue";
+    letter-spacing: 0.02rem;
   }
 
   .menu::after {

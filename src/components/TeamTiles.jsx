@@ -81,13 +81,13 @@ function TeamTiles() {
   const openStandings = (id) => {
     if (id === 0) {
       setOpen(!open);
-      console.log("red");
+      // console.log("red");
     } else if (id === 1) {
       setOpen1(!open1);
-      console.log("white");
+      // console.log("white");
     } else if (id === 2) {
       setOpen2(!open2);
-      console.log("blue");
+      // console.log("blue");
     }
   };
 

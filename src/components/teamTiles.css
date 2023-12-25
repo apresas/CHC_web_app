@@ -26,6 +26,7 @@
 .divisions h2 {
   font-family: "Bebas Neue";
   margin-top: 0;
+  letter-spacing: 0.02rem;
 }
 
 /* .divisions:nth-child(even) {
@@ -68,6 +69,7 @@
   margin-top: 1rem;
   transition: var(--transition);
   color: lightslategray;
+  cursor: pointer;
 }
 
 .division_button:hover {
@@ -98,13 +100,27 @@
 .teams_tiles_sub {
   margin: 0;
   font-weight: 300;
+  letter-spacing: 0.02rem;
 }
 
-.tiles {
+/* .tiles {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: white;
+  height: 7.25rem;
+  padding: 1rem;
+  aspect-ratio: 1/1;
+  border-radius: 7px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.35);
+  transition: var(--transition-fast);
+} */
+.tiles {
+  display: grid;
+  grid-template-rows: 5fr 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
   background-color: white;
   height: 7.25rem;
   padding: 1rem;
@@ -126,14 +142,17 @@
 
 .team_name_title {
   font-size: 0.7rem;
+  font-weight: 500;
 }
 
 .team_image {
-  height: 3.5rem;
-  margin-bottom: 0.5rem;
+  height: 4rem;
+  width: 4.25rem;
+  /* margin-bottom: 0.5rem; */
 }
 .city_title {
   font-size: 0.65rem;
+  color: lightslategray;
 }
 
 .standings_logo {
@@ -176,6 +195,7 @@ thead > tr {
 
 tbody tr:nth-of-type(even) {
   background-color: #f2f2f2;
+  /* background-color: lavender; */
 }
 
 /* tbody tr:hover {
@@ -228,7 +248,7 @@ tbody, td {
 .standing_logo {
   height: 1.5rem;
   width: 1.5rem;
-  margin-right: 0.25rem;
+  margin-right: 0.5rem;
 }
 
 /* .title_data {
