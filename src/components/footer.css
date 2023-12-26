@@ -4,7 +4,8 @@
     align-items: center;
     justify-content: center;
     background-color: var(--color-bg);
-    font-family: "Roboto";
+    /* font-family: "Roboto"; */
+    font-family: 'Rajdhani', sans-serif;
 }
 
 .footer_content_container {

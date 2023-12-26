@@ -59,7 +59,7 @@ margin: 0 0 1rem;
     display: flex;
     flex-direction: column;
     padding: 1rem 0;
-    gap: 1rem;
+    gap: 0.5rem;
 }
 
 .points_header {
@@ -89,9 +89,13 @@ margin: 0 0 1rem;
 
 .stats_name_title {
     /* font-family: "Bebas Neue"; */
-    font-family: "Roboto";
-    font-weight: 500;
-    line-height: 1.15;
+    /* font-family: "Roboto"; */
+    font-family: 'Rajdhani', sans-serif;
+    /* font-family: 'Teko', sans-serif; */
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.02rem;
+    line-height: 1.1;
 }
 
 .stats_points_title {
@@ -99,6 +103,7 @@ margin: 0 0 1rem;
     font-size: 1rem;
     line-height: 1;
     letter-spacing: 0.02rem;
+    margin-bottom: 0.15rem;
 }
 
 .stats_point_total {

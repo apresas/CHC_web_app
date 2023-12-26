@@ -7,7 +7,7 @@
   background-color: rgb(245, 245, 252);
   color: var(--color-bg);
   margin-top: 2rem;
-  font-family: "Roboto";
+  font-family: 'Rajdhani', sans-serif;
   padding-bottom: 2rem;
 }
 
@@ -101,6 +101,8 @@
   margin: 0;
   font-weight: 300;
   letter-spacing: 0.02rem;
+  font-family: 'Teko';
+  font-size: 1.25rem;
 }
 
 /* .tiles {
