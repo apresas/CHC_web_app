@@ -13,9 +13,9 @@ function LeaderStatsItem({
     } else if(type === "POINTS") {
         stat = stats.points
     } else if(type === "GAA") {
-        stat = stats.GAA
+        stat = Number.parseFloat(stats.GAA).toFixed(2)
     } else if(type === "SV") {
-        stat = stats.SV
+        stat = Number.parseFloat(stats.SV).toFixed(3)
     }
   return (
     <div className='leader_stats_item'>

@@ -111,7 +111,7 @@ function TeamTiles() {
             .filter((team) => team.division === "Red")
             .map((team) => {
               return (
-                <div key={team.id} className="tiles">
+                <div key={team.id} className="tiles" onClick={() => {console.log("clicked", team)}}>
                   <img className="team_image" src={team.logo} alt="logo" />
                   <h3 className="school_name_title">{team.schoolName}</h3>
                   <strong className="team_name_title">{team.teamName}</strong>

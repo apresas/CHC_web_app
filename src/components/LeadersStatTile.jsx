@@ -10,6 +10,14 @@ function LeadersStatTile({ stats, type, division }) {
   const [total, setTotal] = useState();
   // console.log(stats);
 
+  const setSV = (stat) => {
+    setTotal(Number.parseFloat(stat).toFixed(3))
+  }
+
+  const setGAA = (stat) => {
+    setTotal(Number.parseFloat(stat).toFixed(2))
+  }
+
   const onStatsHover = (stats, type) => {
     if (type === "POINTS") {
       setTotal(stats.points);
@@ -18,20 +26,12 @@ function LeadersStatTile({ stats, type, division }) {
       setTotal(stats.goals);
     }
     if (type === "GAA") {
-      setTotal(stats.GAA);
+      setGAA(stats.GAA)
     }
     if (type === "SV") {
-      setTotal(stats.SV);
+      setSV(stats.SV)
     }
     setCurrentStats(stats);
-    // console.log(stats.goals)
-    // else if (type === "GOALS") {
-    //   setCurrentGoalsLeader(stats);
-    // } else if (type === "GAA") {
-    //   setCurrentGAALeader(stats);
-    // } else if (type === "SV") {
-    //   setCurrentSVLeader(stats);
-    // }
   };
 
   useEffect(() => {
@@ -110,10 +110,10 @@ function LeadersStatTile({ stats, type, division }) {
     if (type === "GAA") {
       {
         testData
-          .sort((a, b) => (a.GAA > b.GAA ? 1 : -1))
+          .sort((a, b) => (Number.parseFloat(a.GAA).toFixed(2) > Number.parseFloat(b.GAA).toFixed(2) ? 1 : -1))
           .filter((stat, index) => index === 0)
           .map((stat) => {
-            setTotal(stat.GAA);
+            setGAA(stat.GAA);
             setCurrentStats(stat);
           });
       }
@@ -124,7 +124,7 @@ function LeadersStatTile({ stats, type, division }) {
           .sort((a, b) => (a.SV > b.SV ? -1 : 1))
           .filter((stat, index) => index === 0)
           .map((stat) => {
-            setTotal(stat.SV);
+            setSV(stat.SV);
             setCurrentStats(stat);
           });
       }

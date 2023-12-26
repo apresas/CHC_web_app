@@ -6,7 +6,7 @@
     "class": "2025",
     "team": "Olentangy Liberty",
     "logo": "../../src/assets/Logos/Liberty_logo.svg",
-    "GAA": 2.35,
+    "GAA": 2.00,
     "SV": 0.952,
     "division": "Red"
   },
@@ -17,7 +17,7 @@
     "class": "2024",
     "team": "Upper Arlinngton",
     "logo": "../../src/assets/Logos/UA_logo.svg",
-    "GAA": 2.51,
+    "GAA": 3.00,
     "SV": 0.938,
     "division": "Red"
   },
@@ -28,7 +28,7 @@
     "class": "2025",
     "team": "Archbishop Moeller",
     "logo": "../../src/assets/Logos/Moeller_logo.svg",
-    "GAA": 2.45,
+    "GAA": 2.86,
     "SV": 0.915,
     "division": "Red"
   },
@@ -39,7 +39,7 @@
     "class": "2026",
     "team": "St. Charles",
     "logo": "../../src/assets/Logos/SC_logo.svg",
-    "GAA": 2.43,
+    "GAA": 3.00,
     "SV": 0.909,
     "division": "Red"
   },
@@ -50,7 +50,7 @@
     "class": "2026",
     "team": "Olentangy Berlin",
     "logo": "../../src/assets/Logos/Berlin_logo.svg",
-    "GAA": 2.54,
+    "GAA": 2.61,
     "SV": 0.892,
     "division": "Red"
   },
@@ -61,7 +61,7 @@
     "class": "2025",
     "team": "Olentangy Orange",
     "logo": "../../src/assets/Logos/Orange_logo.svg",
-    "GAA": 2.75,
+    "GAA": 2.83,
     "SV": 0.921,
     "division": "White"
   },
@@ -72,7 +72,7 @@
     "class": "2024",
     "team": "St. Xavier",
     "logo": "../../src/assets/Logos/Xavier_logo.svg",
-    "GAA": 2.57,
+    "GAA": 3.00,
     "SV": 0.911,
     "division": "White"
   },
@@ -83,7 +83,7 @@
     "class": "2024",
     "team": "Thomas Worthington",
     "logo": "../../src/assets/Logos/Thomas_logo.svg",
-    "GAA": 2.82,
+    "GAA": 3.50,
     "SV": 0.903,
     "division": "White"
   },
@@ -94,7 +94,7 @@
     "class": "2026",
     "team": "Dublin Jermome",
     "logo": "../../src/assets/Logos/Jerome_logo.svg",
-    "GAA": 2.88,
+    "GAA": 3.33,
     "SV": 0.899,
     "division": "White"
   },
@@ -105,7 +105,7 @@
     "class": "2025",
     "team": "Gahanna",
     "logo": "../../src/assets/Logos/Gahanna_logo.svg",
-    "GAA": 3.01,
+    "GAA": 3.00,
     "SV": 0.896,
     "division": "White"
   },
@@ -116,7 +116,7 @@
     "class": "2026",
     "team": "Dublin Coffman",
     "logo": "../../src/assets/Logos/Coffman_logo.svg",
-    "GAA": 2.11,
+    "GAA": 1.43,
     "SV": 0.953,
     "division": "Blue"
   },
@@ -127,7 +127,7 @@
     "class": "2024",
     "team": "Springboro",
     "logo": "../../src/assets/Logos/Springboro_logo.svg",
-    "GAA": 3.36,
+    "GAA": 5.00,
     "SV": 0.889,
     "division": "Blue"
   },
@@ -138,7 +138,7 @@
     "class": "2024",
     "team": "Worthington Kilborne",
     "logo": "../../src/assets/Logos/Kilborne_logo.svg",
-    "GAA": 3.43,
+    "GAA": 4.13,
     "SV": 0.869,
     "division": "Blue"
   },
@@ -149,7 +149,7 @@
     "class": "2026",
     "team": "Springboro",
     "logo": "../../src/assets/Logos/Springboro_logo.svg",
-    "GAA": 3.48,
+    "GAA": 5.11,
     "SV": 0.863,
     "division": "Blue"
   },
@@ -160,7 +160,7 @@
     "class": "2027",
     "team": "Watterson",
     "logo": "../../src/assets/Logos/Watterson_logo.svg",
-    "GAA": 3.52,
+    "GAA": 5.83,
     "SV": 0.819,
     "division": "Blue"
   }
