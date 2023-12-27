@@ -24,9 +24,9 @@ function Team({ id, pageID, currentTeam, rosterTeam }) {
               color: `${secondary_color}`,
             }}
           >
+            <img className="team_logo" src={currentTeam.logo} alt="" />
             <h1 className="school_title">{currentTeam.schoolName}</h1>
             <h3 className="team_title">{currentTeam.teamName}</h3>
-            <img className="team_logo" src={currentTeam.logo} alt="" />
           </div>
           {/* <h1 className="roster_title">Roster</h1> */}
           <div className="players_grid">

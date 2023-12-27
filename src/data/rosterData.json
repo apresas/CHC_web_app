@@ -752,11 +752,11 @@
       {
         "playerID": 247117,
         "playerImage": "",
-        "firstName": "Lesley",
-        "lastName": "McConnell",
-        "jerseyNumber": 51,
-        "position": "G",
-        "class": "2024",
+        "firstName": "Biaggio",
+        "lastName": "Pagan",
+        "jerseyNumber": 4,
+        "position": "F",
+        "class": "2025",
         "stats": {
           "currentSeason": {
             "gamesPlayed": 0,
@@ -803,6 +803,29 @@
         "jerseyNumber": 71,
         "position": "G",
         "class": "2024",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 293735,
+        "playerImage": "",
+        "firstName": "Jacob",
+        "lastName": "Wildermuth",
+        "jerseyNumber": 24,
+        "position": "D",
+        "class": "2027",
         "stats": {
           "currentSeason": {
             "gamesPlayed": 0,
@@ -1272,13 +1295,13 @@
     "secondaryColor": "#37663c",
     "roster": [
       {
-        "playerID": 0,
+        "playerID": 210923,
         "playerImage": "",
-        "firstName": "",
-        "lastName": "",
-        "jerseyNumber": 0,
-        "position": "",
-        "class": "",
+        "firstName": "Maxwell",
+        "lastName": "Lockett",
+        "jerseyNumber": 2,
+        "position": "D",
+        "class": "2025",
         "stats": {
           "currentSeason": {
             "gamesPlayed": 0,
@@ -1295,13 +1318,266 @@
         }
       },
       {
-        "playerID": 0,
+        "playerID": 218754,
         "playerImage": "",
-        "firstName": "",
-        "lastName": "",
-        "jerseyNumber": 0,
-        "position": "",
-        "class": "",
+        "firstName": "Matthew",
+        "lastName": "Bellamy",
+        "jerseyNumber": 3,
+        "position": "F",
+        "class": "2026",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 201841,
+        "playerImage": "",
+        "firstName": "Nicholas",
+        "lastName": "Shevetz",
+        "jerseyNumber": 4,
+        "position": "D",
+        "class": "2025",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 287028,
+        "playerImage": "",
+        "firstName": "Maxwell",
+        "lastName": "Patterson",
+        "jerseyNumber": 7,
+        "position": "F",
+        "class": "2025",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 270444,
+        "playerImage": "",
+        "firstName": "Jackson",
+        "lastName": "Knittle",
+        "jerseyNumber": 8,
+        "position": "D",
+        "class": "2027",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 245453,
+        "playerImage": "",
+        "firstName": "Brady",
+        "lastName": "Magyar",
+        "jerseyNumber": 9,
+        "position": "F",
+        "class": "2025",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 262669,
+        "playerImage": "",
+        "firstName": "Benjamin",
+        "lastName": "Connelly",
+        "jerseyNumber": 10,
+        "position": "D",
+        "class": "2026",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 299330,
+        "playerImage": "",
+        "firstName": "Jack",
+        "lastName": "Subasic",
+        "jerseyNumber": 11,
+        "position": "F",
+        "class": "2027",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 283680,
+        "playerImage": "",
+        "firstName": "Aiden",
+        "lastName": "Slawson",
+        "jerseyNumber": 14,
+        "position": "D",
+        "class": "2025",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 223059,
+        "playerImage": "",
+        "firstName": "Ethan",
+        "lastName": "Kline",
+        "jerseyNumber": 16,
+        "position": "F",
+        "class": "2026",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 262870,
+        "playerImage": "",
+        "firstName": "Alec",
+        "lastName": "O'Sullivan",
+        "jerseyNumber": 17,
+        "position": "G",
+        "class": "2025",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 265641,
+        "playerImage": "",
+        "firstName": "Benjamin",
+        "lastName": "Grans",
+        "jerseyNumber": 18,
+        "position": "D",
+        "class": "2025",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 262267,
+        "playerImage": "",
+        "firstName": "Zachary",
+        "lastName": "Maas",
+        "jerseyNumber": 21,
+        "position": "F",
+        "class": "2024",
         "stats": {
           "currentSeason": {
             "gamesPlayed": 0,
@@ -1326,13 +1602,13 @@
     "secondaryColor": "#b99f6c",
     "roster": [
       {
-        "playerID": 0,
+        "playerID": 261181,
         "playerImage": "",
-        "firstName": "",
-        "lastName": "",
-        "jerseyNumber": 0,
-        "position": "",
-        "class": "",
+        "firstName": "J.M.",
+        "lastName": "Beuselinck",
+        "jerseyNumber": 35,
+        "position": "G",
+        "class": "2025",
         "stats": {
           "currentSeason": {
             "gamesPlayed": 0,
@@ -1349,13 +1625,404 @@
         }
       },
       {
-        "playerID": 0,
+        "playerID": 223014,
         "playerImage": "",
-        "firstName": "",
-        "lastName": "",
-        "jerseyNumber": 0,
-        "position": "",
-        "class": "",
+        "firstName": "Sean",
+        "lastName": "Covitz",
+        "jerseyNumber": 27,
+        "position": "F",
+        "class": "2025",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 257361,
+        "playerImage": "",
+        "firstName": "Brandon",
+        "lastName": "Duffy",
+        "jerseyNumber": 16,
+        "position": "F",
+        "class": "2024",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 274620,
+        "playerImage": "",
+        "firstName": "Shashwth",
+        "lastName": "Gajapur",
+        "jerseyNumber": 40,
+        "position": "F",
+        "class": "2026",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 230847,
+        "playerImage": "",
+        "firstName": "Ethan",
+        "lastName": "Halligan",
+        "jerseyNumber": 14,
+        "position": "D",
+        "class": "2025",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 265494,
+        "playerImage": "",
+        "firstName": "Grant",
+        "lastName": "Heerdt",
+        "jerseyNumber": 44,
+        "position": "D",
+        "class": "2025",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 271903,
+        "playerImage": "",
+        "firstName": "Jason",
+        "lastName": "Hu",
+        "jerseyNumber": 18,
+        "position": "F",
+        "class": "2026",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 267827,
+        "playerImage": "",
+        "firstName": "Aidan",
+        "lastName": "Janiak",
+        "jerseyNumber": 30,
+        "position": "D",
+        "class": "2024",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 265101,
+        "playerImage": "",
+        "firstName": "Nikolaos",
+        "lastName": "Makrogiannis",
+        "jerseyNumber": 24,
+        "position": "D",
+        "class": "2024",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 206771,
+        "playerImage": "",
+        "firstName": "Brandon",
+        "lastName": "Monska",
+        "jerseyNumber": 8,
+        "position": "4",
+        "class": "2025",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 288906,
+        "playerImage": "",
+        "firstName": "Nick",
+        "lastName": "Myers",
+        "jerseyNumber": 13,
+        "position": "F",
+        "class": "2026",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 272056,
+        "playerImage": "",
+        "firstName": "Alex",
+        "lastName": "Nakamura",
+        "jerseyNumber": 20,
+        "position": "F",
+        "class": "2025",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 276884,
+        "playerImage": "",
+        "firstName": "Griffin",
+        "lastName": "Ridout",
+        "jerseyNumber": 5,
+        "position": "D",
+        "class": "2024",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 283616,
+        "playerImage": "",
+        "firstName": "Jack",
+        "lastName": "Snyder",
+        "jerseyNumber": 22,
+        "position": "F",
+        "class": "2027",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 225268,
+        "playerImage": "",
+        "firstName": "Max",
+        "lastName": "Swift",
+        "jerseyNumber": 7,
+        "position": "F",
+        "class": "2026",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 287284,
+        "playerImage": "",
+        "firstName": "Jack",
+        "lastName": "Turk",
+        "jerseyNumber": 35,
+        "position": "D",
+        "class": "2024",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 221545,
+        "playerImage": "",
+        "firstName": "Matthew",
+        "lastName": "Wesolowski",
+        "jerseyNumber": 17,
+        "position": "F",
+        "class": "2024",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 233757,
+        "playerImage": "",
+        "firstName": "Nash",
+        "lastName": "Williams",
+        "jerseyNumber": 23,
+        "position": "F",
+        "class": "2025",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 263690,
+        "playerImage": "",
+        "firstName": "Collin",
+        "lastName": "Zuehlke",
+        "jerseyNumber": 2,
+        "position": "G",
+        "class": "2026",
         "stats": {
           "currentSeason": {
             "gamesPlayed": 0,
@@ -1380,13 +2047,13 @@
     "secondaryColor": "#fad53e",
     "roster": [
       {
-        "playerID": 0,
+        "playerID": 299415,
         "playerImage": "",
-        "firstName": "",
-        "lastName": "",
-        "jerseyNumber": 0,
-        "position": "",
-        "class": "",
+        "firstName": "Akai",
+        "lastName": "Ketty",
+        "jerseyNumber": 2,
+        "position": "F",
+        "class": "2025",
         "stats": {
           "currentSeason": {
             "gamesPlayed": 0,
@@ -1403,13 +2070,519 @@
         }
       },
       {
-        "playerID": 0,
+        "playerID": 294313,
         "playerImage": "",
-        "firstName": "",
-        "lastName": "",
-        "jerseyNumber": 0,
-        "position": "",
-        "class": "",
+        "firstName": "Trey",
+        "lastName": "Martin",
+        "jerseyNumber": 3,
+        "position": "F",
+        "class": "2024",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 238128,
+        "playerImage": "",
+        "firstName": "Rahi",
+        "lastName": "Schmidt",
+        "jerseyNumber": 4,
+        "position": "D",
+        "class": "2026",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 259548,
+        "playerImage": "",
+        "firstName": "Dario",
+        "lastName": "Giardino",
+        "jerseyNumber": 6,
+        "position": "D",
+        "class": "2026",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 261338,
+        "playerImage": "",
+        "firstName": "Bennie",
+        "lastName": "Hoerig",
+        "jerseyNumber": 7,
+        "position": "F",
+        "class": "2024",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 211587,
+        "playerImage": "",
+        "firstName": "Ian",
+        "lastName": "Phillips",
+        "jerseyNumber": 9,
+        "position": "F",
+        "class": "2024",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 292573,
+        "playerImage": "",
+        "firstName": "Jack",
+        "lastName": "Richards",
+        "jerseyNumber": 13,
+        "position": "F",
+        "class": "2026",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 260798,
+        "playerImage": "",
+        "firstName": "Nicholas",
+        "lastName": "Vujaklija",
+        "jerseyNumber": 17,
+        "position": "D",
+        "class": "2025",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 299979,
+        "playerImage": "",
+        "firstName": "Brodie",
+        "lastName": "Phillips",
+        "jerseyNumber": 18,
+        "position": "D",
+        "class": "2025",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 246378,
+        "playerImage": "",
+        "firstName": "Nate",
+        "lastName": "Highland",
+        "jerseyNumber": 19,
+        "position": "F",
+        "class": "2024",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 229840,
+        "playerImage": "",
+        "firstName": "Antonio",
+        "lastName": "Dejanov",
+        "jerseyNumber": 21,
+        "position": "F",
+        "class": "2024",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 214171,
+        "playerImage": "",
+        "firstName": "David",
+        "lastName": "Van Hoose",
+        "jerseyNumber": 24,
+        "position": "D",
+        "class": "2024",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 248112,
+        "playerImage": "",
+        "firstName": "Drew",
+        "lastName": "Perry",
+        "jerseyNumber": 27,
+        "position": "D",
+        "class": "2025",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 231431,
+        "playerImage": "",
+        "firstName": "Samuel",
+        "lastName": "Heckathorne",
+        "jerseyNumber": 29,
+        "position": "F",
+        "class": "2025",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 260019,
+        "playerImage": "",
+        "firstName": "Kyler",
+        "lastName": "Norman",
+        "jerseyNumber": 35,
+        "position": "G",
+        "class": "2024",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 284152,
+        "playerImage": "",
+        "firstName": "Sam",
+        "lastName": "Gustafson",
+        "jerseyNumber": 39,
+        "position": "F",
+        "class": "2025",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 209730,
+        "playerImage": "",
+        "firstName": "Bryce",
+        "lastName": "O'Rourke",
+        "jerseyNumber": 50,
+        "position": "F",
+        "class": "2024",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 213049,
+        "playerImage": "",
+        "firstName": "Asa",
+        "lastName": "Mattson",
+        "jerseyNumber": 71,
+        "position": "F",
+        "class": "2024",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 261576,
+        "playerImage": "",
+        "firstName": "Porter",
+        "lastName": "Kinkel",
+        "jerseyNumber": 73,
+        "position": "F",
+        "class": "2024",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 299800,
+        "playerImage": "",
+        "firstName": "Stuart",
+        "lastName": "Heckathorne",
+        "jerseyNumber": 74,
+        "position": "G",
+        "class": "2025",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 271271,
+        "playerImage": "",
+        "firstName": "Liam",
+        "lastName": "Rice",
+        "jerseyNumber": 77,
+        "position": "D",
+        "class": "2024",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 213651,
+        "playerImage": "",
+        "firstName": "Jack",
+        "lastName": "Pabst",
+        "jerseyNumber": 88,
+        "position": "F",
+        "class": "2024",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 255887,
+        "playerImage": "",
+        "firstName": "Isaac",
+        "lastName": "Stanley",
+        "jerseyNumber": 91,
+        "position": "F",
+        "class": "2024",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 281120,
+        "playerImage": "",
+        "firstName": "Keaton",
+        "lastName": "Brackett",
+        "jerseyNumber": 92,
+        "position": "F",
+        "class": "2024",
         "stats": {
           "currentSeason": {
             "gamesPlayed": 0,
@@ -1434,13 +2607,13 @@
     "secondaryColor": "#b4a678",
     "roster": [
       {
-        "playerID": 0,
+        "playerID": 294875,
         "playerImage": "",
-        "firstName": "",
-        "lastName": "",
-        "jerseyNumber": 0,
-        "position": "",
-        "class": "",
+        "firstName": "Ryan",
+        "lastName": "Myers",
+        "jerseyNumber": 72,
+        "position": "G",
+        "class": "2026",
         "stats": {
           "currentSeason": {
             "gamesPlayed": 0,
@@ -1457,13 +2630,358 @@
         }
       },
       {
-        "playerID": 0,
+        "playerID": 283333,
         "playerImage": "",
-        "firstName": "",
-        "lastName": "",
-        "jerseyNumber": 0,
-        "position": "",
-        "class": "",
+        "firstName": "Abram",
+        "lastName": "Alvarado",
+        "jerseyNumber": 2,
+        "position": "D",
+        "class": "2026",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 230038,
+        "playerImage": "",
+        "firstName": "Bryan",
+        "lastName": "Bogret",
+        "jerseyNumber": 12,
+        "position": "D",
+        "class": "2025",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 248004,
+        "playerImage": "",
+        "firstName": "Colin",
+        "lastName": "Marotta",
+        "jerseyNumber": 4,
+        "position": "D",
+        "class": "2026",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 274319,
+        "playerImage": "",
+        "firstName": "Cameron",
+        "lastName": "Rader",
+        "jerseyNumber": 14,
+        "position": "D",
+        "class": "2027",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 213381,
+        "playerImage": "",
+        "firstName": "William",
+        "lastName": "Allman",
+        "jerseyNumber": 6,
+        "position": "F",
+        "class": "2025",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 229398,
+        "playerImage": "",
+        "firstName": "Quinn",
+        "lastName": "Blaney",
+        "jerseyNumber": 21,
+        "position": "F",
+        "class": "2025",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 208530,
+        "playerImage": "",
+        "firstName": "Aiden",
+        "lastName": "Dickson",
+        "jerseyNumber": 19,
+        "position": "F",
+        "class": "2025",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 242562,
+        "playerImage": "",
+        "firstName": "Elliot",
+        "lastName": "Fixari",
+        "jerseyNumber": 15,
+        "position": "F",
+        "class": "2024",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 284823,
+        "playerImage": "",
+        "firstName": "Ryan",
+        "lastName": "Franklin",
+        "jerseyNumber": 10,
+        "position": "F",
+        "class": "2025",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 232239,
+        "playerImage": "",
+        "firstName": "Alex",
+        "lastName": "Herron",
+        "jerseyNumber": 18,
+        "position": "F",
+        "class": "2025",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 250639,
+        "playerImage": "",
+        "firstName": "Kyle",
+        "lastName": "Jooss",
+        "jerseyNumber": 8,
+        "position": "F",
+        "class": "2025",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 298968,
+        "playerImage": "",
+        "firstName": "Matan",
+        "lastName": "Lefebvre",
+        "jerseyNumber": 98,
+        "position": "F",
+        "class": "2025",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 210343,
+        "playerImage": "",
+        "firstName": "Jack",
+        "lastName": "Lower",
+        "jerseyNumber": 24,
+        "position": "F",
+        "class": "2026",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 258326,
+        "playerImage": "",
+        "firstName": "Andrew",
+        "lastName": "Mattingly",
+        "jerseyNumber": 25,
+        "position": "F",
+        "class": "2025",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 264493,
+        "playerImage": "",
+        "firstName": "Alex",
+        "lastName": "Mullendore",
+        "jerseyNumber": 11,
+        "position": "F",
+        "class": "2026",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 213056,
+        "playerImage": "",
+        "firstName": "Will",
+        "lastName": "Yoho",
+        "jerseyNumber": 26,
+        "position": "F",
+        "class": "2026",
         "stats": {
           "currentSeason": {
             "gamesPlayed": 0,
@@ -1488,13 +3006,13 @@
     "secondaryColor": "#f6c629",
     "roster": [
       {
-        "playerID": 0,
+        "playerID": 232329,
         "playerImage": "",
-        "firstName": "",
-        "lastName": "",
-        "jerseyNumber": 0,
-        "position": "",
-        "class": "",
+        "firstName": "Sam",
+        "lastName": "Ziliak",
+        "jerseyNumber": 2,
+        "position": "D",
+        "class": "2025",
         "stats": {
           "currentSeason": {
             "gamesPlayed": 0,
@@ -1511,13 +3029,404 @@
         }
       },
       {
-        "playerID": 0,
+        "playerID": 204481,
         "playerImage": "",
-        "firstName": "",
-        "lastName": "",
-        "jerseyNumber": 0,
-        "position": "",
-        "class": "",
+        "firstName": "Hayden",
+        "lastName": "Luckman",
+        "jerseyNumber": 6,
+        "position": "D",
+        "class": "2025",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 226963,
+        "playerImage": "",
+        "firstName": "Joey",
+        "lastName": "Heuser",
+        "jerseyNumber": 9,
+        "position": "F",
+        "class": "2025",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 245765,
+        "playerImage": "",
+        "firstName": "Gio",
+        "lastName": "Valentino",
+        "jerseyNumber": 11,
+        "position": "F",
+        "class": "2024",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 272074,
+        "playerImage": "",
+        "firstName": "Reed",
+        "lastName": "VanRiper",
+        "jerseyNumber": 18,
+        "position": "D",
+        "class": "2026",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 280491,
+        "playerImage": "",
+        "firstName": "Alec",
+        "lastName": "Foreman",
+        "jerseyNumber": 19,
+        "position": "F",
+        "class": "2026",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 255634,
+        "playerImage": "",
+        "firstName": "Ben",
+        "lastName": "Dorbish",
+        "jerseyNumber": 21,
+        "position": "F",
+        "class": "2024",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 265741,
+        "playerImage": "",
+        "firstName": "Jacob",
+        "lastName": "Schlade",
+        "jerseyNumber": 23,
+        "position": "F",
+        "class": "2025",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 238287,
+        "playerImage": "",
+        "firstName": "Grant",
+        "lastName": "Levins",
+        "jerseyNumber": 33,
+        "position": "F",
+        "class": "2025",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 200197,
+        "playerImage": "",
+        "firstName": "Alex",
+        "lastName": "Dorbish",
+        "jerseyNumber": 34,
+        "position": "F",
+        "class": "2025",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 225437,
+        "playerImage": "",
+        "firstName": "Parker",
+        "lastName": "Schlade",
+        "jerseyNumber": 43,
+        "position": "D",
+        "class": "2026",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 250457,
+        "playerImage": "",
+        "firstName": "Zane",
+        "lastName": "Williams",
+        "jerseyNumber": 44,
+        "position": "D",
+        "class": "2026",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 208572,
+        "playerImage": "",
+        "firstName": "Matthew",
+        "lastName": "Palmer",
+        "jerseyNumber": 50,
+        "position": "F",
+        "class": "2025",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 241666,
+        "playerImage": "",
+        "firstName": "Landon",
+        "lastName": "Ramsier",
+        "jerseyNumber": 53,
+        "position": "G",
+        "class": "2024",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 243884,
+        "playerImage": "",
+        "firstName": "Drew",
+        "lastName": "Dorbish",
+        "jerseyNumber": 56,
+        "position": "G",
+        "class": "2026",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 278991,
+        "playerImage": "",
+        "firstName": "Ben",
+        "lastName": "Garth",
+        "jerseyNumber": 63,
+        "position": "D",
+        "class": "2025",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 201055,
+        "playerImage": "",
+        "firstName": "Jasmeh",
+        "lastName": "Singh",
+        "jerseyNumber": 67,
+        "position": "F",
+        "class": "2024",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 219725,
+        "playerImage": "",
+        "firstName": "Donovan",
+        "lastName": "Roen",
+        "jerseyNumber": 88,
+        "position": "F",
+        "class": "2026",
+        "stats": {
+          "currentSeason": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          },
+          "careerStats": {
+            "gamesPlayed": 0,
+            "goals": 0,
+            "assists": 0,
+            "points": 0
+          }
+        }
+      },
+      {
+        "playerID": 250410,
+        "playerImage": "",
+        "firstName": "Zach",
+        "lastName": "Spellman",
+        "jerseyNumber": 90,
+        "position": "G",
+        "class": "2026",
         "stats": {
           "currentSeason": {
             "gamesPlayed": 0,
