@@ -5,8 +5,10 @@ import standings from "../data/standing.json";
 import { FiChevronsDown } from "react-icons/fi";
 import { GrStar } from "react-icons/gr";
 import { useTable, useSortBy } from "react-table";
+import { Link, useParams } from "react-router-dom";
+import rosterData from "../data/rosterData.json";
 
-function TeamTiles() {
+function TeamTiles({ setCurrentTeam, setRosterTeam }) {
   const [open, setOpen] = useState(false);
   const [open1, setOpen1] = useState(false);
   const [open2, setOpen2] = useState(false);
@@ -14,6 +16,8 @@ function TeamTiles() {
   const winPerAccessor = (row) => {
     return Number(row.wins / row.gamesPlayed).toFixed(2);
   };
+
+  const { id } = useParams();
 
   // const positionAccessor = (row) => {
   //   return Number(row.position);
@@ -91,6 +95,18 @@ function TeamTiles() {
     }
   };
 
+  const handleTeamClick = (team) => {
+    console.log("clicked", team.schoolName);
+    setCurrentTeam(team);
+    addRoster(team);
+  };
+
+  const addRoster = (team) => {
+    rosterData
+    .filter((roster) => roster.teamID === team.id)
+    .map((roster) => (setRosterTeam(roster)));
+  }
+
   return (
     <div className="teamTiles_container">
       <div className="teams_title_container">
@@ -110,13 +126,23 @@ function TeamTiles() {
           })
             .filter((team) => team.division === "Red")
             .map((team) => {
+              const link = "/team/" + team.id;
               return (
-                <div key={team.id} className="tiles" onClick={() => {console.log("clicked", team)}}>
-                  <img className="team_image" src={team.logo} alt="logo" />
-                  <h3 className="school_name_title">{team.schoolName}</h3>
-                  <strong className="team_name_title">{team.teamName}</strong>
-                  <small className="city_title">{team.city}</small>
-                </div>
+                <Link
+                  to={link}
+                  style={{ color: "inherit", textDecoration: "inherit" }}
+                >
+                  <div
+                    key={team.id}
+                    className="tiles"
+                    onClick={() => handleTeamClick(team)}
+                  >
+                    <img className="team_image" src={team.logo} alt="logo" />
+                    <h3 className="school_name_title">{team.schoolName}</h3>
+                    <strong className="team_name_title">{team.teamName}</strong>
+                    <small className="city_title">{team.city}</small>
+                  </div>
+                </Link>
               );
             })}
         </div>
@@ -138,9 +164,12 @@ function TeamTiles() {
               <table className="standings_table blue" {...getTableProps()}>
                 <thead>
                   {headerGroups.map((headerGroup) => (
-                    <tr key={headerGroup.id} {...headerGroup.getHeaderGroupProps()}>
+                    <tr
+                      key={headerGroup.id}
+                      {...headerGroup.getHeaderGroupProps()}
+                    >
                       {headerGroup.headers.map((column) => (
-                        <th key={headerGroup.id}{...column.getHeaderProps()}>
+                        <th key={headerGroup.id} {...column.getHeaderProps()}>
                           {column.render("Header")}
                         </th>
                       ))}
@@ -158,7 +187,7 @@ function TeamTiles() {
                     .map((row) => {
                       prepareRow(row);
                       return (
-                        <tr key={row.id}{...row.getRowProps()}>
+                        <tr key={row.id} {...row.getRowProps()}>
                           {row.cells.map((cell) => {
                             return (
                               <td key={cell.id} {...cell.getCellProps()}>
@@ -186,13 +215,23 @@ function TeamTiles() {
           })
             .filter((team) => team.division === "White")
             .map((team) => {
+              const link = "/team/" + team.id;
               return (
-                <div key={team.id} className="tiles">
-                  <img className="team_image" src={team.logo} alt="logo" />
-                  <h3 className="school_name_title">{team.schoolName}</h3>
-                  <strong className="team_name_title">{team.teamName}</strong>
-                  <small className="city_title">{team.city}</small>
-                </div>
+                <Link
+                  to={link}
+                  style={{ color: "inherit", textDecoration: "inherit" }}
+                >
+                  <div
+                    key={team.id}
+                    className="tiles"
+                    onClick={() => handleTeamClick(team)}
+                  >
+                    <img className="team_image" src={team.logo} alt="logo" />
+                    <h3 className="school_name_title">{team.schoolName}</h3>
+                    <strong className="team_name_title">{team.teamName}</strong>
+                    <small className="city_title">{team.city}</small>
+                  </div>
+                </Link>
               );
             })}
         </div>
@@ -214,9 +253,12 @@ function TeamTiles() {
               <table className="standings_table blue" {...getTableProps()}>
                 <thead>
                   {headerGroups.map((headerGroup) => (
-                    <tr key={headerGroup.id} {...headerGroup.getHeaderGroupProps()}>
+                    <tr
+                      key={headerGroup.id}
+                      {...headerGroup.getHeaderGroupProps()}
+                    >
                       {headerGroup.headers.map((column) => (
-                        <th key={headerGroup.id}{...column.getHeaderProps()}>
+                        <th key={headerGroup.id} {...column.getHeaderProps()}>
                           {column.render("Header")}
                         </th>
                       ))}
@@ -264,13 +306,23 @@ function TeamTiles() {
           })
             .filter((team) => team.division === "Blue")
             .map((team) => {
+              const link = "/team/" + team.id;
               return (
-                <div key={team.id} className="tiles">
-                  <img className="team_image" src={team.logo} alt="logo" />
-                  <h3 className="school_name_title">{team.schoolName}</h3>
-                  <strong className="team_name_title">{team.teamName}</strong>
-                  <small className="city_title">{team.city}</small>
-                </div>
+                <Link
+                  to={link}
+                  style={{ color: "inherit", textDecoration: "inherit" }}
+                >
+                  <div
+                    key={team.id}
+                    className="tiles"
+                    onClick={() => handleTeamClick(team)}
+                  >
+                    <img className="team_image" src={team.logo} alt="logo" />
+                    <h3 className="school_name_title">{team.schoolName}</h3>
+                    <strong className="team_name_title">{team.teamName}</strong>
+                    <small className="city_title">{team.city}</small>
+                  </div>
+                </Link>
               );
             })}
         </div>
@@ -292,7 +344,10 @@ function TeamTiles() {
               <table className="standings_table blue" {...getTableProps()}>
                 <thead>
                   {headerGroups.map((headerGroup) => (
-                    <tr key={headerGroup.id} {...headerGroup.getHeaderGroupProps()}>
+                    <tr
+                      key={headerGroup.id}
+                      {...headerGroup.getHeaderGroupProps()}
+                    >
                       {headerGroup.headers.map((column) => (
                         <th key={headerGroup.id} {...column.getHeaderProps()}>
                           {column.render("Header")}

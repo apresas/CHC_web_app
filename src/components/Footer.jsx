@@ -4,6 +4,7 @@ import { FaYoutube } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -24,24 +25,24 @@ function Footer() {
           </a>
         </div>
         <div className="footer_links_container">
-          <a href="" className="footer_link">
+          <Link to="/" className="footer_link">
             CHC.com
-          </a>
+          </Link>
           <a href="" className="footer_link">
             Team Columbus
           </a>
-          <a href="" className="footer_link">
+          <Link to="/history" className="footer_link">
             League History
-          </a>
-          <a href="" className="footer_link">
+          </Link>
+          <Link to="/archive" className="footer_link">
             Archives
-          </a>
-          <a href="" className="footer_link">
+          </Link>
+          <Link to="/links" className="footer_link">
             Links
-          </a>
-          <a href="" className="footer_link">
+          </Link>
+          <Link to="/about" className="footer_link">
             About
-          </a>
+          </Link>
         </div>
         <span className="footer_links_divider" />
         <div className="footer_legal_container">

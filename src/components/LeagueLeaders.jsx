@@ -8,6 +8,7 @@ import GoalieLeadersStats from "../data/goalieStats.json";
 import { FiChevronsDown } from "react-icons/fi";
 import LeaderStatsItem from "./LeaderStatsItem";
 import LeadersStatTile from "./LeadersStatTile";
+import { Link } from "react-router-dom"
 
 function LeagueLeaders() {
   return (
@@ -36,16 +37,21 @@ function LeagueLeaders() {
             type="SV"
           />
         </div>
-        <div className="stats_btn_container">
-          <div
-            className="stats_btn"
-            onClick={() => {
-              console.log("clicked");
-            }}
-          >
-            <FiChevronsDown style={{ fontSize: "1.5rem" }} />
+        <Link
+          to="/stats"
+          style={{ color: "inherit", textDecoration: "inherit" }}
+        >
+          <div className="stats_btn_container">
+            <div
+              className="stats_btn"
+              onClick={() => {
+                console.log("clicked");
+              }}
+            >
+              <FiChevronsDown style={{ fontSize: "1.5rem" }} />
+            </div>
           </div>
-        </div>
+        </Link>
         <h3 className="leagueLeaders_dvision_title">White Division</h3>
         <div className="stats_tile">
           <LeadersStatTile stats={LeaderStats} division="WHITE" type="POINTS" />
@@ -61,16 +67,21 @@ function LeagueLeaders() {
             type="SV"
           />
         </div>
-        <div className="stats_btn_container">
-          <div
-            className="stats_btn"
-            onClick={() => {
-              console.log("clicked");
-            }}
-          >
-            <FiChevronsDown style={{ fontSize: "1.5rem" }} />
+        <Link
+          to="/team"
+          style={{ color: "inherit", textDecoration: "inherit" }}
+        >
+          <div className="stats_btn_container">
+            <div
+              className="stats_btn"
+              onClick={() => {
+                console.log("clicked");
+              }}
+            >
+              <FiChevronsDown style={{ fontSize: "1.5rem" }} />
+            </div>
           </div>
-        </div>
+        </Link>
         <h3 className="leagueLeaders_dvision_title">Blue Division</h3>
         <div className="stats_tile">
           <LeadersStatTile stats={LeaderStats} division="BLUE" type="POINTS" />
@@ -86,16 +97,21 @@ function LeagueLeaders() {
             type="SV"
           />
         </div>
-        <div className="stats_btn_container">
-          <div
-            className="stats_btn"
-            onClick={() => {
-              console.log("clicked");
-            }}
-          >
-            <FiChevronsDown style={{ fontSize: "1.5rem" }} />
+        <Link
+          to="/team"
+          style={{ color: "inherit", textDecoration: "inherit" }}
+        >
+          <div className="stats_btn_container">
+            <div
+              className="stats_btn"
+              onClick={() => {
+                console.log("clicked");
+              }}
+            >
+              <FiChevronsDown style={{ fontSize: "1.5rem" }} />
+            </div>
           </div>
-        </div>
+        </Link>
       </div>
     </div>
   );

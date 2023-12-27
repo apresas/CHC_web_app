@@ -1,28 +1,29 @@
 // import React from 'react'
 import "./varsityNav.css";
+import { Link } from "react-router-dom"
 
 function VarsityNav() {
   return (
     <div className="varsity_nav_container">
       {/* Varsity */}
-      <a href="" className="navLinks">
+      <Link to="/schedule" className="navLinks">
         Schdule
-      </a>
-      <a href="" className="navLinks">
+      </Link>
+      <Link to="/info" className="navLinks">
         League Info
-      </a>
-      <a href="" className="navLinks">
+      </Link>
+      <Link to="/ranking" className="navLinks">
         Rankings
-      </a>
-      <a href="" className="navLinks">
+      </Link>
+      <Link to="/postseason" className="navLinks">
         Post Season
-      </a>
-      <a href="" className="navLinks">
+      </Link>
+      <Link to="/awards" className="navLinks">
         Player Awards
-      </a>
-      <a href="" className="navLinks">
+      </Link>
+      <Link to="/allstar" className="navLinks">
         All-Star Games
-      </a>
+      </Link>
       {/* <a href="" className="navLinks">
         Schdule
       </a>

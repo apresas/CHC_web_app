@@ -118,6 +118,11 @@
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.35);
   transition: var(--transition-fast);
 } */
+
+.tile_link {
+  text-decoration: none;
+}
+
 .tiles {
   display: grid;
   grid-template-rows: 5fr 1fr 1fr 1fr;
@@ -137,13 +142,14 @@
 }
 
 .school_name_title {
-  font-size: 0.755rem;
+  /* font-size: 0.755rem; */
+  font-size: 0.8rem;
   font-style: bold;
   margin: 0;
 }
 
 .team_name_title {
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   font-weight: 500;
 }
 
