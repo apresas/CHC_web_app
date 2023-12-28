@@ -21,10 +21,30 @@
             "points": 0
           },
           "careerStats": {
-            "gamesPlayed": 0,
-            "goals": 0,
-            "assists": 0,
-            "points": 0
+            "freshmen": {
+              "gamesPlayed": 0,
+              "goals": 0,
+              "assists": 0,
+              "points": 0
+            },
+            "sophomore": {
+              "gamesPlayed": 0,
+              "goals": 0,
+              "assists": 0,
+              "points": 0
+            },
+            "junior": {
+              "gamesPlayed": 0,
+              "goals": 0,
+              "assists": 0,
+              "points": 0
+            },
+            "senior": {
+              "gamesPlayed": 0,
+              "goals": 0,
+              "assists": 0,
+              "points": 0
+            }
           }
         }
       },
@@ -100,8 +120,8 @@
       {
         "playerID": 221350,
         "playerImage": "",
-        "firstName": "Christian",
-        "lastName": "Rivard",
+        "firstName": "Christian Rivard",
+        "lastName": "",
         "jerseyNumber": 9,
         "position": "F",
         "class": "2026",

@@ -1,0 +1,29 @@
+.overlay {
+    background-color: rgba(2, 14, 29, 0.85);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+  }
+
+  .modal_container {
+    width: 80rem;
+    height: 50rem;
+    background: white;
+    color: var(--color-bg);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 2rem;
+  }
+
+  .close_btn_container {
+    transition: var(--transition)
+  }
+
+  .close_btn_container:hover {
+    color: var(--color-ohio-red);
+    transition: var(--transition)
+  }

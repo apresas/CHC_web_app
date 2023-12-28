@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import "./team.css";
 import NavBar from "./NavBar";
 import Footer from "./Footer";
 import PlayerItem from "./PlayerItem";
 import rosterData from "../data/rosterData.json";
+import PlayerModal from "../modal/PlayerModal"
 
 function Team({ id, pageID, currentTeam, rosterTeam, setCurrentPlayer, currentPlayer }) {
   // console.log(rosterTeam);
@@ -11,12 +12,22 @@ function Team({ id, pageID, currentTeam, rosterTeam, setCurrentPlayer, currentPl
   // const secondary_color = "#031327"
   const primary_color = rosterTeam.primaryColor;
   const secondary_color = rosterTeam.secondaryColor;
+  const [openModal, setOpenModal] = useState(false);
 
   const checkCurrentPlayer = () => {
-    console.log(currentPlayer)
+    setOpenModal(true);
+  }
+
+  const closeModal = () => {
+    setOpenModal(false);
   }
   return (
     <>
+    <PlayerModal
+    open={openModal}
+    currentPlayer={currentPlayer}
+    onClose={closeModal}
+    />
       <NavBar />
       <div className="team_container">
         <div className="team_content_container">
