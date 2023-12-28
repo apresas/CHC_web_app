@@ -2,8 +2,8 @@
     display: grid;
     align-content: center;
     grid-template-columns: 1fr 8fr 2fr;
-    background-color: lightslategray;
-    background-color: lavender;
+    /* background-color: lavender; */
+    background-color: var(--color-border-white);
     border-radius: 15px;
     padding: 0.3rem 0.5rem;
     font-family: "Bebas Neue";

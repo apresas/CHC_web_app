@@ -5,12 +5,16 @@ import Footer from "./Footer";
 import PlayerItem from "./PlayerItem";
 import rosterData from "../data/rosterData.json";
 
-function Team({ id, pageID, currentTeam, rosterTeam }) {
-  console.log(rosterTeam);
+function Team({ id, pageID, currentTeam, rosterTeam, setCurrentPlayer, currentPlayer }) {
+  // console.log(rosterTeam);
   // const primary_color = "White"
   // const secondary_color = "#031327"
   const primary_color = rosterTeam.primaryColor;
   const secondary_color = rosterTeam.secondaryColor;
+
+  const checkCurrentPlayer = () => {
+    console.log(currentPlayer)
+  }
   return (
     <>
       <NavBar />
@@ -35,7 +39,7 @@ function Team({ id, pageID, currentTeam, rosterTeam }) {
               {rosterTeam.roster
                 .filter((roster) => roster.position === "F")
                 .map((roster) => (
-                  <PlayerItem roster={roster} />
+                  <PlayerItem roster={roster} setCurrentPlayer={setCurrentPlayer} checkCurrentPlayer={checkCurrentPlayer} currentPlayer={currentPlayer}/>
                 ))}
             </div>
             <h2 className="grid_title">Defensemen</h2>
@@ -43,7 +47,7 @@ function Team({ id, pageID, currentTeam, rosterTeam }) {
               {rosterTeam.roster
                 .filter((roster) => roster.position === "D")
                 .map((roster) => (
-                  <PlayerItem roster={roster} />
+                  <PlayerItem roster={roster} setCurrentPlayer={setCurrentPlayer} checkCurrentPlayer={checkCurrentPlayer}/>
                 ))}
             </div>
             <h2 className="grid_title">Goalies</h2>
@@ -51,7 +55,7 @@ function Team({ id, pageID, currentTeam, rosterTeam }) {
               {rosterTeam.roster
                 .filter((roster) => roster.position === "G")
                 .map((roster) => (
-                  <PlayerItem roster={roster} />
+                  <PlayerItem roster={roster} setCurrentPlayer={setCurrentPlayer} checkCurrentPlayer={checkCurrentPlayer}/>
                 ))}
             </div>
           </div>

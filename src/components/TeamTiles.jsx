@@ -96,7 +96,7 @@ function TeamTiles({ setCurrentTeam, setRosterTeam }) {
   };
 
   const handleTeamClick = (team) => {
-    console.log("clicked", team.schoolName);
+    // console.log("clicked", team.schoolName);
     setCurrentTeam(team);
     addRoster(team);
   };

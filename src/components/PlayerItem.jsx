@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./playerItem.css";
-import { FaUserLarge } from "react-icons/fa6";
-import { RiUser3Fill } from "react-icons/ri";
 
-function PlayerItem({roster}) {
+function PlayerItem({roster, setCurrentPlayer, currentPlayer, checkCurrentPlayer}) {
+  const onPlayerClick = (player) => {
+    setCurrentPlayer(player)
+    checkCurrentPlayer();
+  }
+
+
+
   return (
-    <div className="player_item">
+    <div className="player_item" onClick={() => onPlayerClick(roster)}>
       <div className="player_image_container">
         <img src="../../src/assets/Player_Icon.svg" alt="player image" />
       </div>

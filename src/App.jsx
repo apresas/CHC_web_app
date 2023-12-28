@@ -14,21 +14,23 @@ import AllstarGame from "./pages/AllstarGame";
 import History from "./pages/LeagueHistory";
 import Archieve from "./pages/Archieve";
 import Links from "./pages/Links";
-import About from "./pages/About"
-import { useSite } from "./context/SiteContext"
+import About from "./pages/About";
+import { useSite } from "./context/SiteContext";
 
 function App() {
   const {
     currentTeam,
     setCurrentTeam,
     setRosterTeam,
-    rosterTeam
+    rosterTeam,
+    setCurrentPlayer,
+    currentPlayer,
   }= useSite();
   return (
     <>
       <Routes>
         <Route path="/" element={<Home  setCurrentTeam={setCurrentTeam} setRosterTeam={setRosterTeam} rosterTeam={rosterTeam}/>} />
-        <Route path="/team/:id" element={<TeamPage currentTeam={currentTeam} rosterTeam={rosterTeam}/>} />
+        <Route path="/team/:id" element={<TeamPage currentTeam={currentTeam} rosterTeam={rosterTeam} setCurrentPlayer={setCurrentPlayer} currentPlayer={currentPlayer} />} />
         <Route path="/stats" elememt={<StatsLeader/>} />
         <Route path="/schedule" element={<Schedule />} />
         <Route path="/info" element={<LeagueInfo />} />

@@ -33,6 +33,8 @@ margin: 0 0 1rem;
     font-family: "Bebas Neue";
     color: var(--color-bg);
 }
+
+
 .icon_container {
     display: flex;
     justify-self: center;
