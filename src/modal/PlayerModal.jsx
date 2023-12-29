@@ -64,8 +64,8 @@ function playerModal({
   }
   return (
     <>
-      <div className="overlay">
-        <div className="modal_container">
+      <div className="overlay" onClick={onClose}>
+        <div className="modal_container" onClick={e => e.stopPropagation()}>
           <div className="modal_content">
             <div className="modal_left">
               <div className="player_info">
