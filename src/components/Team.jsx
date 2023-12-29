@@ -16,6 +16,7 @@ function Team({ id, pageID, currentTeam, rosterTeam, setCurrentPlayer, currentPl
 
   const checkCurrentPlayer = () => {
     setOpenModal(true);
+    console.log(currentPlayer.stats)
   }
 
   const closeModal = () => {
@@ -27,6 +28,8 @@ function Team({ id, pageID, currentTeam, rosterTeam, setCurrentPlayer, currentPl
     open={openModal}
     currentPlayer={currentPlayer}
     onClose={closeModal}
+    primaryColor={primary_color}
+    secondaryColor={secondary_color}
     />
       <NavBar />
       <div className="team_container">

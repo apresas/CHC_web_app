@@ -25,10 +25,6 @@ function TeamTiles({ setCurrentTeam, setRosterTeam }) {
 
   const columns = useMemo(
     () => [
-      // {
-      //   Header: "",
-      //   accessor: "position",
-      // },
       {
         Header: "",
         accessor: "teamName",
