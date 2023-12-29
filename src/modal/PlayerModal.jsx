@@ -2,7 +2,8 @@ import React, { useMemo } from "react";
 import "./playerModal.css";
 import { useTable, useSortBy } from "react-table";
 import { IoClose } from "react-icons/io5";
-
+import CurrentStatsTable from "../components/currentStatsTable";
+import CareerStatsTable from "../components/CareerStatsTable";
 function playerModal({
   open,
   onClose,
@@ -105,8 +106,9 @@ function playerModal({
               </div>
               <div className="stats_container">
                 <div className="current_stats_container">
-                  <h2>Season Stats</h2>
-                  <table className="current_stats_table">
+                  <h2 className="season_title">Season Stats</h2>
+                  <CurrentStatsTable currentPlayer={currentPlayer}/>
+                  {/* <table className="current_stats_table">
                     <thead>
                       <tr className="table_header">
                         <th className="year_title">SEASON</th>
@@ -127,7 +129,7 @@ function playerModal({
                         <td>{currentPlayer.stats.currentSeason.points}</td>
                       </tr>
                     </tbody>
-                  </table>
+                  </table> */}
                   {/* <table className="standings_table blue" {...getTableProps()}>
                 <thead>
                   {headerGroups.map((headerGroup) => (
@@ -170,7 +172,8 @@ function playerModal({
                 </div>
                 <div className="career_stats_container">
                   <h2>Career Stats</h2>
-                  <table className="career_stats_table">
+                  <CareerStatsTable currentPlayer={currentPlayer}/>
+                  {/* <table className="career_stats_table">
                     <thead>
                       <tr className="table_header">
                         <th className="year_title">YEAR</th>
@@ -205,7 +208,7 @@ function playerModal({
                           )
                         })}
                     </tbody>
-                  </table>
+                  </table> */}
                 </div>
               </div>
             </div>

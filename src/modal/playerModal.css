@@ -26,8 +26,13 @@
   }
 
   .modal_right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: var(--color-ohio-blue);
     color: white;
+    position: relative;
   }
 
   .modal_left {
@@ -52,6 +57,7 @@
   .stats_container h2 {
     font-family: "Bebas Neue";
   }
+
 
   .info_list {
     list-style: none;
@@ -102,9 +108,14 @@
 }
 
   .modal_controls {
-    display: flex;
-    justify-content: end;
+    position: absolute;
     padding: 1rem;
+    right: 0;
+    top: 0;
+  }
+
+  .season_title {
+    margin-top: 0;
   }
 
   .close_btn_container {
@@ -118,13 +129,6 @@
     transition: var(--transition)
   }
 
-  .current_stats_table, .career_stats_table {
-    background-color: white;
-    color: var(--color-bg);
-    padding: 2rem;
-    /* border: 3px solid lightslategray; */
-    font-family: 'Rajdhani', sans-serif;
-  }
 
   .career_stats_container, .current_stats_container {
     width: 85%;
@@ -132,25 +136,6 @@
     flex-direction: column;
   }
 
-  .current_stats_table tr, .career_stats_table tr {
-    text-align: center;
-  }
-
-  .career_stats_table tbody tr:last-of-type{
-    /* background-color: var(--color-ohio-blue); */
-    color: var(--color-ohio-red);
-  }
-
-  .year_title {
-    text-align: left;
-    width: 8rem;
-    padding-left: 1.5rem;
-    font-weight: 700;
-  }
-
-  .table_header {
-    background-color: lightslategray;
-  }
 
   .player_portrait_container {
     display: flex;

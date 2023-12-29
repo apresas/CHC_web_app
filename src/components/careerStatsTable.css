@@ -1,0 +1,48 @@
+.career_stats_table {
+    background-color: rgba(255, 255, 255,0.9);
+    color: var(--color-bg);
+    padding: 2rem;
+    /* border: 3px solid lightslategray; */
+    font-family: 'Rajdhani', sans-serif;
+    border-radius: 5px;
+  }
+
+  .career_table_header {
+    background-color: inherit;
+    color: var(--color-bg);
+    border-bottom: none;
+    font-weight: 300;
+  }
+
+.career_stats_table tr {
+    text-align: center;
+  }
+
+  .career_stats_table tr:nth-of-type(even) {
+    background-color: var(--color-dark-white);
+  }
+
+  .career_stats_table th {
+    border-right: 1px solid rgba(119, 136, 153, 0.5);
+    padding-top: 0.5rem;
+  }
+
+  .career_stats_table td {
+    padding: 1rem 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-right: 1px solid rgba(119, 136, 153, 0.5);
+  }
+
+  .career_stats_table tbody tr:last-of-type{
+    /* background-color: var(--color-ohio-blue); */
+    color: var(--color-ohio-red);
+  }
+
+
+  .career_year_title {
+    text-align: left;
+    width: 8rem;
+    padding-left: 1.5rem;
+    font-weight: 700;
+  }

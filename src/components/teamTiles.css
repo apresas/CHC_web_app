@@ -187,36 +187,40 @@ table {
   overflow: hidden;
 }
 
-table td, table th {
-  padding: 0.5rem;
+.teamTiles_container table td, .teamTiles_container table th {
+  padding: 1rem 0.5rem;
 }
 
 /* table th:nth-of-type(7), table td:nth-of-type(7) {
   background-color: lightslategray;
 } */
 
-thead > tr {
+.teamTiles_container thead > tr {
   border-bottom: 1px solid lightslategray;
   background-color: var(--color-ohio-blue);
   color: white;
 }
 
-tbody tr:nth-of-type(even) {
+.teamTiles_container tbody tr:nth-of-type(even) {
   background-color: #f2f2f2;
   background-color: var(--color-border-white);
   /* background-color: lavender; */
+}
+
+.teamTiles_container tbody td:first-of-type {
+  font-weight: 600;
 }
 
 /* tbody tr:hover {
   background-color: lightslategray;
 } */
 
-td, th {
+.teamTiles_container td, th {
   position: relative;
   z-index: 1;
 }
 
-th:not(:first-child):hover::before {
+.teamTiles_container th:not(:first-child):hover::before {
   content: "";
   position: absolute;
   background-color: rgba(255, 255, 255, 0.5);
@@ -227,7 +231,7 @@ th:not(:first-child):hover::before {
   z-index: 0;
 }
 
-tbody, td {
+.teamTiles_container tbody, td {
   width: 1.5rem;
 }
 
