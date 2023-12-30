@@ -1,10 +1,12 @@
 .career_stats_table {
-    background-color: rgba(255, 255, 255,0.9);
+    background-color: rgba(255, 255, 255, 1);
     color: var(--color-bg);
     padding: 2rem;
     /* border: 3px solid lightslategray; */
     font-family: 'Rajdhani', sans-serif;
-    border-radius: 5px;
+    border-radius: 8px;
+    opacity: 0.9;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.35);
   }
 
   .career_table_header {
@@ -19,7 +21,7 @@
   }
 
   .career_stats_table tr:nth-of-type(even) {
-    background-color: var(--color-dark-white);
+    background-color: rgba(225, 226, 240, 0.9);
   }
 
   .career_stats_table th {

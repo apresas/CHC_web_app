@@ -35,6 +35,14 @@
     position: relative;
   }
 
+  .team_logo_bg {
+    position: absolute;
+    height:25rem;
+    width: 25rem;
+    opacity: 0.30;
+    z-index: 0;
+  }
+
   .modal_left {
     display: flex;
     align-items: center;
@@ -52,6 +60,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
+    z-index: 2;
   }
 
   .stats_container h2 {
@@ -69,6 +78,7 @@
   .info_list li {
     font-weight: 500;
     margin-bottom: 0.25rem;
+    font-size: 1.1rem;
   }
 
   .info_list span {
@@ -100,11 +110,12 @@
 }
 
 .player_info h3 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    text-align: center;
 }
 
 .player_info h2 {
-    font-size: 3rem;
+    font-size: 3.5rem;
 }
 
   .modal_controls {
@@ -131,7 +142,7 @@
 
 
   .career_stats_container, .current_stats_container {
-    width: 85%;
+    width: 80%;
     display: flex;
     flex-direction: column;
   }

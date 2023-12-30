@@ -16,7 +16,6 @@ function CareerStatsTable({currentPlayer}) {
     <tbody>
 
         {currentPlayer.stats.careerStats.map((stats) => {
-          console.log(stats)
           return (
             <tr>
             <td className="career_year_title">

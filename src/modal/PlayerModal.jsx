@@ -10,7 +10,9 @@ function playerModal({
   currentPlayer,
   primaryColor,
   secondaryColor,
+  teamLogo
 }) {
+
   // const data = useMemo(() => currentPlayer.stats.currentSeason, []);
   // const columns = useMemo(
   //   () => [
@@ -76,10 +78,10 @@ function playerModal({
                     alt="player image"
                   />
                 </div>
-                <h3 className="player_name">
+                <h3 className="modal_player_name">
                   {currentPlayer.firstName} {currentPlayer.lastName}
                 </h3>
-                <h2 className="player_number">{currentPlayer.jerseyNumber}</h2>
+                <h2 className="modal_player_number">{currentPlayer.jerseyNumber}</h2>
                 <small className="player_class">{playerClass}</small>
                 <span className="info_divider" />
                 <div className="info_section_container">
@@ -99,6 +101,7 @@ function playerModal({
                 color: `${secondaryColor}`,
               }}
             >
+              <img src={teamLogo} alt="" className="team_logo_bg" />
               <div className="modal_controls">
                 <div className="close_btn_container">
                   <IoClose onClick={onClose} style={{ fontSize: "2.25rem" }} />

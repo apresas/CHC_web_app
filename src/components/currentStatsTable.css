@@ -1,17 +1,16 @@
 .current_stats_table {
-    background-color: rgba(255, 255, 255,0.9);
+    background-color: rgba(255, 255, 255, 1);
     color: var(--color-bg);
     padding: 2rem;
-    /* border: 3px solid lightslategray; */
+    border: 2px solid white;
     font-family: 'Rajdhani', sans-serif;
+    border-radius: 8px;
+    opacity: 0.85;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.35);
+    /* border: 2px solid rgba(119, 136, 153, 0.5); */
   }
 
-  .current_stats_table {
-    border-radius: 5px;
-    border: 2px solid rgba(119, 136, 153, 0.5);
-  }
-
-  .current_stats_table tr, .career_stats_table tr {
+  .current_stats_table tr {
     text-align: center;
   }
 
