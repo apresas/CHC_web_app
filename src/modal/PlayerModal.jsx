@@ -12,33 +12,6 @@ function playerModal({
   secondaryColor,
   teamLogo
 }) {
-
-  // const data = useMemo(() => currentPlayer.stats.currentSeason, []);
-  // const columns = useMemo(
-  //   () => [
-  //     {
-  //       Header: "GP",
-  //       accessor: "gamesPlayed",
-  //     },
-  //     {
-  //       Header: "G",
-  //       accessor: "goals",
-  //     },
-  //     {
-  //       Header: "A",
-  //       accessor: "assists",
-  //     },
-  //     {
-  //       Header: "P",
-  //       accessor: "points",
-  //     }
-  //   ],
-  //   []
-  // );
-
-  // const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } =
-  // useTable({ columns, data }, useSortBy);
-
   if (!open) {
     return null;
   }
@@ -119,107 +92,10 @@ function playerModal({
                 <div className="current_stats_container">
                   <h2 className="season_title">Season Stats</h2>
                   <CurrentStatsTable currentPlayer={currentPlayer}/>
-                  {/* <table className="current_stats_table">
-                    <thead>
-                      <tr className="table_header">
-                        <th className="year_title">SEASON</th>
-                        <th>GP</th>
-                        <th>G</th>
-                        <th>A</th>
-                        <th>P</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td className="year_title">
-                          2023-24
-                        </td>
-                        <td>{currentPlayer.stats.currentSeason.gamesPlayed}</td>
-                        <td>{currentPlayer.stats.currentSeason.goals}</td>
-                        <td>{currentPlayer.stats.currentSeason.assists}</td>
-                        <td>{currentPlayer.stats.currentSeason.points}</td>
-                      </tr>
-                    </tbody>
-                  </table> */}
-                  {/* <table className="standings_table blue" {...getTableProps()}>
-                <thead>
-                  {headerGroups.map((headerGroup) => (
-                    <tr
-                      key={headerGroup.id}
-                      {...headerGroup.getHeaderGroupProps()}
-                    >
-                      {headerGroup.headers.map((column) => (
-                        <th key={headerGroup.id} {...column.getHeaderProps()}>
-                          {column.render("Header")}
-                        </th>
-                      ))}
-                    </tr>
-                  ))}
-                </thead>
-                <tbody {...getTableBodyProps()}>
-                  {rows
-                    .filter((row) => row.original.divison === "Red")
-                    .sort((a, b) =>
-                      parseInt(a.original.points) > parseInt(b.original.points)
-                        ? -1
-                        : 1
-                    )
-                    .map((row) => {
-                      prepareRow(row);
-                      return (
-                        <tr key={row.id} {...row.getRowProps()}>
-                          {row.cells.map((cell) => {
-                            return (
-                              <td key={cell.id} {...cell.getCellProps()}>
-                                {cell.render("Cell")}
-                              </td>
-                            );
-                          })}
-                        </tr>
-                      );
-                    })}
-                </tbody>
-              </table> */}
                 </div>
                 <div className="career_stats_container">
                   <h2>Career Stats</h2>
                   <CareerStatsTable currentPlayer={currentPlayer}/>
-                  {/* <table className="career_stats_table">
-                    <thead>
-                      <tr className="table_header">
-                        <th className="year_title">YEAR</th>
-                        <th>GP</th>
-                        <th>G</th>
-                        <th>A</th>
-                        <th>P</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-
-                        {currentPlayer.stats.careerStats.map((stats) => {
-                          console.log(stats)
-                          return (
-                            <tr>
-                            <td className="year_title">
-                              {stats.title.toUpperCase()}
-                            </td>
-                            <td>
-                              {stats.gamesPlayed}
-                            </td>
-                            <td>
-                              {stats.goals}
-                            </td>
-                            <td>
-                              {stats.assists}
-                            </td>
-                            <td>
-                              {stats.points}
-                            </td>
-                            </tr>
-                          )
-                        })}
-                    </tbody>
-                  </table> */}
                 </div>
               </div>
             </div>
