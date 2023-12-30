@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+import React, { useMemo, useEffect } from "react";
 import "./playerModal.css";
 import { useTable, useSortBy } from "react-table";
 import { IoClose } from "react-icons/io5";
@@ -43,10 +43,18 @@ function playerModal({
     return null;
   }
   let position = "";
-  let height = "6'1\"";
+  // let height = "6'1\"";
   let weight = "155";
   let handedness = "L";
   let playerClass = "";
+
+
+  let rawHeight = (currentPlayer.height / 12).toFixed(2);
+  let heightArray = rawHeight.split('.');
+  let heightString = (heightArray[1] / 100 * 12).toString()
+  let heightInches = heightString.split('.')
+  const height = heightArray[0] + "'" + heightInches[0] + "\"";
+
 
   if (currentPlayer.position === "F") {
     position = "Forward";
