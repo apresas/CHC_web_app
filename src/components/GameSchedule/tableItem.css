@@ -2,7 +2,7 @@
 .schedule_game_container {
     display: flex;
     align-items: center;
-    justify-self: center;
+    justify-self: flex-start;
     gap: 1rem;
     font-size: 1.2rem;
 }
@@ -29,8 +29,12 @@
 .item_body {
     display: grid;
     grid-template-columns: 5fr 1fr;
+    /* display: flex;
+    align-items: center; */
+    /* justify-content: space-between; */
     background-color: white;
-    padding: 0.5rem 0;
+    padding: 1rem 3rem;
+    border-bottom: 1px solid rgba(119, 136, 153, 0.5);
 }
 
 .table_items {
@@ -44,11 +48,8 @@
 
 .score {
     align-self: center;
-    justify-self: center;
+    justify-self: flex-end;
 }
 
-.schedule_game_container, .score {
-    background-color: white;
-}
 
 

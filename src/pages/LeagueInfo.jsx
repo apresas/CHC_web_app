@@ -1,9 +1,15 @@
-import React from 'react'
+import React from "react";
+import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
 
 function LeagueInfo() {
   return (
-    <div>LeagueInfo</div>
-  )
+    <>
+      <NavBar />
+      <div>LeagueInfo</div>
+      <Footer />
+    </>
+  );
 }
 
-export default LeagueInfo
+export default LeagueInfo;

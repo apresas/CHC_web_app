@@ -12,7 +12,7 @@ function VarsityNav() {
       <Link to="/info" className="navLinks">
         League Info
       </Link>
-      <Link to="/ranking" className="navLinks">
+      <Link to="/rankings" className="navLinks">
         Rankings
       </Link>
       <Link to="/postseason" className="navLinks">

@@ -1,9 +1,15 @@
-import React from 'react'
+import React from "react";
+import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
 
 function StatsLeader() {
   return (
-    <div>StatsLeader</div>
-  )
+    <>
+      <NavBar />
+      <div>StatsLeader</div>
+      <Footer />
+    </>
+  );
 }
 
-export default StatsLeader
+export default StatsLeader;

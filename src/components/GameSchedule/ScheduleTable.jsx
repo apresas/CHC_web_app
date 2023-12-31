@@ -9,10 +9,10 @@ function ScheduleTable() {
     <div className='schedule_table_container'>
         <h2>Thu, December 28</h2>
         <TableHeader />
-        <TableItem />
-        <TableItem />
-        <TableItem />
-        <TableItem />
+        <TableItem id="1"/>
+        <TableItem id="2"/>
+        <TableItem id="3"/>
+        <TableItem id="4"/>
     </div>
     </>
   )

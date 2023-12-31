@@ -68,7 +68,7 @@ function LeagueLeaders() {
           />
         </div>
         <Link
-          to="/team"
+          to="/stats"
           style={{ color: "inherit", textDecoration: "inherit" }}
         >
           <div className="stats_btn_container">
@@ -98,7 +98,7 @@ function LeagueLeaders() {
           />
         </div>
         <Link
-          to="/team"
+          to="/stats"
           style={{ color: "inherit", textDecoration: "inherit" }}
         >
           <div className="stats_btn_container">

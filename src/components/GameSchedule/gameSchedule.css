@@ -16,14 +16,21 @@
     color: var(--color-bg);
     margin-top: 2rem;
     font-family: 'Rajdhani', sans-serif;
-    padding: 0 7rem 4rem;
+    padding: 0 6.5rem 2rem;
+    
+    
     /* padding-bottom: 4rem; */
+}
+
+.schedule_content_container h1 {
+    font-family: "Bebas Neue", sans-serif;
 }
 
 
 .day_tile_container {
     display: flex;
     gap: 0.5rem;
+    margin-bottom: 2rem;
 }
 
 .date_header {
@@ -36,8 +43,35 @@
 
 .schedule_table {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
 }
 
+.schedule_controller {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 6rem;
+}
+
+.schedule_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: var(--color-bg);
+    width: 12rem;
+    border: 1px solid rgba(119, 136, 153, 0.5);
+    font-weight: 700;
+    transition:var(--transition);
+    padding: 0.75rem;
+}
+
+.schedule_btn:hover {
+    background-color: var(--color-dark-white);
+    border-color: rgba(119, 136, 153, 0.5);
+    transition:var(--transition)
+}

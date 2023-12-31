@@ -1,7 +1,11 @@
 import React from "react";
 import "./tableItem.css";
 
-function TableItem() {
+function TableItem({id}) {
+  let rowColor = "rgb(245, 245, 252)"
+  if(parseInt(id) % 2 === 0) {
+    rowColor = "#e1e2f0"
+  }
   return (
     <>
       {/* <table className="table_items">
@@ -33,7 +37,7 @@ function TableItem() {
         </tbody>
       </table> */}
       <div className="table_item_container">
-        <div className="item_body">
+        <div className="item_body" style={{backgroundColor: `${rowColor}`}}>
           <div className="schedule_game_container">
             <span>Team 1 </span>{" "}
             <img

@@ -2,6 +2,11 @@
     width: 100%;
 }
 
+.schedule_table_container h2 {
+    font-size: 2rem;
+    font-family: "Bebas Neue", sans-serif;
+}
+
 .table_items {
 width: 50rem;
 }
