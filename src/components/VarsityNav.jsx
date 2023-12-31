@@ -7,7 +7,7 @@ function VarsityNav() {
     <div className="varsity_nav_container">
       {/* Varsity */}
       <Link to="/schedule" className="navLinks">
-        Schdule
+        Schedule
       </Link>
       <Link to="/info" className="navLinks">
         League Info
