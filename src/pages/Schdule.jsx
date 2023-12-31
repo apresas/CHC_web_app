@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import NavBar from "../components/NavBar";
+import GameSchedule from "../components/GameSchedule/GameSchedule";
 
 function Schdule() {
   return (
-    <div>Schdule</div>
-  )
+    <>
+      <NavBar />
+      <GameSchedule />
+    </>
+  );
 }
 
-export default Schdule
+export default Schdule;

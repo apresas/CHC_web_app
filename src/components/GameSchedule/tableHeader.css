@@ -1,0 +1,12 @@
+.matchup_title, .score_title {
+    align-self: center;
+    justify-self: center;
+}
+
+
+.table_item_header {
+    padding: 1rem 0;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    background-color: lightslategray;
+}
