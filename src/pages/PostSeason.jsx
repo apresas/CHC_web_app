@@ -6,7 +6,6 @@ function PostSeason() {
   return (
     <>
       <NavBar />
-      <div>PostSeason</div>
       <PlayoffBracket />
       <Footer />
     </>

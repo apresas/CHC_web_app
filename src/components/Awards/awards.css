@@ -1,4 +1,4 @@
-.playoff_bracket_container {
+.awards_container {
     width: 100%;
     display: flex;
     align-items: center;
@@ -6,7 +6,7 @@
     color: var(--color-bg);
 }
 
-.playoff_bracket_content_container {
+.awards_content_container {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -16,9 +16,15 @@
     color: var(--color-bg);
     margin-top: 2rem;
     font-family: 'Rajdhani', sans-serif;
-    border: 1rem solid var(--color-nav);
-    /* padding: 2rem 4rem; */
-    
-    
-    /* padding-bottom: 4rem; */
+}
+
+.first_team_container, .second_team_container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
+}
+
+.all_league_container, .honorable_mention_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }

@@ -1,76 +1,69 @@
 import React from "react";
-import BracketItem from "./BracketItem";
+import Matchup from "./Matchup";
 import "./bracketLayout.css";
+import ChampionshipTile from "./ChampionshipTile";
 
 function BracketLayout() {
   return (
-    <div className="bracket_container">
-      <div className="first_round">
-        <div className="bracket_item " id="item_1"><div className="item_logo"></div></div>
-        <div className="bracket_item" id="item_2"></div>
-        <div className="bracket_item " id="item_3"></div>
-        <div className="bracket_item" id="item_4"></div>
-        <div className="bracket_item " id="item_5"></div>
-        <div className="bracket_item" id="item_6"></div>
-        <div className="bracket_item " id="item_7"></div>
-        <div className="bracket_item" id="item_8"></div>
+    <>
+      <div className="bracket_header">
+        <h1>Blue Jackets Cup 2023-2024</h1>
       </div>
-      <div className="quater_finals">
-        <div className="bracket_item " id="item_9"></div>
-        <div className="bracket_item" id="item_10"></div>
-        <div className="bracket_item" id="item_11"></div>
-        <div className="bracket_item" id="item_12"></div>
-        <div className="bracket_item" id="item_13"></div>
-        <div className="bracket_item" id="item_14"></div>
-        <div className="bracket_item" id="item_15"></div>
-        <div className="bracket_item" id="item_16"></div>
+      <div className="header_border"></div>
+      <div className="bracket_container">
+        {/* <BracketGroup /> */}
+        <div className="first_round">
+          <div className="connector_1">
+            <span />
+          </div>
+          <div className="matchup_1">
+            <Matchup gameID={0} homeTeamID={9} awayTeamID={6} />
+          </div>
+          <div className="matchup_2">
+            <Matchup gameID={1} homeTeamID={12} awayTeamID={0} />
+          </div>
+          <div className="connector_2">
+            <span />
+          </div>
+          <div className="matchup_3">
+            <Matchup gameID={2} homeTeamID={8} awayTeamID={7} />
+          </div>
+          <div className="matchup_4" gameID={4}>
+            <Matchup gameID={3} homeTeamID={14} awayTeamID={3} />
+          </div>
+        </div>
+        <div className="semi_finals">
+          <div className="connector_3">
+            <span />
+          </div>
+          <div className="matchup_5">
+            <Matchup gameID={4} homeTeamID={9} awayTeamID={12} />
+          </div>
+          <div className="matchup_6">
+            <Matchup gameID={5} homeTeamID={8} awayTeamID={3} />
+          </div>
+        </div>
+        <div className="division_finals">
+          <div className="connector_4">
+            <span />
+          </div>
+          <div className="matchup_7">
+            <Matchup gameID={6} homeTeamID={9} awayTeamID={8} />
+          </div>
+        </div>
+        <ChampionshipTile id={9}/>
+        {/* <div className="champions" id={9}>
+          <div className="champions_item">
+            <h2>Blue Jackets Cup</h2>
+            <h2>Champions</h2>
+            <div className="champion_logo_container">
+              <img src="../../src/assets/Logos/Olentangy_logo.svg" alt="logo" />
+            </div>
+            <h3>Olentangy Braves</h3>
+          </div>
+        </div> */}
       </div>
-      <div className="semi_finals">
-        <div className="bracket_item" id="item_17"></div>
-        <div className="bracket_item" id="item_18"></div>
-        <div className="bracket_item" id="item_19"></div>
-        <div className="bracket_item" id="item_20"></div>
-      </div>
-      <div className="division_championship">
-        <div className="bracket_item" id="item_21"></div>
-        <div className="bracket_item" id="item_22"></div>
-      </div>
-      <div className="championship">
-        <div className="bracket_item" id="item_23"></div>
-        <div className="bracket_item" id="item_24"></div>
-        <div className="bracket_item" id="item_25"></div>
-      </div>
-      <div className="division_championship">
-        <div className="bracket_item" id="item_21"></div>
-        <div className="bracket_item" id="item_22"></div>
-      </div>
-      <div className="semi_finals">
-        <div className="bracket_item" id="item_17"></div>
-        <div className="bracket_item" id="item_18"></div>
-        <div className="bracket_item" id="item_19"></div>
-        <div className="bracket_item" id="item_20"></div>
-      </div>
-      <div className="quater_finals">
-        <div className="bracket_item " id="item_9"></div>
-        <div className="bracket_item" id="item_10"></div>
-        <div className="bracket_item" id="item_11"></div>
-        <div className="bracket_item" id="item_12"></div>
-        <div className="bracket_item" id="item_13"></div>
-        <div className="bracket_item" id="item_14"></div>
-        <div className="bracket_item" id="item_15"></div>
-        <div className="bracket_item" id="item_16"></div>
-      </div>
-      <div className="first_round">
-        <div className="bracket_item " id="item_1"></div>
-        <div className="bracket_item" id="item_2"></div>
-        <div className="bracket_item " id="item_3"></div>
-        <div className="bracket_item" id="item_4"></div>
-        <div className="bracket_item " id="item_5"></div>
-        <div className="bracket_item" id="item_6"></div>
-        <div className="bracket_item " id="item_7"></div>
-        <div className="bracket_item" id="item_8"></div>
-      </div>
-    </div>
+    </>
   );
 }
 
