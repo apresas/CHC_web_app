@@ -40,7 +40,7 @@ function Footer() {
           <Link to="/links" className="footer_link">
             Links
           </Link>
-          <Link to="/about" className="footer_link">
+          <Link to="/info" className="footer_link">
             About
           </Link>
         </div>

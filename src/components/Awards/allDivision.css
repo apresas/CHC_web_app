@@ -1,6 +1,7 @@
 .all_division_container {
     border: 1px solid lightgrey;
     width: 22.5rem;
+    background-color: white;
 }
 
 .all_division_header {
@@ -9,6 +10,7 @@
     align-items: center;
     justify-content: center;
     padding: 0.5rem 1rem;
+    border-bottom: 1px solid lightgrey;
     /* background-color: red; */
 }
 
@@ -29,6 +31,12 @@
     display: flex;
     height: 5rem;
     border-bottom: 1px solid lightgrey;
+    transition: var(--transition);
+}
+
+.all_division_item_container:hover{
+    transform: scale(1.05);
+    transition: var(--transition);
 }
 
 .all_division_logo, .all_division_position, .all_division_info {
@@ -38,7 +46,7 @@
 }
 
 .all_division_position {
-    aspect-ratio: 1/1;
+    aspect-ratio: 1/2;
     font-size: 1.25rem;
     font-weight: 600;
     border-right: 1px solid lightgrey;
@@ -47,7 +55,12 @@
 .all_division_logo {
     aspect-ratio: 1/1;
     border-right: 1px solid lightgrey;
-    padding: 0.5rem;
+    padding: 1rem;
+}
+
+.all_division_logo img {
+    height: 3.5rem;
+    width: 3.5rem;
 }
 
 .all_division_info {

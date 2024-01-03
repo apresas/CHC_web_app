@@ -41,7 +41,7 @@ function App() {
         <Route path="/history" element={<History/>} />
         <Route path="/archive" element={<Archieve />} />
         <Route path="/links" element={<Links />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/info" element={<LeagueInfo />} />
       </Routes>
     </>
   );

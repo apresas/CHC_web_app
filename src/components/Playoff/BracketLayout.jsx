@@ -10,7 +10,7 @@ function BracketLayout() {
       {/* <div className="bracket_header">
         <h1>Blue Jackets Cup 2023-2024</h1>
       </div> */}
-      <TitleBar title="Blue Jackets Cup 2023-24"/>
+      <TitleBar title="Blue Jackets Cup" subtitle="2023-2024"/>
       <div className="bracket_container">
         {/* <BracketGroup /> */}
         <div className="first_round">

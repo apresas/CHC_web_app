@@ -2,6 +2,13 @@
   position: relative;
   width: 11rem;
   border: 1px solid lightgray;
+  background-color: white;
+  transition: var(--transition);
+}
+
+.award_item_container:hover {
+    transform: scale(1.05);
+    transition: var(--transition);
 }
 
 .position_box {

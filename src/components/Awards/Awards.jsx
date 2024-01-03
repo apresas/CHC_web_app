@@ -1,45 +1,103 @@
 import React from "react";
 import "./awards.css";
 import AwardItem from "./AwardItem";
-import AllDivison from "./AllDivision";
 import TitleBar from "../TitleBar";
-import playerAwards from "../../data/playerAwards.json"
+import AllDivisionItem from "./AllDivisionItem";
+import playerAwards from "../../data/playerAwards.json";
 
 function Awards() {
   return (
     <div className="awards_container">
       <div className="awards_content_container">
-        {/* <div className="awards_title">
-        <h1>All League Awards</h1>
-        <h3>2023-2024</h3>
-        </div> */}
-        <TitleBar title="All League Awards" subtitle="2023-2024"/>
-        {/* <div className="title_bar"></div> */}
-        <h2>First Team</h2>
-        <div className="first_team_container">
-          {playerAwards.filter((data) => data.category === "firstTeam").map((data) => (
-            <AwardItem key={data.playerID} player={data}/>
-          ))
-          }
+        <TitleBar title="All League Awards" subtitle="2023-2024" />
+        <div className="section_container">
+          <h2 className="section_title">First Team</h2>
+          <div className="first_team_container">
+            {playerAwards
+              .filter((data) => data.category === "firstTeam")
+              .map((data) => (
+                <AwardItem key={data.playerID} player={data} />
+              ))}
+          </div>
         </div>
-        <h2>Second Team</h2>
-        <div className="second_team_container">
-        {playerAwards.filter((data) => data.category === "secondTeam").map((data) => (
-            <AwardItem key={data.playerID} player={data}/>
-          ))
-          }
+        <div className="section_container">
+          <h2 className="section_title">Second Team</h2>
+          <div className="second_team_container">
+            {playerAwards
+              .filter((data) => data.category === "secondTeam")
+              .map((data) => (
+                <AwardItem key={data.playerID} player={data} />
+              ))}
+          </div>
         </div>
-        <h2>All Division Team</h2>
-        <div className="all_league_container">
-          {/* {playerAwards.filter((data) => data.category === "allDivision" && data.division === "Red").map((data) => (
-                      <AllDivison key={data.playerID} player={data}/>
-          ))} */}
-          <AllDivison division="RED"/>
-          <AllDivison division="WHITE"/>
-          <AllDivison division="BLUE"/>
+        <div className="section_container">
+          <h2 className="section_title">All Division Team</h2>
+          <div className="all_league_container">
+            <div className="all_division_container">
+              <div
+                className="all_division_header"
+                style={{ backgroundColor: "#ff2400", color: "white" }}
+              >
+                <h2>1st Team</h2>
+                <h3>All-Red Division</h3>
+              </div>
+              <div className="all_division_body">
+                {playerAwards
+                  .filter(
+                    (data) =>
+                      data.category === "allDivision" && data.division === "Red"
+                  )
+                  .map((data) => (
+                    <AllDivisionItem player={data} />
+                  ))}
+              </div>
+            </div>
+            <div className="all_division_container">
+              <div
+                className="all_division_header"
+                style={{ backgroundColor: "transparent" }}
+              >
+                <h2>1st Team</h2>
+                <h3>All-White Division</h3>
+              </div>
+              <div className="all_division_body">
+                {playerAwards
+                  .filter(
+                    (data) =>
+                      data.category === "allDivision" &&
+                      data.division === "White"
+                  )
+                  .map((data) => (
+                    <AllDivisionItem player={data} />
+                  ))}
+              </div>
+            </div>
+            <div className="all_division_container">
+              <div
+                className="all_division_header"
+                style={{ backgroundColor: "#0047ab", color: "white" }}
+              >
+                <h2>1st Team</h2>
+                <h3>All-Blue Division</h3>
+              </div>
+              <div className="all_division_body">
+                {playerAwards
+                  .filter(
+                    (data) =>
+                      data.category === "allDivision" &&
+                      data.division === "Blue"
+                  )
+                  .map((data) => (
+                    <AllDivisionItem player={data} />
+                  ))}
+              </div>
+            </div>
+          </div>
         </div>
-        <h2>Honorable Mentions</h2>
+        <div className="section_container">
+        <h2 className="section_title">Honorable Mentions</h2>
         <div className="honorable_mention_container"></div>
+      </div>
       </div>
     </div>
   );

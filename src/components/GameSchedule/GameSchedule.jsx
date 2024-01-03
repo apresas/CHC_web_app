@@ -12,7 +12,7 @@ function GameSchedule() {
       <div className="schedule_container">
         <div className="schedule_content_container">
           {/* <h1>Schedule</h1> */}
-          <TitleBar title="Schedule" subtitle={null}/>
+          <TitleBar title="Schedule" subtitle="2023-2024"/>
           <ScheduleFilterControls />
           <div className="day_tile_container">
             <DayTile />
