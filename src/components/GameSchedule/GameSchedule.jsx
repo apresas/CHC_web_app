@@ -2,6 +2,7 @@ import React from "react";
 import DayTile from "./DayTile";
 import SchduleTable from "./ScheduleTable";
 import ScheduleFilterControls from "./ScheduleFilterControls";
+import TitleBar from "../TitleBar";
 import "./gameSchedule.css";
 import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
 
@@ -10,7 +11,8 @@ function GameSchedule() {
     <>
       <div className="schedule_container">
         <div className="schedule_content_container">
-          <h1>Schedule</h1>
+          {/* <h1>Schedule</h1> */}
+          <TitleBar title="Schedule" subtitle={null}/>
           <ScheduleFilterControls />
           <div className="day_tile_container">
             <DayTile />

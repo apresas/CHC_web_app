@@ -1,33 +1,56 @@
 .award_item_container {
-    display: grid;
-    grid-template-rows: 4fr 1fr;
-    /* flex-direction: column;
-    align-items: center; */
-    width: 11rem;
-    height: 16.5rem;
-    border: 1px solid lightgray;
+  position: relative;
+  width: 11rem;
+  border: 1px solid lightgray;
+}
+
+.position_box {
+  background-color: white;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  aspect-ratio: 1/1;
+  right: 0;
+  font-family: "Teko";
+  font-size: 1.25rem;
+  font-weight: 500;
 }
 
 .award_logo_container {
-    width: 100%;
-    aspect-ratio: 1/1;
-    background-color: aqua;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  aspect-ratio: 1/1;
+  background-color: black;
+}
+
+.award_logo_container img {
+  padding: 2rem;
 }
 
 .award_item_info {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    height: 5rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0.5rem 0;
 }
 
-.award_item_info h2, h3, h4 {
+.award_item_info h2,
+h3,
+h4 {
+  font-family: "Bebas Neue";
+  margin: 0;
+}
 
-    font-family: "Bebas Neue";
-    margin: 0;
+.award_item_info h3 {
+  font-family: "Teko", sans-serif;
+  font-weight: 400;
 }
 
 .award_item_info h4 {
-    font-family: 'Rajdhani', sans-serif;
-    font-weight: 300;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 300;
 }

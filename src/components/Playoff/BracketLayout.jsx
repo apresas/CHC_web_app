@@ -2,14 +2,15 @@ import React from "react";
 import Matchup from "./Matchup";
 import "./bracketLayout.css";
 import ChampionshipTile from "./ChampionshipTile";
+import TitleBar from "../TitleBar";
 
 function BracketLayout() {
   return (
     <>
-      <div className="bracket_header">
+      {/* <div className="bracket_header">
         <h1>Blue Jackets Cup 2023-2024</h1>
-      </div>
-      <div className="header_border"></div>
+      </div> */}
+      <TitleBar title="Blue Jackets Cup 2023-24"/>
       <div className="bracket_container">
         {/* <BracketGroup /> */}
         <div className="first_round">

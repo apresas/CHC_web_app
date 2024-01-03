@@ -6,11 +6,15 @@
     color: var(--color-bg);
 }
 
+.awards_container h1, .awards_container h2{
+    font-family: "Bebas Neue";
+}
+
 .awards_content_container {
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 100%;
+    width: 80%;
     max-width: 1280px;
     background-color: rgb(245, 245, 252);
     color: var(--color-bg);
@@ -20,11 +24,28 @@
 
 .first_team_container, .second_team_container {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 2rem;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 0.5rem;
 }
 
 .all_league_container, .honorable_mention_container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
 }
+
+.awards_title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-nav);
+    width: 100%;
+    padding: 2rem 0;
+    color: white;
+}
+
+.awards_title h1 {
+    margin: 0;
+}
+

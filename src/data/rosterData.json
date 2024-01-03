@@ -1897,7 +1897,7 @@
         "height": 0,
         "weight": 0,
         "handedness": "",
-        "class": "",
+        "class": "2024",
         "stats": {
           "currentSeason": {
             "gamesPlayed": 0,
@@ -8620,9 +8620,10 @@
         "jerseyNumber": 0,
         "position": "",
 
-"height": 0,
-"weight": 0,
-"handedness": "",        "class": "",
+        "height": 0,
+        "weight": 0,
+        "handedness": "",
+        "class": "",
         "stats": {
           "currentSeason": {
             "gamesPlayed": 0,
@@ -17568,9 +17569,10 @@
         "jerseyNumber": 0,
         "position": "",
 
-"height": 0,
-"weight": 0,
-"handedness": "",        "class": "",
+        "height": 0,
+        "weight": 0,
+        "handedness": "",
+        "class": "",
         "stats": {
           "currentSeason": {
             "gamesPlayed": 0,

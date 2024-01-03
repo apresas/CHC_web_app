@@ -2,6 +2,7 @@ import { useState, useMemo } from "react";
 import "./teamTiles.css";
 import Teams from "../data/teams.json";
 import standings from "../data/standing.json";
+import TitleBar from "./TitleBar"
 import { FiChevronsDown } from "react-icons/fi";
 import { GrStar } from "react-icons/gr";
 import { useTable, useSortBy } from "react-table";
@@ -105,12 +106,13 @@ function TeamTiles({ setCurrentTeam, setRosterTeam }) {
 
   return (
     <div className="teamTiles_container">
-      <div className="teams_title_container">
+      <TitleBar title="Capital Hockey Conference" subtitle="Central Ohio Varsity Hockey"/>
+      {/* <div className="teams_title_container">
         <h1 className="teams_tiles_title">CAPITAL HOCKEY CONFERENCE</h1>
         <h3 className="teams_tiles_sub">
           Central Ohio Varsity High School Hockey
         </h3>
-      </div>
+      </div> */}
       <section className="divisions">
         <h2 className="divisions_title">Red Division</h2>
         <div className="star">

@@ -1,0 +1,66 @@
+.all_division_container {
+    border: 1px solid lightgrey;
+    width: 22.5rem;
+}
+
+.all_division_header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    /* background-color: red; */
+}
+
+.all_division_header h2, .all_division_header h3, .all_division_item_container h2, .all_division_item_container h3 {
+    margin: 0;
+}
+
+.all_division_header h2 {
+    font-family: "Bebas Neue";
+}
+
+.all_division_header h3 {
+    font-family: "Teko";
+    font-weight: 300;
+}
+
+.all_division_item_container{
+    display: flex;
+    height: 5rem;
+    border-bottom: 1px solid lightgrey;
+}
+
+.all_division_logo, .all_division_position, .all_division_info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.all_division_position {
+    aspect-ratio: 1/1;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-right: 1px solid lightgrey;
+}
+
+.all_division_logo {
+    aspect-ratio: 1/1;
+    border-right: 1px solid lightgrey;
+    padding: 0.5rem;
+}
+
+.all_division_info {
+    width: 100%;
+    flex-direction: column;
+}
+
+.all_division_info h2 {
+    font-family: "Bebas Neue";
+
+}
+
+.all_division_info h3 { 
+    font-family: "Teko";
+    font-weight: 300;
+}
