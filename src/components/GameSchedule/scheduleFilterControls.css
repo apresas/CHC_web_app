@@ -47,3 +47,36 @@
     width: 1px;
     background-color: rgba(119, 136, 153, 0.5);
 }
+
+.react-datepicker-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.react-datepicker__input-container {
+    /* display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: space-between;
+    width: 12rem;
+    border: 1px solid rgba(119, 136, 153, 0.5);
+    padding: 0.75rem;
+    border-radius: 10px; */
+}
+
+.react-datepicker__input-container input {
+    background-color: transparent;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-bg);
+    &:focus {
+        outline: none;
+      }
+}
+

@@ -9,6 +9,16 @@ import { Element } from "react-scroll";
 import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
 
 function GameSchedule({ dropdownTitle, setDropDownTitle }) {
+  const dateList = [
+    "2023-11-13",
+    "2023-11-14",
+    "2023-11-15",
+    "2023-11-16",
+    "2023-11-17",
+    "2023-11-18",
+    "2023-11-19",
+    "2023-11-20"
+  ];
   return (
     <>
       <div className="schedule_container">
@@ -29,36 +39,62 @@ function GameSchedule({ dropdownTitle, setDropDownTitle }) {
             <DayTile href={"#s7"} />
           </div>
           <div className="schedule_table">
-            <section className="schedule_section" id="s1">
-              {scheduleData.filter((data) => data.date === "2023-11-17")
-              .map((data) => data.games)
-              .map((data) => (
-                <SchduleTable gameData={data} date={scheduleData.filter((data) => data.date === "2023-11-17")}/>
-              ))}
-              {/* {scheduleData
-                .filter((data) => data.date === "2023-12-17")
+          <section className="schedule_section" id="s1">
+              {scheduleData
+                .filter((data) => data.date === dateList[1])
                 .map((data) => data.games)
-                .map((data) => {console.log(data)})
-                } */}
+                .map((data, i) => (
+                  <SchduleTable key={i} gameData={data} date={dateList[1]} />
+                ))}
             </section>
-            {/* <section className="schedule_section" id="s2">
-              <SchduleTable />
+            <section className="schedule_section" id="s2">
+              {scheduleData
+                .filter((data) => data.date === dateList[2])
+                .map((data) => data.games)
+                .map((data, i) => (
+                  <SchduleTable key={i} gameData={data} date={dateList[2]} />
+                ))}
             </section>
             <section className="schedule_section" id="s3">
-              <SchduleTable />
+              {scheduleData
+                .filter((data) => data.date === dateList[3])
+                .map((data) => data.games)
+                .map((data, i) => (
+                  <SchduleTable key={i} gameData={data} date={dateList[3]} />
+                ))}
             </section>
             <section className="schedule_section" id="s4">
-              <SchduleTable />
+              {scheduleData
+                .filter((data) => data.date === dateList[4])
+                .map((data) => data.games)
+                .map((data, i) => (
+                  <SchduleTable key={i} gameData={data} date={dateList[4]} />
+                ))}
             </section>
             <section className="schedule_section" id="s5">
-              <SchduleTable />
+              {scheduleData
+                .filter((data) => data.date === dateList[5])
+                .map((data) => data.games)
+                .map((data, i) => (
+                  <SchduleTable key={i} gameData={data} date={dateList[5]} />
+                ))}
             </section>
             <section className="schedule_section" id="s6">
-              <SchduleTable />
+              {scheduleData
+                .filter((data) => data.date === dateList[6])
+                .map((data) => data.games)
+                .map((data, i) => (
+                  <SchduleTable key={i} gameData={data} date={dateList[6]} />
+                ))}
             </section>
             <section className="schedule_section" id="s7">
-              <SchduleTable />
-            </section> */}
+              {scheduleData
+                .filter((data) => data.date === dateList[7])
+                .map((data) => data.games)
+                .map((data, i) => (
+                  <SchduleTable key={i} gameData={data} date={dateList[7]} />
+                ))}
+            </section>
           </div>
           <div className="schedule_controller">
             <button className="schedule_btn">

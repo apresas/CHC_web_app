@@ -5,6 +5,7 @@ function DropdownItem({ name, logo, setDropdownTitle, setLogo }) {
   const itemClick = () => {
     setDropdownTitle(name);
     setLogo(logo);
+    console.log(name)
   };
   return (
     <button className="dropdown_item_container" onClick={itemClick}>
