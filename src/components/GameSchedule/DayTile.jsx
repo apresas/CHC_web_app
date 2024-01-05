@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaRegCalendar } from "react-icons/fa";
 import "./dayTile.css"
+import { Link } from 'react-scroll'
 
 function DayTile({href}) {
   return (

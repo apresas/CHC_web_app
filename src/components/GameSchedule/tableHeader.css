@@ -7,10 +7,14 @@
     /* display: flex;
     justify-content: space-between; */
     display: grid;
-    grid-template-columns: 5fr 1fr;
+    grid-template-columns: 5fr 1fr 1fr 1fr;
     /* background-color: lightslategray; */
     border-top: 1px solid rgba(119, 136, 153, 0.5);
     border-bottom: 1px solid rgba(119, 136, 153, 0.5);
+}
+
+.arena_title, .time_title {
+    text-align: center;
 }
 
 

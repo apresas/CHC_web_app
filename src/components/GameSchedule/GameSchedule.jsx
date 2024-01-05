@@ -3,7 +3,9 @@ import DayTile from "./DayTile";
 import SchduleTable from "./ScheduleTable";
 import ScheduleFilterControls from "./ScheduleFilterControls";
 import TitleBar from "../TitleBar";
+import scheduleData from "../../data/schedule.json";
 import "./gameSchedule.css";
+import { Element } from "react-scroll";
 import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
 
 function GameSchedule({ dropdownTitle, setDropDownTitle }) {
@@ -28,9 +30,18 @@ function GameSchedule({ dropdownTitle, setDropDownTitle }) {
           </div>
           <div className="schedule_table">
             <section className="schedule_section" id="s1">
-              <SchduleTable />
+              {scheduleData.filter((data) => data.date === "2023-11-17")
+              .map((data) => data.games)
+              .map((data) => (
+                <SchduleTable gameData={data} date={scheduleData.filter((data) => data.date === "2023-11-17")}/>
+              ))}
+              {/* {scheduleData
+                .filter((data) => data.date === "2023-12-17")
+                .map((data) => data.games)
+                .map((data) => {console.log(data)})
+                } */}
             </section>
-            <section className="schedule_section" id="s2">
+            {/* <section className="schedule_section" id="s2">
               <SchduleTable />
             </section>
             <section className="schedule_section" id="s3">
@@ -47,7 +58,7 @@ function GameSchedule({ dropdownTitle, setDropDownTitle }) {
             </section>
             <section className="schedule_section" id="s7">
               <SchduleTable />
-            </section>
+            </section> */}
           </div>
           <div className="schedule_controller">
             <button className="schedule_btn">

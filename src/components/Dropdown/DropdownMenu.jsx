@@ -9,7 +9,7 @@ function DropdownMenu({ setDropdownTitle, setLogo }) {
       <li>
         <DropdownItem
           name="All Teams"
-          logo="../../src/assets/Logos/CHC_logo_V2.svg"
+          logo={null}
           setDropdownTitle={setDropdownTitle}
           setLogo={setLogo}
         />

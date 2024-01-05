@@ -1,59 +1,53 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./tableItem.css";
+import teamData from "../../data/teams.json";
 
-function TableItem({id}) {
-  let rowColor = "rgb(245, 245, 252)"
-  if(parseInt(id) % 2 === 0) {
-    rowColor = "#e1e2f0"
+function TableItem({ id, gameData }) {
+  const [homeLogo, setHomeLogo] = useState();
+  const [awayLogo, setAwayLogo] = useState();
+
+  useEffect(() => {
+    {
+      teamData
+        .filter((data) => data.id === gameData.homeID)
+        .map((data) => setHomeLogo(data.logo));
+    }
+    {
+      teamData
+        .filter((data) => data.id === gameData.awayID)
+        .map((data) => setAwayLogo(data.logo));
+    }
+  }, [gameData]);
+
+  let rowColor = "#ffffff";
+  if (parseInt(id) % 2 === 0) {
+    rowColor = "rgb(245, 245, 252)";
   }
+
   return (
     <>
-      {/* <table className="table_items">
-        <thead>
-          <tr>
-            <th>Matchup</th>
-            <th>Score</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <div className="schedule_game_container">
-              <span>Team 1 </span>{" "}
-              <img
-                src="../../src/assets/Logos/Olentangy_logo.svg"
-                alt="team1"
-                className="schedule_logo"
-              />{" "}
-              @{" "}
-              <img
-                src="../../src/assets/Logos/Orange_logo.svg"
-                alt="team2"
-                className="schedule_logo"
-              />
-              <span> Team 2</span>
-            </div>
-            <td>4-5</td>
-          </tr>
-        </tbody>
-      </table> */}
       <div className="table_item_container">
-        <div className="item_body" style={{backgroundColor: `${rowColor}`}}>
+        <div className="item_body" style={{ backgroundColor: `${rowColor}` }}>
           <div className="schedule_game_container">
-            <span>Team 1 </span>{" "}
-            <img
-              src="../../src/assets/Logos/Olentangy_logo.svg"
-              alt="team1"
-              className="schedule_logo"
-            />{" "}
-            @{" "}
-            <img
-              src="../../src/assets/Logos/Orange_logo.svg"
-              alt="team2"
-              className="schedule_logo"
-            />
-            <span> Team 2</span>
+            <div className="away_info_container">
+              <img src={awayLogo} alt="team1" className="schedule_logo" />
+              <span>{gameData.awayTeam} </span>{" "}
+            </div>
+            <div className="at_symbol">@</div>
+            <div className="home_info_container">
+              <span>{gameData.homeTeam}</span>
+              <img src={homeLogo} alt="team2" className="schedule_logo" />
+            </div>
           </div>
-          <div className="score">4-5</div>
+          <div className="schedule_arena_container">
+            {gameData.arena}
+          </div>
+          <div className="schedule_time_container">
+            {gameData.time}
+          </div>
+          <div className="score">
+            {gameData.awayScore} - {gameData.homeScore}
+          </div>
         </div>
       </div>
     </>

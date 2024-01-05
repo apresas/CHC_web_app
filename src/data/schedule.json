@@ -1,0 +1,95 @@
+[
+  {
+    "date": "2023-11-17",
+    "games": [
+      {
+        "gameID": 0,
+        "homeID": 0,
+        "homeTeam": "Archbishop Moeller",
+        "awayID": 9,
+        "awayTeam": "Olentangy Liberty",
+        "homeScore": 1,
+        "awayScore": 5,
+        "time": "6:00pm",
+        "arena": "Northlands"
+      },
+      {
+        "gameID": 1,
+        "homeID": 11,
+        "homeTeam": "Springboro",
+        "awayID": 3,
+        "awayTeam": "Dublin Coffman",
+        "homeScore": 0,
+        "awayScore": 8,
+        "time": "7:00pm",
+        "arena": "South Metro"
+      },
+      {
+        "gameID": 2,
+        "homeID": 14,
+        "homeTeam": "Upper Arlington",
+        "awayID": 12,
+        "awayTeam": "St. Charles",
+        "homeScore": 1,
+        "awayScore": 2,
+        "time": "7:30pm",
+        "arena": "Ice Haus"
+      },
+      {
+        "gameID": 3,
+        "homeID": 10,
+        "homeTeam": "Olentangy Orange",
+        "awayID": 2,
+        "awayTeam": "Columbus Academy",
+        "homeScore": 7,
+        "awayScore": 1,
+        "time": "7:30pm",
+        "arena": "North 1"
+      },
+      {
+        "gameID": 4,
+        "homeID": 5,
+        "homeTeam": "Gahanna",
+        "awayID": 6,
+        "awayTeam": "New Albany",
+        "homeScore": 3,
+        "awayScore": 5,
+        "time": "8:15pm",
+        "arena": "Easton 2"
+      },
+      {
+        "gameID": 5,
+        "homeID": 4,
+        "homeTeam": "Dublin Jerome",
+        "awayID": 8,
+        "awayTeam": "Olentangy Berlin",
+        "homeScore": 2,
+        "awayScore": 4,
+        "time": "8:20pm",
+        "arena": "Dublin 1"
+      },
+      {
+        "gameID": 6,
+        "homeID": 16,
+        "homeTeam": "Thomas Worthington",
+        "awayID": 15,
+        "awayTeam": "Worthington Kilborne",
+        "homeScore": 4,
+        "awayScore": 2,
+        "time": "8:30pm",
+        "arena": "Ice Works"
+      },
+      {
+        "gameID": 7,
+        "homeID": 7,
+        "homeTeam": "Olentangy",
+        "awayID": 1,
+        "awayTeam": "Bishop Watterson",
+        "homeScore": 8,
+        "awayScore": 2,
+        "time": "8:30pm",
+        "arena": "North 3"
+      }
+    ]
+  }
+]
