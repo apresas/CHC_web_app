@@ -2,9 +2,9 @@ import React from 'react';
 import { FaRegCalendar } from "react-icons/fa";
 import "./dayTile.css"
 
-function DayTile() {
+function DayTile({href}) {
   return (
-    <div className="day_container">
+    <a className="day_container" href={href}>
         <div className="date_header">
             <div className="date">12/28</div>
             <div className="day">Thu</div>
@@ -13,7 +13,7 @@ function DayTile() {
             <div className="number_of_games">9 Games</div>
             <FaRegCalendar />
         </div>
-    </div>
+    </a>
   )
 }
 

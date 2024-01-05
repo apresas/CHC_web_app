@@ -76,3 +76,10 @@
     border-color: rgba(119, 136, 153, 0.5);
     transition:var(--transition)
 }
+
+.schedule_section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}

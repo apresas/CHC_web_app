@@ -2,6 +2,7 @@
     border: 1px solid lightgrey;
     width: 22.5rem;
     background-color: white;
+    /* box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.35); */
 }
 
 .all_division_header {
@@ -32,11 +33,13 @@
     height: 5rem;
     border-bottom: 1px solid lightgrey;
     transition: var(--transition);
+    background-color: white;
 }
 
 .all_division_item_container:hover{
     transform: scale(1.05);
     transition: var(--transition);
+    border: none;
 }
 
 .all_division_logo, .all_division_position, .all_division_info {

@@ -2,6 +2,7 @@ import React from "react";
 import "./awards.css";
 import AwardItem from "./AwardItem";
 import TitleBar from "../TitleBar";
+import HonorableMention from "./HonorableMention";
 import AllDivisionItem from "./AllDivisionItem";
 import playerAwards from "../../data/playerAwards.json";
 
@@ -96,7 +97,9 @@ function Awards() {
         </div>
         <div className="section_container">
         <h2 className="section_title">Honorable Mentions</h2>
-        <div className="honorable_mention_container"></div>
+        {/* <div className="honorable_mention_container"> */}
+          <HonorableMention />
+        {/* </div> */}
       </div>
       </div>
     </div>

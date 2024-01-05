@@ -11,6 +11,7 @@
 }
 
 .bracket_item_logo {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -20,6 +21,11 @@
     aspect-ratio: 1/1;
 }
 
+.bracket_item_logo img {
+    height: 2.25rem;
+    width: 2.25rem;
+}
+
 .bracket_item_score {
     display: flex;
     align-items: center;
@@ -27,4 +33,25 @@
     height: 100%;
     aspect-ratio: 1/1;
     font-weight: 600;
+}
+
+.bracket_item_info {
+    display: flex;
+    align-items: flex-start;
+    justify-self: flex-start;
+}
+
+.seed {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    height: 1rem;
+    aspect-ratio: 1/1;
+    position: absolute;
+    color: var(--color-bg);
+    top: 0;
+    left: 0;
 }

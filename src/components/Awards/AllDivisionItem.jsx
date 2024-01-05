@@ -32,6 +32,7 @@ function AllDivisionItem({
         <div className="all_division_info">
             <h2>{player.firstName} {player.lastName}</h2>
             <h3>{player.teamName}</h3>
+            <small>{player.class}</small>
         </div>
     </div>
   )

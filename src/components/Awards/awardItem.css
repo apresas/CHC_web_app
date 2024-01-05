@@ -4,6 +4,7 @@
   border: 1px solid lightgray;
   background-color: white;
   transition: var(--transition);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.35);
 }
 
 .award_item_container:hover {

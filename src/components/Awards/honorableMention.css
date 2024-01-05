@@ -1,0 +1,87 @@
+/* .honorable_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+} */
+
+.hororable_content_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    /* border: 1px solid lightgrey; */
+    margin-bottom: 4rem;
+}
+
+.honorable_column {
+    /* padding: 2rem; */
+    border-top: 1px solid lightgrey;
+    border-right: 1px solid lightgrey;
+    border-left: 1px solid lightgrey;
+    background-color: white;
+}
+
+.honorable_item {
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+    height: 3rem;
+    width: 22rem;
+    border-bottom: 1px solid lightgrey;
+    transition: var(--transition);
+    background-color: white;
+}
+
+
+.honorable_item:hover {
+    transform: scale(1.05);
+    transition: var(--transition);
+    /* border: 1px solid lightgrey; */
+}
+
+.honorable_logo {
+    height: 100%;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid lightgrey;
+    /* padding: 0.25rem; */
+}
+
+.honorable_logo img {
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.honorable_position {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    aspect-ratio: 1/2;
+    border-right: 1px solid lightgrey;
+    font-weight: 600;
+}
+
+.honorable_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.honorable_info h2, .honorable_info h3 {
+    margin: 0;
+}
+
+.honorable_info h2 {
+    font-size: 1.25rem;
+}
+
+.honorable_info h3 {
+    font-size: 1rem;
+    font-family: "Teko";
+    font-weight: 300;
+}

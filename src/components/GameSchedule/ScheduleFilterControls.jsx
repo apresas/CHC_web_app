@@ -1,9 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { IoChevronDown } from "react-icons/io5";
 import "./scheduleFilterControls.css";
 import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
+import Dropdown from "../Dropdown/Dropdown";
 
-function ScheduleFilterControls() {
+function ScheduleFilterControls({
+  dropdownTitle, setDropdownTitle
+}) {
+  const [open, setOpen] = useState(false);
+
+  const handleOpen = () => {
+    setOpen(!open);
+    console.log("clicked");
+  };
   return (
     <div className="filter_controls_container">
       <div className="date_range_selector">
@@ -15,14 +24,15 @@ function ScheduleFilterControls() {
           <FiChevronRight />
         </button>
       </div>
-      <div className="team_selector">
-        <button className="select_btn">
+      <Dropdown dropdownTitle={dropdownTitle} setDropdownTitle={setDropdownTitle}/>
+      {/* <div className="team_selector">
+        <button className="select_btn" onClick={handleOpen}>
           All Teams
           <div className="arrow_btn">
             <span /> <IoChevronDown />
           </div>
         </button>
-      </div>
+      </div> */}
     </div>
   );
 }
