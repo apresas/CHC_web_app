@@ -29,7 +29,9 @@ function App() {
     dateList,
     setDate,
     date,
-    getDates
+    getDates,
+    selectedDate,
+    setSelectedDate
   }= useSite();
   return (
     <>
@@ -37,7 +39,7 @@ function App() {
         <Route path="/" element={<Home  setCurrentTeam={setCurrentTeam} setRosterTeam={setRosterTeam} rosterTeam={rosterTeam}/>} />
         <Route path="/team/:id" element={<TeamPage currentTeam={currentTeam} rosterTeam={rosterTeam} setCurrentPlayer={setCurrentPlayer} currentPlayer={currentPlayer} />} />
         <Route path="/stats" elememt={<StatsLeader/>} />
-        <Route path="/schedule" element={<Schedule setDateList={setDateList} dateList={dateList} setDate={setDate} date={date} getDates={getDates}/>} />
+        <Route path="/schedule" element={<Schedule setDateList={setDateList} dateList={dateList} setDate={setDate} date={date} getDates={getDates} selectedDate={selectedDate} setSelectedDate={setSelectedDate}/>} />
         <Route path="/info" element={<LeagueInfo />} />
         <Route path="/rankings" element={<Rankings />} />
         <Route path="/postseason" element={<PostSeason />} />

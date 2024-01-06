@@ -13,6 +13,7 @@ export const SiteProvider = ({ children }) => {
     const [currentPlayer, setCurrentPlayer] = useState({});
     const [date, setDate] = useState();
     const [dateList, setDateList] = useState([]);
+    const [selectedDate, setSelectedDate] = useState()
 
     const getDates = (startDate) => {
       let dateArray = new Array();
@@ -23,6 +24,8 @@ export const SiteProvider = ({ children }) => {
       }
       setDateList(dateArray);
     }
+
+    console.log(dateList)
   return (<SiteContext.Provider value={{
     currentTeam,
     setCurrentTeam,
@@ -34,7 +37,9 @@ export const SiteProvider = ({ children }) => {
     setDateList,
     date,
     setDate,
-    getDates
+    getDates,
+    selectedDate,
+    setSelectedDate,
   }}>{children}</SiteContext.Provider>);
 };
 
