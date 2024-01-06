@@ -7,9 +7,12 @@ import scheduleData from "../../data/schedule.json";
 import "./gameSchedule.css";
 import { Element } from "react-scroll";
 import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
+import { DateTime } from "luxon";
+import { format, addDays, getDate, setDate } from "date-fns";
 
 function GameSchedule({ dropdownTitle, setDropDownTitle }) {
-  const dateList = [
+  const [dateRange, setDateRange] = useState([]);
+  let dateList = [
     "2023-11-13",
     "2023-11-14",
     "2023-11-15",
@@ -17,8 +20,27 @@ function GameSchedule({ dropdownTitle, setDropDownTitle }) {
     "2023-11-17",
     "2023-11-18",
     "2023-11-19",
-    "2023-11-20"
+    "2023-11-20",
   ];
+
+  const setDates = (startDate) => {
+    // console.log(startDate)
+
+    let dateArray = new Array();
+    let endDate = new Date(addDays(startDate, 7));
+    while (startDate <= endDate) {
+      dateArray.push(DateTime.fromISO(startDate.toISOString()).toISODate());
+      startDate.setDate(startDate.getDate() + 1);
+    }
+    setDateRange(dateArray);
+  };
+
+
+  useEffect(() => {
+    // console.log(dateRange)
+  }, [dateRange]);
+  console.log(dateRange);
+
   return (
     <>
       <div className="schedule_container">
@@ -28,6 +50,7 @@ function GameSchedule({ dropdownTitle, setDropDownTitle }) {
           <ScheduleFilterControls
             setDropDownTitle={setDropDownTitle}
             dropDownTitle={dropdownTitle}
+            setDates={setDates}
           />
           <div className="day_tile_container">
             <DayTile href={"#s1"} />
@@ -39,12 +62,12 @@ function GameSchedule({ dropdownTitle, setDropDownTitle }) {
             <DayTile href={"#s7"} />
           </div>
           <div className="schedule_table">
-          <section className="schedule_section" id="s1">
+            <section className="schedule_section" id="s1">
               {scheduleData
-                .filter((data) => data.date === dateList[1])
+                .filter((data) => data.date === dateRange[0])
                 .map((data) => data.games)
                 .map((data, i) => (
-                  <SchduleTable key={i} gameData={data} date={dateList[1]} />
+                  <SchduleTable key={i} gameData={data} date={dateRange[0]} />
                 ))}
             </section>
             <section className="schedule_section" id="s2">
