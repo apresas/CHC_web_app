@@ -4,12 +4,12 @@ import GameSchedule from "../components/GameSchedule/GameSchedule";
 import Footer from "../components/Footer";
 
 function Schdule({
-  setDropdownTitle, dropdownTitle
+  setDropdownTitle, dropdownTitle, setDateList, dateList, setDate, date, getDates
 }) {
   return (
     <>
       <NavBar />
-      <GameSchedule setDropdownTitle={setDropdownTitle} dropdownTitle={dropdownTitle}/>
+      <GameSchedule setDropdownTitle={setDropdownTitle} dropdownTitle={dropdownTitle} setDateList={setDateList} dateList={dateList} setDate={setDate} date={date} getDates={getDates}/>
       <Footer />
     </>
   );
