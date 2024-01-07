@@ -59,17 +59,24 @@ function GameSchedule({ dropdownTitle, setDropDownTitle, setDateList, dateList, 
             dateList={dateList}
             setSelectedDate={setSelectedDate}
             selectedDate={selectedDate}
-            // setDates={setDates}
+            setDate={setDate}
             setDateList={setDateList}
           />
           <div className="day_tile_container">
-            <DayTile href={"#s1"} />
-            <DayTile href={"#s2"} />
-            <DayTile href={"#s3"} />
-            <DayTile href={"#s4"} />
-            <DayTile href={"#s5"} />
-            <DayTile href={"#s6"} />
-            <DayTile href={"#s7"} />
+            <DayTile href={"#s1"} date={dateList[0]} />
+            <DayTile href={"#s2"} date={dateList[1]}/>
+            <DayTile href={"#s3"} date={dateList[2]}/>
+            <DayTile href={"#s4"} date={dateList[3]}/>
+            <DayTile href={"#s5"} date={dateList[4]}/>
+            <DayTile href={"#s6"} date={dateList[5]}/>
+            <DayTile href={"#s7"} date={dateList[6]}/>
+            {/* <DayTile href={"#s1"} />
+            <DayTile href={"#s2"}/>
+            <DayTile href={"#s3"}/>
+            <DayTile href={"#s4"}/>
+            <DayTile href={"#s5"}/>
+            <DayTile href={"#s6"}/>
+            <DayTile href={"#s7"}/> */}
           </div>
           <div className="schedule_table">
             <section className="schedule_section" id="s1">

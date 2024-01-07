@@ -11,70 +11,43 @@ import "react-day-picker/dist/style.css";
 // import DatePicker from "react-datepicker";
 // import "react-datepicker/dist/react-datepicker.css";
 
-function ScheduleFilterControls({ dropdownTitle, setDropdownTitle, setDates, getDates, setSelectedDate, selectedDate }) {
+function ScheduleFilterControls({
+  dropdownTitle,
+  setDropdownTitle,
+  setDate,
+  getDates,
+  setSelectedDate,
+  selectedDate,
+  date,
+  dateList,
+}) {
   const [open, setOpen] = useState(false);
   const [selected, setSelected] = useState();
 
-  // const [selectedDate, setSelectedDate] = useState(new Date());
   const handleDayClick = (day) => {
-
-    setSelectedDate(day)
-    setSelected(day)
-    // getDates(day)
-    getDates(selectedDate)
+    // setSelectedDate(true)
+    setSelected(day);
+    setDate(day);
+    getDates(day);
+    // getDates(day);
     setOpen(false)
-    // setDates(selectedDate)
-  }
+  };
 
+  // useEffect(()=>{
+  //   getDates(selected)
+  // } ,[selected])
 
-  // useEffect(() => {
-  //   setSelected(selectedDate)
-  // },[selectedDate])
+  // console.log(dateRange)
 
-  useEffect(()=>{
-    setSelected(new Date())
-    getDates(selectedDate)
-  },[])
+  useEffect(() => {
+    setSelected(new Date());
+    getDates(new Date());
+  }, []);
 
   const handleOpen = () => {
     setOpen(!open);
     console.log("clicked");
   };
-
-  // console.log(selectedDate)
-
-
-  // const startDate = "";
-
-  // const getDates = (startDate) => {
-  //   let dateArray = new Array();
-  //   let currentDate = startDate;
-  //   let newEnd = new Date(
-  //     DateTime.fromISO(startDate.toISOString()).plus({ days: 7 }).toISODate()
-  //   );
-  //   while (currentDate <= newEnd) {
-  //     dateArray.push(DateTime.fromISO(currentDate.toISOString()).toISODate());
-  //     currentDate.setDate(currentDate.getDate() + 1);
-  //   }
-  //   setDateRange(dateArray);
-  // };
-
-  // const getDates = (startDate) => {
-  //   // console.log(startDate)
-  //   let dateArray = new Array();
-  //   let endDate = new Date(addDays(startDate, 7));
-  //   while (startDate <= endDate) {
-  //     dateArray.push(DateTime.fromISO(startDate.toISOString()).toISODate());
-  //     startDate.setDate(startDate.getDate() + 1);
-  //   }
-  //   // console.log(dateArray);
-  //   setDates(dateArray);
-  //   // setDateRange(dateArray)
-  // }
-
-  // let testDate = new Date(
-  //   DateTime.fromISO(selected.toISOString()).plus({ days: 7 }).toISODate()
-  // );
 
   let header = "";
   if (selected) {
@@ -82,17 +55,7 @@ function ScheduleFilterControls({ dropdownTitle, setDropdownTitle, setDates, get
       DateTime.fromISO(selected.toISOString()).plus({ days: 7 }).toISODate()
     );
     header = format(selected, "PP") + " - " + format(endDate, "PP");
-
-    // header = format(selected, "PP");
-    
   }
-
-  // console.log(dateRange);
-  // console.log(selected)
-
-  // useEffect(() => {
-  //   setDates(selected);
-  // }, [selected]);
 
   return (
     <div className="filter_controls_container">
@@ -112,30 +75,13 @@ function ScheduleFilterControls({ dropdownTitle, setDropdownTitle, setDates, get
           <div className="popup_container">
             <DayPicker
               selected={selected}
+              // onSelected={setSelected}
+              // onChange={onChange}
               onDayClick={handleDayClick}
-              // onSelect={setSelected}
-              // onDayClick={() => getDates(selected)}
-              // footer={footer}
             />
-            {/* <DayPicker
-              mode="range"
-              selected={range}
-              onSelect={setRange}
-              // footer={footer}
-            /> */}
           </div>
         ) : null}
       </div>
-
-      {/* <div className="date_range_selector">
-        <button className="prev_btn">
-          <FiChevronLeft />
-        </button>
-        <button className="date_btn">Dec 9-15</button>
-        <button className="next_btn">
-          <FiChevronRight />
-        </button>
-      </div> */}
       <Dropdown
         dropdownTitle={dropdownTitle}
         setDropdownTitle={setDropdownTitle}

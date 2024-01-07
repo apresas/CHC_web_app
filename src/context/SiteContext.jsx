@@ -1,4 +1,4 @@
-import React, { useContext, createContext, useState } from "react";
+import React, { useContext, createContext, useState, useEffect } from "react";
 import { format, addDays, getDate } from "date-fns";
 import { DateTime } from "luxon";
 const SiteContext = createContext();
@@ -17,7 +17,7 @@ export const SiteProvider = ({ children }) => {
 
     const getDates = (startDate) => {
       let dateArray = new Array();
-      let endDate = new Date(addDays(startDate, 7));
+      let endDate = new Date(addDays(startDate, 6));
       while (startDate <= endDate) {
         dateArray.push(DateTime.fromISO(startDate.toISOString()).toISODate());
         startDate.setDate(startDate.getDate() + 1);
@@ -25,7 +25,12 @@ export const SiteProvider = ({ children }) => {
       setDateList(dateArray);
     }
 
+    // useEffect(() => {
+    //   getDates(date)
+    // }, [date])
+
     console.log(dateList)
+    // console.log(date)
   return (<SiteContext.Provider value={{
     currentTeam,
     setCurrentTeam,
