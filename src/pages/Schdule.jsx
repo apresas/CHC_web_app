@@ -6,13 +6,8 @@ import Footer from "../components/Footer";
 function Schdule({
   setDropdownTitle,
   dropdownTitle,
-  setDateList,
   dateList,
-  setDate,
-  date,
-  getDates,
-  selectedDate,
-  setSelectedDate,
+  getDates
 }) {
   return (
     <>
@@ -20,13 +15,8 @@ function Schdule({
       <GameSchedule
         setDropdownTitle={setDropdownTitle}
         dropdownTitle={dropdownTitle}
-        setDateList={setDateList}
         dateList={dateList}
-        setDate={setDate}
-        date={date}
         getDates={getDates}
-        selectedDate={selectedDate}
-        setSelectedDate={setSelectedDate}
       />
       <Footer />
     </>

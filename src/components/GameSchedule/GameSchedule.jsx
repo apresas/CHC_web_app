@@ -5,12 +5,9 @@ import ScheduleFilterControls from "./ScheduleFilterControls";
 import TitleBar from "../TitleBar";
 import scheduleData from "../../data/schedule.json";
 import "./gameSchedule.css";
-import { Element } from "react-scroll";
 import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
-import { DateTime } from "luxon";
-import { format, addDays, getDate, setDate } from "date-fns";
 
-function GameSchedule({ dropdownTitle, setDropDownTitle, setDateList, dateList, date, setDate, getDates, selectedDate, setSelectedDate }) {
+function GameSchedule({ dropdownTitle, setDropDownTitle, dateList, getDates }) {
   const [dateRange, setDateRange] = useState([]);
   // let dateList = [
   //   "2023-11-13",
@@ -53,14 +50,7 @@ function GameSchedule({ dropdownTitle, setDropDownTitle, setDateList, dateList, 
           <ScheduleFilterControls
             setDropDownTitle={setDropDownTitle}
             dropDownTitle={dropdownTitle}
-            // setDate={setDate}
             getDates={getDates}
-            date={date}
-            dateList={dateList}
-            setSelectedDate={setSelectedDate}
-            selectedDate={selectedDate}
-            setDate={setDate}
-            setDateList={setDateList}
           />
           <div className="day_tile_container">
             <DayTile href={"#s1"} date={dateList[0]} />

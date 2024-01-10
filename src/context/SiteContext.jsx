@@ -1,4 +1,4 @@
-import React, { useContext, createContext, useState, useEffect } from "react";
+import React, { useContext, createContext, useState } from "react";
 import { format, addDays, eachDayOfInterval } from "date-fns";
 
 
@@ -13,9 +13,7 @@ export const SiteProvider = ({ children }) => {
     const [currentTeam, setCurrentTeam] = useState({});
     const [rosterTeam, setRosterTeam] = useState();
     const [currentPlayer, setCurrentPlayer] = useState({});
-    const [date, setDate] = useState();
     const [dateList, setDateList] = useState([]);
-    const [selectedDate, setSelectedDate] = useState()
 
 
     const getDates = (startDate) => {
@@ -37,11 +35,7 @@ export const SiteProvider = ({ children }) => {
     setCurrentPlayer,
     dateList,
     setDateList,
-    date,
-    setDate,
     getDates,
-    selectedDate,
-    setSelectedDate,
   }}>{children}</SiteContext.Provider>);
 };
 

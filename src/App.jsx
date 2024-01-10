@@ -1,7 +1,6 @@
-
 import "./App.css";
 
-import { Routes, Route} from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import TeamPage from "./pages/TeamPage";
 import StatsLeader from "./pages/StatsLeader";
@@ -27,25 +26,49 @@ function App() {
     currentPlayer,
     setDateList,
     dateList,
-    setDate,
-    date,
-    getDates,
-    selectedDate,
-    setSelectedDate
-  }= useSite();
+    getDates
+  } = useSite();
   return (
     <>
       <Routes>
-        <Route path="/" element={<Home  setCurrentTeam={setCurrentTeam} setRosterTeam={setRosterTeam} rosterTeam={rosterTeam}/>} />
-        <Route path="/team/:id" element={<TeamPage currentTeam={currentTeam} rosterTeam={rosterTeam} setCurrentPlayer={setCurrentPlayer} currentPlayer={currentPlayer} />} />
-        <Route path="/stats" elememt={<StatsLeader/>} />
-        <Route path="/schedule" element={<Schedule setDateList={setDateList} dateList={dateList} setDate={setDate} date={date} getDates={getDates} selectedDate={selectedDate} setSelectedDate={setSelectedDate}/>} />
+        <Route
+          path="/"
+          element={
+            <Home
+              setCurrentTeam={setCurrentTeam}
+              setRosterTeam={setRosterTeam}
+              rosterTeam={rosterTeam}
+            />
+          }
+        />
+        <Route
+          path="/team/:id"
+          element={
+            <TeamPage
+              currentTeam={currentTeam}
+              rosterTeam={rosterTeam}
+              setCurrentPlayer={setCurrentPlayer}
+              currentPlayer={currentPlayer}
+            />
+          }
+        />
+        <Route path="/stats" elememt={<StatsLeader />} />
+        <Route
+          path="/schedule"
+          element={
+            <Schedule
+              setDateList={setDateList}
+              dateList={dateList}
+              getDates={getDates}
+            />
+          }
+        />
         <Route path="/info" element={<LeagueInfo />} />
         <Route path="/rankings" element={<Rankings />} />
         <Route path="/postseason" element={<PostSeason />} />
         <Route path="/awards" element={<PlayerAwards />} />
         <Route path="/allstar" element={<AllstarGame />} />
-        <Route path="/history" element={<History/>} />
+        <Route path="/history" element={<History />} />
         <Route path="/archive" element={<Archieve />} />
         <Route path="/links" element={<Links />} />
         <Route path="/info" element={<LeagueInfo />} />
