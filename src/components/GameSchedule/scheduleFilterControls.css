@@ -3,6 +3,7 @@
   align-items: center;
   margin: 2rem 0 1rem;
   gap: 1rem;
+  user-select: none;
 }
 
 .date_range_selector, .team_selector {
@@ -14,6 +15,7 @@
   border: 1px solid rgba(119, 136, 153, 0.5);
   padding: 0.75rem;
   border-radius: 10px;
+  user-select: none;
 }
 
 .date_range_selector {
@@ -28,6 +30,7 @@
     align-items: center;
     justify-content: center;
     font-weight: 600;
+    user-select: none;
 }
 
 .next_btn:hover, .prev_btn:hover, .date_btn:hover, .select_btn:hover{
@@ -56,10 +59,10 @@
     display: flex;
     align-items: center;
     justify-content:center;
-} */
+}
 
 
-/* .react-datepicker__input-container input {
+.react-datepicker__input-container input {
     background-color: transparent;
     text-align: center;
     height: 100%;
@@ -69,12 +72,17 @@
     font-size: 1rem;
     font-weight: 600;
     color: var(--color-bg);
+    user-select: none;
+    cursor: pointer;
     &:focus {
         outline: none;
+        user-select: none;
+
       }
 } */
 .date_picker_container {
     position: relative;
+    user-select: none;
 }
 .popup_container {
     position: absolute;

@@ -1,6 +1,7 @@
 import React, { useContext, createContext, useState, useEffect } from "react";
-import { format, addDays, getDate } from "date-fns";
-import { DateTime } from "luxon";
+import { format, addDays, eachDayOfInterval } from "date-fns";
+
+
 const SiteContext = createContext();
 
 export function useSite() {
@@ -8,6 +9,7 @@ export function useSite() {
 }
 
 export const SiteProvider = ({ children }) => {
+
     const [currentTeam, setCurrentTeam] = useState({});
     const [rosterTeam, setRosterTeam] = useState();
     const [currentPlayer, setCurrentPlayer] = useState({});
@@ -15,22 +17,17 @@ export const SiteProvider = ({ children }) => {
     const [dateList, setDateList] = useState([]);
     const [selectedDate, setSelectedDate] = useState()
 
+
     const getDates = (startDate) => {
-      let dateArray = new Array();
-      let endDate = new Date(addDays(startDate, 6));
-      while (startDate <= endDate) {
-        dateArray.push(DateTime.fromISO(startDate.toISOString()).toISODate());
-        startDate.setDate(startDate.getDate() + 1);
-      }
-      setDateList(dateArray);
+      const start = new Date(startDate)
+      const end = new Date(addDays(start, 6))
+      const range = eachDayOfInterval({start:start, end:end, steps:1})
+      const dateRange = range.map((date) => format(date, 'yyyy-MM-dd'))
+      setDateList(dateRange)
     }
 
-    // useEffect(() => {
-    //   getDates(date)
-    // }, [date])
-
     console.log(dateList)
-    // console.log(date)
+
   return (<SiteContext.Provider value={{
     currentTeam,
     setCurrentTeam,

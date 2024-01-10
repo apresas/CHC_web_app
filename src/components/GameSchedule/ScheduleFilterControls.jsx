@@ -1,43 +1,22 @@
 import React, { useState, useEffect } from "react";
-import { IoChevronDown } from "react-icons/io5";
 import { DateTime } from "luxon";
 import "./scheduleFilterControls.css";
 import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
 import Dropdown from "../Dropdown/Dropdown";
-import { format, addDays, getDate } from "date-fns";
+import { format } from "date-fns";
 
 import { DayPicker } from "react-day-picker";
 import "react-day-picker/dist/style.css";
-// import DatePicker from "react-datepicker";
-// import "react-datepicker/dist/react-datepicker.css";
 
-function ScheduleFilterControls({
-  dropdownTitle,
-  setDropdownTitle,
-  setDate,
-  getDates,
-  setSelectedDate,
-  selectedDate,
-  date,
-  dateList,
-}) {
+function ScheduleFilterControls({ dropdownTitle, setDropdownTitle, getDates }) {
   const [open, setOpen] = useState(false);
   const [selected, setSelected] = useState();
 
   const handleDayClick = (day) => {
-    // setSelectedDate(true)
     setSelected(day);
-    setDate(day);
     getDates(day);
-    // getDates(day);
-    setOpen(false)
+    setOpen(false);
   };
-
-  // useEffect(()=>{
-  //   getDates(selected)
-  // } ,[selected])
-
-  // console.log(dateRange)
 
   useEffect(() => {
     setSelected(new Date());
@@ -73,12 +52,7 @@ function ScheduleFilterControls({
         </div>
         {open ? (
           <div className="popup_container">
-            <DayPicker
-              selected={selected}
-              // onSelected={setSelected}
-              // onChange={onChange}
-              onDayClick={handleDayClick}
-            />
+            <DayPicker selected={selected} onDayClick={handleDayClick} />
           </div>
         ) : null}
       </div>
