@@ -8,44 +8,10 @@ import "./gameSchedule.css";
 import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
 
 function GameSchedule({ dropdownTitle, setDropDownTitle, dateList, getDates }) {
-  const [dateRange, setDateRange] = useState([]);
-  // let dateList = [
-  //   "2023-11-13",
-  //   "2023-11-14",
-  //   "2023-11-15",
-  //   "2023-11-16",
-  //   "2023-11-17",
-  //   "2023-11-18",
-  //   "2023-11-19",
-  //   "2023-11-20",
-  // ];
-
-  // const setDates = (startDate) => {
-  //   // console.log(startDate)
-
-  //   let dateArray = new Array();
-  //   let endDate = new Date(addDays(startDate, 7));
-  //   while (startDate <= endDate) {
-  //     dateArray.push(DateTime.fromISO(startDate.toISOString()).toISODate());
-  //     startDate.setDate(startDate.getDate() + 1);
-  //   }
-  //   setDateRange(dateArray);
-  //   setDateList(dateArray)
-  // };
-
-
-  useEffect(() => {
-    // console.log(dateRange)
-  }, [dateRange]);
-  // console.log(dateRange);
-
-  // console.log(dateList)
-
   return (
     <>
       <div className="schedule_container">
         <div className="schedule_content_container">
-          {/* <h1>Schedule</h1> */}
           <TitleBar title="Schedule" subtitle="2023-2024" />
           <ScheduleFilterControls
             setDropDownTitle={setDropDownTitle}
@@ -53,13 +19,13 @@ function GameSchedule({ dropdownTitle, setDropDownTitle, dateList, getDates }) {
             getDates={getDates}
           />
           <div className="day_tile_container">
-            <DayTile href={"#s1"} date={dateList[0]} />
-            <DayTile href={"#s2"} date={dateList[1]}/>
-            <DayTile href={"#s3"} date={dateList[2]}/>
-            <DayTile href={"#s4"} date={dateList[3]}/>
-            <DayTile href={"#s5"} date={dateList[4]}/>
-            <DayTile href={"#s6"} date={dateList[5]}/>
-            <DayTile href={"#s7"} date={dateList[6]}/>
+            <DayTile href={"#s1"} date={dateList[0]} scheduleData={scheduleData}/>
+            <DayTile href={"#s2"} date={dateList[1]} scheduleData={scheduleData}/>
+            <DayTile href={"#s3"} date={dateList[2]} scheduleData={scheduleData}/>
+            <DayTile href={"#s4"} date={dateList[3]} scheduleData={scheduleData}/>
+            <DayTile href={"#s5"} date={dateList[4]} scheduleData={scheduleData}/>
+            <DayTile href={"#s6"} date={dateList[5]} scheduleData={scheduleData}/>
+            <DayTile href={"#s7"} date={dateList[6]} scheduleData={scheduleData}/>
             {/* <DayTile href={"#s1"} />
             <DayTile href={"#s2"}/>
             <DayTile href={"#s3"}/>

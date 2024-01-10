@@ -5,10 +5,8 @@ import TableHeader from "./TableHeader";
 import "./scheduleTable.css";
 
 function ScheduleTable({ gameData, date }) {
-  // const titleDate = new Date(date)
   const newDate =   DateTime.fromISO(date).toFormat("DD")
   const week =   DateTime.fromISO(date).toFormat("EEE")
-  // const gameDate = titleDate.toDateString().replace(/(\S+)\s+(\S+\s+\S+)/, "$1, $2,")
   const title = week + ", " + newDate
 
   return (

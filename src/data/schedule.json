@@ -91,5 +91,43 @@
         "arena": "North 3"
       }
     ]
+  },
+  {
+    "date": "2023-11-18",
+    "games": [
+      {
+        "gameID": 8,
+        "homeID": 10,
+        "homeTeam": "Olentangy Orange",
+        "awayID": 8,
+        "awayTeam": "Olentangy Berlin",
+        "homeScore": 3,
+        "awayScore": 1,
+        "time": "6:00pm",
+        "arena": "North 1"
+      },
+      {
+        "gameID": 9,
+        "homeID": 12,
+        "homeTeam": "St.Charles",
+        "awayID": 4,
+        "awayTeam": "Dublin Jerome",
+        "homeScore": 4,
+        "awayScore": 2,
+        "time": "8:00pm",
+        "arena": "Ice Haus"
+      },
+      {
+        "gameID": 10,
+        "homeID": 16,
+        "homeTeam": "Thomas Worthington",
+        "awayID": 7,
+        "awayTeam": "Olentangy",
+        "homeScore": 2,
+        "awayScore": 4,
+        "time": "8:00pm",
+        "arena": "North 1"
+      }
+    ]
   }
 ]
