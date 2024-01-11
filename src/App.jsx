@@ -26,7 +26,13 @@ function App() {
     currentPlayer,
     setDateList,
     dateList,
-    getDates
+    getDates,
+    currentTeamTitle,
+    setCurrentTeamTitle,
+    selected,
+    setSelected,
+    nextClick,
+    prevClick
   } = useSite();
   return (
     <>
@@ -60,6 +66,12 @@ function App() {
               setDateList={setDateList}
               dateList={dateList}
               getDates={getDates}
+              setCurrentTeamTitle={setCurrentTeamTitle}
+              currentTeamTitle={currentTeamTitle}
+              selected={selected}
+              setSelected={setSelected}
+              prevClick={prevClick}
+              nextClick={nextClick}
             />
           }
         />

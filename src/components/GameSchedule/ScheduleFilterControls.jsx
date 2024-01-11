@@ -3,14 +3,13 @@ import { DateTime } from "luxon";
 import "./scheduleFilterControls.css";
 import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
 import Dropdown from "../Dropdown/Dropdown";
-import { addDays, subDays, format } from "date-fns";
+import { format } from "date-fns";
 
 import { DayPicker } from "react-day-picker";
 import "react-day-picker/dist/style.css";
 
-function ScheduleFilterControls({ dropdownTitle, setDropdownTitle, getDates }) {
+function ScheduleFilterControls({ currentTeamTitle, setCurrentTeamTitle, getDates, selected, setSelected, prevClick, nextClick }) {
   const [open, setOpen] = useState(false);
-  const [selected, setSelected] = useState();
 
   const handleDayClick = (day) => {
     setSelected(day);
@@ -27,20 +26,6 @@ function ScheduleFilterControls({ dropdownTitle, setDropdownTitle, getDates }) {
     setOpen(!open);
     console.log("clicked");
   };
-
-  const nextClick = () => {
-    const nextDay = addDays(selected, 7)
-    setSelected(nextDay)
-    getDates(nextDay)
-
-  }
-
-  const prevClick = () => {
-    const prevDay = subDays(selected, 7)
-    setSelected(prevDay)
-    getDates(prevDay)
-
-  }
 
   let header = "";
   if (selected) {
@@ -71,8 +56,8 @@ function ScheduleFilterControls({ dropdownTitle, setDropdownTitle, getDates }) {
         ) : null}
       </div>
       <Dropdown
-        dropdownTitle={dropdownTitle}
-        setDropdownTitle={setDropdownTitle}
+        currentTeamTitle={currentTeamTitle}
+        setCurrentTeamTitle={setCurrentTeamTitle}
       />
     </div>
   );

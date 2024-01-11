@@ -1,5 +1,5 @@
 import React, { useContext, createContext, useState } from "react";
-import { format, addDays, eachDayOfInterval } from "date-fns";
+import { format, addDays, subDays, eachDayOfInterval } from "date-fns";
 
 const SiteContext = createContext();
 
@@ -12,6 +12,10 @@ export const SiteProvider = ({ children }) => {
   const [rosterTeam, setRosterTeam] = useState();
   const [currentPlayer, setCurrentPlayer] = useState({});
   const [dateList, setDateList] = useState([]);
+  const [currentTeamTitle, setCurrentTeamTitle] = useState();
+
+  const [selected, setSelected] = useState();
+
 
   const getDates = (startDate) => {
     const start = new Date(startDate);
@@ -21,7 +25,22 @@ export const SiteProvider = ({ children }) => {
     setDateList(dateRange);
   };
 
+  const nextClick = () => {
+    const nextDay = addDays(selected, 7)
+    setSelected(nextDay)
+    getDates(nextDay)
+
+  }
+
+  const prevClick = () => {
+    const prevDay = subDays(selected, 7)
+    setSelected(prevDay)
+    getDates(prevDay)
+
+  }
+
   // console.log(dateList);
+  // console.log(currentTeamTitle)
 
   return (
     <SiteContext.Provider
@@ -35,6 +54,12 @@ export const SiteProvider = ({ children }) => {
         dateList,
         setDateList,
         getDates,
+        currentTeamTitle, 
+        setCurrentTeamTitle,
+        selected,
+        setSelected,
+        prevClick,
+        nextClick
       }}
     >
       {children}

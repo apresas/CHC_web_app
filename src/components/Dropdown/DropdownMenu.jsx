@@ -2,8 +2,7 @@ import React from "react";
 import DropdownItem from "./DropdownItem";
 import teamData from "../../data/teams.json";
 import "./dropdown.css";
-
-function DropdownMenu({ setDropdownTitle, setLogo }) {
+function DropdownMenu({ setDropdownTitle, setLogo, setCurrentTeamTitle, currentTeamTitle }) {
   return (
     <ul className="dropdown_menu">
       <li>
@@ -11,6 +10,8 @@ function DropdownMenu({ setDropdownTitle, setLogo }) {
           name="All Teams"
           logo={null}
           setDropdownTitle={setDropdownTitle}
+          setCurrentTeamTitle={setCurrentTeamTitle}
+          currentTeamTitle={currentTeamTitle}
           setLogo={setLogo}
         />
       </li>
@@ -20,6 +21,8 @@ function DropdownMenu({ setDropdownTitle, setLogo }) {
             name={data.schoolName}
             logo={data.logo}
             setDropdownTitle={setDropdownTitle}
+            setCurrentTeamTitle={setCurrentTeamTitle}
+            currentTeamTitle={currentTeamTitle}
             setLogo={setLogo}
           />
         </li>

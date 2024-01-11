@@ -1,17 +1,17 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import DropdownMenu from "./DropdownMenu";
 import "./dropdown.css";
 import { IoChevronDown } from "react-icons/io5";
 
 
-function Dropdown() {
+function Dropdown({ currentTeamTitle, setCurrentTeamTitle }) {
   const [dropdownTitle, setDropdownTitle] = useState(["Select Team"]);
   const [logo, setLogo] = useState();
   const [open, setOpen] = useState(false);
   const handleOpen = () => {
     setOpen(!open);
-
   };
+  // console.log(dropdownTitle)
   return (
     <div className="dropdown_container" onClick={handleOpen}>
       <div className="dropdown_toggle">
@@ -22,7 +22,7 @@ function Dropdown() {
           </div>
         </div>
       </div>
-      {open ? <DropdownMenu setDropdownTitle={setDropdownTitle} setLogo={setLogo}/> : null}
+      {open ? <DropdownMenu setDropdownTitle={setDropdownTitle} setCurrentTeamTitle={setCurrentTeamTitle} currentTeamTitle={currentTeamTitle} setLogo={setLogo} /> : null}
     </div>
   );
 }

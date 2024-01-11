@@ -15,3 +15,7 @@
 .table_items {
 width: 50rem;
 }
+
+.no_games_title {
+    text-align: center;
+}

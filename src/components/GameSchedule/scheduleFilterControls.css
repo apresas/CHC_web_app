@@ -55,31 +55,6 @@
     background-color: rgba(119, 136, 153, 0.5);
 }
 
-/* .react-datepicker-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content:center;
-}
-
-
-.react-datepicker__input-container input {
-    background-color: transparent;
-    text-align: center;
-    height: 100%;
-    width: 100%;
-    border: none;
-    font-family: 'Rajdhani', sans-serif;
-    font-size: 1rem;
-    font-weight: 600;
-    color: var(--color-bg);
-    user-select: none;
-    cursor: pointer;
-    &:focus {
-        outline: none;
-        user-select: none;
-
-      }
-} */
 .date_picker_container {
     position: relative;
     user-select: none;

@@ -10,15 +10,17 @@ function DayTile({ href, date, scheduleData }) {
   const dayOfWeek = DateTime.fromISO(date).toFormat("EEE");
   const dateTitle = month + "/" + day;
 
-  const [gameCount, setGameCount] = useState([0]);
+  const [gameCount, setGameCount] = useState(0);
 
   useEffect(() => {
     scheduleData.filter((sdate) => sdate.date === date).map((sdate) => {
+      console.log(sdate)
       setGameCount(sdate.games.length)
+      if (sdate === undefined) {
+        setGameCount(0)
+      }
     })
-  })
-  // console.log(schedule)
-
+  },[date])
 
   return (
     <a className="day_container" href={href}>

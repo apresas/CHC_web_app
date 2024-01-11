@@ -1,11 +1,11 @@
 import React from "react";
 import "./dropdown.css";
 
-function DropdownItem({ name, logo, setDropdownTitle, setLogo }) {
+function DropdownItem({ name, logo, setDropdownTitle, setLogo, setCurrentTeamTitle, currentTeamTitle }) {
   const itemClick = () => {
     setDropdownTitle(name);
     setLogo(logo);
-    console.log(name)
+    setCurrentTeamTitle(name)
   };
   return (
     <button className="dropdown_item_container" onClick={itemClick}>
