@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+/* eslint-disable react/prop-types */
 import DayTile from "./DayTile";
 import SchduleTable from "./ScheduleTable";
 import ScheduleFilterControls from "./ScheduleFilterControls";
@@ -7,8 +7,33 @@ import scheduleData from "../../data/schedule.json";
 import "./gameSchedule.css";
 import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
 
-function GameSchedule({ currentTeamTitle, setCurrentTeamTitle, dateList, getDates, selected, setSelected, nextClick, prevClick }) {
+function GameSchedule({
+  currentTeamTitle,
+  setCurrentTeamTitle,
+  dateList,
+  getDates,
+  selected,
+  setSelected,
+  nextClick,
+  prevClick,
+  setFilteredItem,
+  filteredItem,
+}) {
 
+  // const filterTable = (data) => {
+  //   data.games
+  //     .map((data) => data)
+  //     .filter((data) => data.gameID === filteredItem.gameID)
+  // };
+
+  // useEffect(() => {
+  //   scheduleData
+  //     .filter((data) => data.date === dateList[0])
+  //     .map((data) => data)
+  //     .filter(filterTable);
+  // });
+
+  // console.log(filteredItem)
   return (
     <>
       <div className="schedule_container">
@@ -66,7 +91,7 @@ function GameSchedule({ currentTeamTitle, setCurrentTeamTitle, dateList, getDate
                 .filter((data) => data.date === dateList[0])
                 .map((data) => data.games)
                 .map((data, i) => (
-                  <SchduleTable key={i} gameData={data} date={dateList[0]} filterTeam={currentTeamTitle} />
+                  <SchduleTable key={i} gameData={data} date={dateList[0]} filterTeam={currentTeamTitle} setFilteredItem={setFilteredItem} filteredItem={filteredItem} />
                 ))}
             </section>
             <section className="schedule_section" id="s2">
@@ -74,7 +99,14 @@ function GameSchedule({ currentTeamTitle, setCurrentTeamTitle, dateList, getDate
                 .filter((data) => data.date === dateList[1])
                 .map((data) => data.games)
                 .map((data, i) => (
-                  <SchduleTable key={i} gameData={data} date={dateList[1]}  filterTeam={currentTeamTitle} />
+                  <SchduleTable
+                    key={i}
+                    gameData={data}
+                    date={dateList[1]}
+                    filterTeam={currentTeamTitle}
+                    setFilteredItem={setFilteredItem}
+                    filteredItem={filteredItem}
+                  />
                 ))}
             </section>
             <section className="schedule_section" id="s3">
@@ -82,7 +114,14 @@ function GameSchedule({ currentTeamTitle, setCurrentTeamTitle, dateList, getDate
                 .filter((data) => data.date === dateList[2])
                 .map((data) => data.games)
                 .map((data, i) => (
-                  <SchduleTable key={i} gameData={data} date={dateList[2]}  filterTeam={currentTeamTitle} />
+                  <SchduleTable
+                    key={i}
+                    gameData={data}
+                    date={dateList[2]}
+                    filterTeam={currentTeamTitle}
+                    setFilteredItem={setFilteredItem}
+                    filteredItem={filteredItem}
+                  />
                 ))}
             </section>
             <section className="schedule_section" id="s4">
@@ -90,7 +129,14 @@ function GameSchedule({ currentTeamTitle, setCurrentTeamTitle, dateList, getDate
                 .filter((data) => data.date === dateList[3])
                 .map((data) => data.games)
                 .map((data, i) => (
-                  <SchduleTable key={i} gameData={data} date={dateList[3]}  filterTeam={currentTeamTitle}/>
+                  <SchduleTable
+                    key={i}
+                    gameData={data}
+                    date={dateList[3]}
+                    filterTeam={currentTeamTitle}
+                    setFilteredItem={setFilteredItem}
+                    filteredItem={filteredItem}
+                  />
                 ))}
             </section>
             <section className="schedule_section" id="s5">
@@ -98,7 +144,14 @@ function GameSchedule({ currentTeamTitle, setCurrentTeamTitle, dateList, getDate
                 .filter((data) => data.date === dateList[4])
                 .map((data) => data.games)
                 .map((data, i) => (
-                  <SchduleTable key={i} gameData={data} date={dateList[4]}  filterTeam={currentTeamTitle}/>
+                  <SchduleTable
+                    key={i}
+                    gameData={data}
+                    date={dateList[4]}
+                    filterTeam={currentTeamTitle}
+                    setFilteredItem={setFilteredItem}
+                    filteredItem={filteredItem}
+                  />
                 ))}
             </section>
             <section className="schedule_section" id="s6">
@@ -106,7 +159,14 @@ function GameSchedule({ currentTeamTitle, setCurrentTeamTitle, dateList, getDate
                 .filter((data) => data.date === dateList[5])
                 .map((data) => data.games)
                 .map((data, i) => (
-                  <SchduleTable key={i} gameData={data} date={dateList[5]}  filterTeam={currentTeamTitle}/>
+                  <SchduleTable
+                    key={i}
+                    gameData={data}
+                    date={dateList[5]}
+                    filterTeam={currentTeamTitle}
+                    setFilteredItem={setFilteredItem}
+                    filteredItem={filteredItem}
+                  />
                 ))}
             </section>
             <section className="schedule_section" id="s7">
@@ -114,7 +174,14 @@ function GameSchedule({ currentTeamTitle, setCurrentTeamTitle, dateList, getDate
                 .filter((data) => data.date === dateList[6])
                 .map((data) => data.games)
                 .map((data, i) => (
-                  <SchduleTable key={i} gameData={data} date={dateList[6]}  filterTeam={currentTeamTitle}/>
+                  <SchduleTable
+                    key={i}
+                    gameData={data}
+                    date={dateList[6]}
+                    filterTeam={currentTeamTitle}
+                    setFilteredItem={setFilteredItem}
+                    filteredItem={filteredItem}
+                  />
                 ))}
             </section>
           </div>

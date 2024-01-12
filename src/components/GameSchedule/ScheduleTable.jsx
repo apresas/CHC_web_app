@@ -1,50 +1,41 @@
-import React, { useEffect, useState } from "react";
+/* eslint-disable react/prop-types */
+import React, { useState } from 'react';
 import { DateTime } from "luxon";
 import TableItem from "./TableItem";
 import TableHeader from "./TableHeader";
 import NoGamesHeader from "./NoGamesHeader";
 import "./scheduleTable.css";
 
-function ScheduleTable({ gameData, date, filterTeam }) {
+function ScheduleTable({ gameData, date, filterTeam, filteredItem, setFilteredItem}) {
   const newDate = DateTime.fromISO(date).toFormat("DD");
   const week = DateTime.fromISO(date).toFormat("EEE");
   const title = week + ", " + newDate;
+  
+  const filterByTeam = (team) => {
+    if (team.homeTeam === filterTeam || team.awayTeam === filterTeam) {
+      setFilteredItem(team)
+      return team
+    } else if (filterTeam === "All Teams") {
+      setFilteredItem(team)
+      return team
+    } else if (filterTeam === undefined) {
+      setFilteredItem(team)
+      return team
+    }
 
-  // const [filteredItem, setFilteredItem] = useState([gameData]);
-
-  // useEffect(() => {
-  //   gameData
-  //     .map((mDate) => mDate)
-  //     .filter(
-  //       (fDate) =>
-  //         fDate.homeTeam === filterTeam || fDate.awayTeam === filterTeam
-  //     )
-  //     .map((mDate) => {
-  //       console.log(mDate);
-  //       let data = [];
-  //       data.push(mDate);
-  //       setFilteredItem(data);
-  //       console.log(filteredItem);
-  //     });
-  // }, [filterTeam]);
-
-  // console.log(filterTeam);
-
+  }
 
   return (
     <>
       <div className="schedule_table_container">
         <h2>{title}</h2>
         {gameData.length !== 0 ? <TableHeader /> : <NoGamesHeader/>}
-        {/* <TableHeader /> */}
-        {/* {filteredItem !== undefined
-          ? filteredItem
-              .filter((fItem) => fItem !== undefined)
-              .map((fItem, i) => <TableItem id={i} key={i} gameData={fItem} />)
-          : null} */}
-        {gameData.map((data, i) => (
+          {gameData.map((mItem) => mItem).filter(filterByTeam).map((data, i) => (
+            <TableItem id={data.gameID} key={i} gameData={data} />
+          ))}
+        {/* {gameData.map((data, i) => (
           <TableItem id={i} key={i} gameData={data} />
-        ))}
+        ))} */}
       </div>
     </>
   );

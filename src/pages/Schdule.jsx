@@ -11,7 +11,9 @@ function Schdule({
   selected,
   setSelected,
   prevClick,
-  nextClick
+  nextClick,
+  setFilteredItem,
+  filteredItem
 }) {
   return (
     <>
@@ -25,6 +27,8 @@ function Schdule({
         setSelected={setSelected}
         prevClick={prevClick}
         nextClick={nextClick}
+        setFilteredItem={setFilteredItem}
+        filteredItem={filteredItem}
       />
       <Footer />
     </>

@@ -32,7 +32,9 @@ function App() {
     selected,
     setSelected,
     nextClick,
-    prevClick
+    prevClick,
+    setFilteredItem,
+    filteredItem
   } = useSite();
   return (
     <>
@@ -72,6 +74,8 @@ function App() {
               setSelected={setSelected}
               prevClick={prevClick}
               nextClick={nextClick}
+              setFilteredItem={setFilteredItem}
+              filteredItem={filteredItem}
             />
           }
         />

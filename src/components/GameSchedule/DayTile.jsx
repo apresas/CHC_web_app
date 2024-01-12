@@ -1,7 +1,7 @@
-import React, { useEffect, useState, useRef} from "react";
+/* eslint-disable react/prop-types */
+import { useEffect, useState} from "react";
 import { FaRegCalendar } from "react-icons/fa";
 import "./dayTile.css";
-import { Link } from "react-scroll";
 import { DateTime } from "luxon";
 
 function DayTile({ href, date, scheduleData }) {
@@ -14,13 +14,13 @@ function DayTile({ href, date, scheduleData }) {
 
   useEffect(() => {
     scheduleData.filter((sdate) => sdate.date === date).map((sdate) => {
-      console.log(sdate)
+      // console.log(sdate)
       setGameCount(sdate.games.length)
       if (sdate === undefined) {
         setGameCount(0)
       }
     })
-  },[date])
+  })
 
   return (
     <a className="day_container" href={href}>

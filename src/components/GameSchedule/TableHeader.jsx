@@ -1,4 +1,4 @@
-import React from "react";
+
 import "./tableHeader.css";
 
 function TableHeader() {
