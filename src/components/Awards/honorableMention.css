@@ -34,9 +34,11 @@
 
 
 .honorable_item:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
     transition: var(--transition);
-    /* border: 1px solid lightgrey; */
+    border-bottom: 3px solid var(--color-ohio-blue);
+    box-shadow: 0px 5px 10px rgba(26, 86, 214, 0.35);
+    /* box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.35); */
 }
 
 .honorable_logo {

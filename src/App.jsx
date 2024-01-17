@@ -34,7 +34,9 @@ function App() {
     nextClick,
     prevClick,
     setFilteredItem,
-    filteredItem
+    filteredItem,
+    defaultTeam,
+    setDefaultTeam
   } = useSite();
   return (
     <>
@@ -76,6 +78,8 @@ function App() {
               nextClick={nextClick}
               setFilteredItem={setFilteredItem}
               filteredItem={filteredItem}
+              defaultTeam={defaultTeam}
+              setDefaultTeam={setDefaultTeam}
             />
           }
         />

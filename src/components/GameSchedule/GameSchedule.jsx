@@ -18,8 +18,9 @@ function GameSchedule({
   prevClick,
   setFilteredItem,
   filteredItem,
+  defaultTeam,
+  setDefaultTeam
 }) {
-
   // const filterTable = (data) => {
   //   data.games
   //     .map((data) => data)
@@ -33,7 +34,7 @@ function GameSchedule({
   //     .filter(filterTable);
   // });
 
-  // console.log(filteredItem)
+  // console.log(filteredItem);
   return (
     <>
       <div className="schedule_container">
@@ -53,36 +54,43 @@ function GameSchedule({
               href={"#s1"}
               date={dateList[0]}
               scheduleData={scheduleData}
+              filteredItem={filteredItem}
             />
             <DayTile
               href={"#s2"}
               date={dateList[1]}
               scheduleData={scheduleData}
+              filteredItem={filteredItem}
             />
             <DayTile
               href={"#s3"}
               date={dateList[2]}
               scheduleData={scheduleData}
+              filteredItem={filteredItem}
             />
             <DayTile
               href={"#s4"}
               date={dateList[3]}
               scheduleData={scheduleData}
+              filteredItem={filteredItem}
             />
             <DayTile
               href={"#s5"}
               date={dateList[4]}
               scheduleData={scheduleData}
+              filteredItem={filteredItem}
             />
             <DayTile
               href={"#s6"}
               date={dateList[5]}
               scheduleData={scheduleData}
+              filteredItem={filteredItem}
             />
             <DayTile
               href={"#s7"}
               date={dateList[6]}
               scheduleData={scheduleData}
+              filteredItem={filteredItem}
             />
           </div>
           <div className="schedule_table">
@@ -91,7 +99,15 @@ function GameSchedule({
                 .filter((data) => data.date === dateList[0])
                 .map((data) => data.games)
                 .map((data, i) => (
-                  <SchduleTable key={i} gameData={data} date={dateList[0]} filterTeam={currentTeamTitle} setFilteredItem={setFilteredItem} filteredItem={filteredItem} />
+                  <SchduleTable
+                    key={i}
+                    gameData={data}
+                    date={dateList[0]}
+                    filterTeam={currentTeamTitle}
+                    setFilteredItem={setFilteredItem}
+                    filteredItem={filteredItem}
+                    setDefaultTeam={setDefaultTeam}
+                  />
                 ))}
             </section>
             <section className="schedule_section" id="s2">
@@ -106,6 +122,7 @@ function GameSchedule({
                     filterTeam={currentTeamTitle}
                     setFilteredItem={setFilteredItem}
                     filteredItem={filteredItem}
+                    setDefaultTeam={setDefaultTeam}
                   />
                 ))}
             </section>
@@ -121,6 +138,7 @@ function GameSchedule({
                     filterTeam={currentTeamTitle}
                     setFilteredItem={setFilteredItem}
                     filteredItem={filteredItem}
+                    setDefaultTeam={setDefaultTeam}
                   />
                 ))}
             </section>
@@ -136,6 +154,7 @@ function GameSchedule({
                     filterTeam={currentTeamTitle}
                     setFilteredItem={setFilteredItem}
                     filteredItem={filteredItem}
+                    setDefaultTeam={setDefaultTeam}
                   />
                 ))}
             </section>
@@ -151,6 +170,7 @@ function GameSchedule({
                     filterTeam={currentTeamTitle}
                     setFilteredItem={setFilteredItem}
                     filteredItem={filteredItem}
+                    setDefaultTeam={setDefaultTeam}
                   />
                 ))}
             </section>
@@ -166,6 +186,7 @@ function GameSchedule({
                     filterTeam={currentTeamTitle}
                     setFilteredItem={setFilteredItem}
                     filteredItem={filteredItem}
+                    setDefaultTeam={setDefaultTeam}
                   />
                 ))}
             </section>
@@ -181,6 +202,7 @@ function GameSchedule({
                     filterTeam={currentTeamTitle}
                     setFilteredItem={setFilteredItem}
                     filteredItem={filteredItem}
+                    setDefaultTeam={setDefaultTeam}
                   />
                 ))}
             </section>

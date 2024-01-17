@@ -16,6 +16,7 @@ export const SiteProvider = ({ children }) => {
 
   const [selected, setSelected] = useState();
   const [filteredItem, setFilteredItem] = useState([]);
+  const [defaultTeam, setDefaultTeam] = useState();
 
 
   const getDates = (startDate) => {
@@ -40,6 +41,8 @@ export const SiteProvider = ({ children }) => {
 
   }
 
+  // console.log(defaultTeam)
+
   // console.log(dateList);
   // console.log(currentTeamTitle)
 
@@ -62,7 +65,9 @@ export const SiteProvider = ({ children }) => {
         prevClick,
         nextClick,
         setFilteredItem,
-        filteredItem
+        filteredItem,
+        defaultTeam,
+        setDefaultTeam
       }}
     >
       {children}
