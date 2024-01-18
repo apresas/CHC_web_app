@@ -55,7 +55,7 @@ function NavBar() {
           <VarsityNav />
           {/* <JVNav /> */}
         </div>
-        <div className="dropdown">
+        {/* <div className="dropdown">
           <button className="dropdown_btn" onClick={handleOpen}>
             {currentCategory}{" "}
             <div className="btn_icon">
@@ -72,8 +72,8 @@ function NavBar() {
               </li>
             </ul>
           ) : null}
-          {/* {open ? <div>Is Open</div> : <div>Is Closed</div>} */}
-        </div>
+          {open ? <div>Is Open</div> : <div>Is Closed</div>}
+        </div> */}
       </div>
     </div>
   );

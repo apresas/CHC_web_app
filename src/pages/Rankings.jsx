@@ -1,16 +1,18 @@
-import React from 'react'
+import React from "react";
 import NavBar from "../components/NavBar";
-import Footer from '../components/Footer';
-import Ranking from '../components/Ranking/Ranking';
+import SponcerBar from "../components/Sponcer/SponcerBar";
+import Footer from "../components/Footer";
+import Ranking from "../components/Ranking/Ranking";
 
 function Rankings() {
   return (
     <>
-    <NavBar />
-    <Ranking />
-    <Footer />
+      <SponcerBar />
+      <NavBar />
+      <Ranking />
+      <Footer />
     </>
-  )
+  );
 }
 
-export default Rankings
+export default Rankings;

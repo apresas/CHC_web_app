@@ -3,6 +3,7 @@ import TeamTiles from "../components/TeamTiles";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import LeagueLeaders from "../components/LeagueLeaders";
+import SponcerBar from "../components/Sponcer/SponcerBar";
 import { useParams } from "react-router-dom";
 
 function Home({
@@ -14,6 +15,7 @@ function Home({
   return (
     <>
     <div className="nav_container">
+      <SponcerBar />
       <NavBar />
     </div>
     <div className="app_container">

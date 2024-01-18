@@ -1,17 +1,18 @@
-import React from 'react'
-import NavBar from '../components/NavBar';
-import Footer from '../components/Footer';
-import Awards from '../components/Awards/Awards'
+import React from "react";
+import NavBar from "../components/NavBar";
+import SponcerBar from "../components/Sponcer/SponcerBar";
+import Footer from "../components/Footer";
+import Awards from "../components/Awards/Awards";
 
 function PlayerAwards() {
   return (
     <>
-    <NavBar />
-    <Awards />
-    <Footer />
+      <SponcerBar />
+      <NavBar />
+      <Awards />
+      <Footer />
     </>
-
-  )
+  );
 }
 
-export default PlayerAwards
+export default PlayerAwards;

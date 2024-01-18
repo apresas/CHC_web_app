@@ -1,46 +1,56 @@
 import React, { useState, useEffect } from "react";
 import "./team.css";
 import NavBar from "./NavBar";
+import SponcerBar from "./Sponcer/SponcerBar";
 import Footer from "./Footer";
 import PlayerItem from "./PlayerItem";
 import rosterData from "../data/rosterData.json";
-import PlayerModal from "../modal/PlayerModal"
-import Teams from "../data/teams.json"
+import PlayerModal from "../modal/PlayerModal";
+import Teams from "../data/teams.json";
 
-function Team({ id, pageID, currentTeam, rosterTeam, setCurrentPlayer, currentPlayer }) {
+function Team({
+  id,
+  pageID,
+  currentTeam,
+  rosterTeam,
+  setCurrentPlayer,
+  currentPlayer,
+}) {
   // console.log(rosterTeam);
   // const primary_color = "White"
   // const secondary_color = "#031327"
   const primary_color = rosterTeam.primaryColor;
   const secondary_color = rosterTeam.secondaryColor;
   const [openModal, setOpenModal] = useState(false);
-  const [teamLogo, setTeamLogo] = useState("")
+  const [teamLogo, setTeamLogo] = useState("");
 
   useEffect(() => {
-  {Teams.filter((data) => data.id === rosterTeam.teamID).map((data) => (
-    setTeamLogo(data.logo) 
-  ))}
-  }, [currentTeam])
-
+    {
+      Teams.filter((data) => data.id === rosterTeam.teamID).map((data) =>
+        setTeamLogo(data.logo)
+      );
+    }
+  }, [currentTeam]);
 
   const checkCurrentPlayer = () => {
     setOpenModal(true);
     // console.log(currentPlayer.stats)
-  }
+  };
 
   const closeModal = () => {
     setOpenModal(false);
-  }
+  };
   return (
     <>
-    <PlayerModal
-    open={openModal}
-    currentPlayer={currentPlayer}
-    onClose={closeModal}
-    primaryColor={primary_color}
-    secondaryColor={secondary_color}
-    teamLogo={teamLogo}
-    />
+      <PlayerModal
+        open={openModal}
+        currentPlayer={currentPlayer}
+        onClose={closeModal}
+        primaryColor={primary_color}
+        secondaryColor={secondary_color}
+        teamLogo={teamLogo}
+      />
+      <SponcerBar />
       <NavBar />
       <div className="team_container">
         <div className="team_content_container">
@@ -63,7 +73,12 @@ function Team({ id, pageID, currentTeam, rosterTeam, setCurrentPlayer, currentPl
               {rosterTeam.roster
                 .filter((roster) => roster.position === "F")
                 .map((roster) => (
-                  <PlayerItem roster={roster} setCurrentPlayer={setCurrentPlayer} checkCurrentPlayer={checkCurrentPlayer} currentPlayer={currentPlayer}/>
+                  <PlayerItem
+                    roster={roster}
+                    setCurrentPlayer={setCurrentPlayer}
+                    checkCurrentPlayer={checkCurrentPlayer}
+                    currentPlayer={currentPlayer}
+                  />
                 ))}
             </div>
             <h2 className="grid_title">Defensemen</h2>
@@ -71,7 +86,11 @@ function Team({ id, pageID, currentTeam, rosterTeam, setCurrentPlayer, currentPl
               {rosterTeam.roster
                 .filter((roster) => roster.position === "D")
                 .map((roster) => (
-                  <PlayerItem roster={roster} setCurrentPlayer={setCurrentPlayer} checkCurrentPlayer={checkCurrentPlayer}/>
+                  <PlayerItem
+                    roster={roster}
+                    setCurrentPlayer={setCurrentPlayer}
+                    checkCurrentPlayer={checkCurrentPlayer}
+                  />
                 ))}
             </div>
             <h2 className="grid_title">Goalies</h2>
@@ -79,7 +98,11 @@ function Team({ id, pageID, currentTeam, rosterTeam, setCurrentPlayer, currentPl
               {rosterTeam.roster
                 .filter((roster) => roster.position === "G")
                 .map((roster) => (
-                  <PlayerItem roster={roster} setCurrentPlayer={setCurrentPlayer} checkCurrentPlayer={checkCurrentPlayer}/>
+                  <PlayerItem
+                    roster={roster}
+                    setCurrentPlayer={setCurrentPlayer}
+                    checkCurrentPlayer={checkCurrentPlayer}
+                  />
                 ))}
             </div>
           </div>

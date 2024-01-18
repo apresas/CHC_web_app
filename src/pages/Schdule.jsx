@@ -1,5 +1,6 @@
 import NavBar from "../components/NavBar";
 import GameSchedule from "../components/GameSchedule/GameSchedule";
+import SponcerBar from "../components/Sponcer/SponcerBar";
 import Footer from "../components/Footer";
 import { useEffect } from "react";
 
@@ -15,11 +16,11 @@ function Schdule({
   setFilteredItem,
   filteredItem,
   defaultTeam,
-  setDefaultTeam
+  setDefaultTeam,
 }) {
-
   return (
     <>
+      <SponcerBar />
       <NavBar />
       <GameSchedule
         setCurrentTeamTitle={setCurrentTeamTitle}
