@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./awardItem.css";
+import { GrStar } from "react-icons/gr";
 import rosterData from "../../data/rosterData.json"
 import team from "../../data/teams.json"
 
@@ -27,7 +28,12 @@ function AwardItem({
   return (
     <div className="award_item_container">
       <div className="position_box">
-        {player.position}
+      <div className="star_container">
+        <GrStar />
+        <GrStar />
+        <GrStar />
+        </div>
+        <h3>{player.position}</h3>
       </div>
       <div className="award_logo_container" style={{backgroundColor: `${color}`}}>
         <img src={`${logo}`} alt="logo" />

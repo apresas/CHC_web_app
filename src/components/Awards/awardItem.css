@@ -36,17 +36,29 @@
 
 
 .position_box {
-  background-color: white;
+  /* background-color: white; */
+  margin: 0.25rem;
+  color: white;
   position: absolute;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 2.5rem;
-  aspect-ratio: 1/1;
+  width: 2.5rem;
+  /* aspect-ratio: 1/1; */
   right: 0;
   font-family: "Teko";
   font-size: 1.25rem;
   font-weight: 500;
+}
+
+.star_container {
+  display: flex;
+  width: 2rem;
+}
+
+.position_box h3 {
+  line-height: 0.85;
 }
 
 .award_logo_container {
