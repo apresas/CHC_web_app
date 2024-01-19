@@ -26,6 +26,7 @@
     justify-content: flex-end;
 }
 
+
 .sponcer_bar_content_container p{
     margin: 0rem 0.5rem;
     font-family: 'Rajdhani', sans-serif;
@@ -34,6 +35,7 @@
 
 .sponcer_bar_content_container img{
     width: 7%;
+    cursor: pointer;
 }
 
 .sponcer_bar_content_container img, .sponcer_bar_content_container p {

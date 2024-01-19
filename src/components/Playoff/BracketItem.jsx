@@ -19,7 +19,7 @@ function BracketItem({ homeTeamInfo, awayTeamInfo, gameID, ID }) {
           setTeamData(data);
         }
         if (data.id === ID) {
-          console.log(data);
+          // console.log(data);
           setTeamData(data);
         }
       });
@@ -29,7 +29,7 @@ function BracketItem({ homeTeamInfo, awayTeamInfo, gameID, ID }) {
       playoffGames.map((data) => {
         if (data.gameID === gameID) {
           setGameData(data);
-          console.log(data);
+          // console.log(data);
           if (ID === data.homeTeamID) {
             setScore(data.homeScore);
           } else if (ID === data.awayTeamID) {

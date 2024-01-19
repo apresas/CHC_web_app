@@ -8,7 +8,7 @@ function LeadersStatTile({ stats, type, division }) {
   const [typeTitle, setTypeTitle] = useState("");
   const [typeAttribute, setTypeAttribute] = useState("");
   const [total, setTotal] = useState();
-  // console.log(stats);
+  // console.log(total);
 
   const setSV = (stat) => {
     setTotal(Number.parseFloat(stat).toFixed(3))
