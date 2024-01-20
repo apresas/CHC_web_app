@@ -338,7 +338,7 @@
     {
         "ranking": 29,
         "teamID": 0,
-        "logo": "",
+        "logo": "../../src/assets/Logos/SJJ_logo.svg",
         "schoolName": "St.Johns Jesuit",
         "mascot": "Titans",
         "record": "2-24-0",
