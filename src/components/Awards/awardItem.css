@@ -47,7 +47,7 @@
   width: 2.5rem;
   /* aspect-ratio: 1/1; */
   right: 0;
-  font-family: "Teko";
+  font-family: var(--font-sub-header);
   font-size: 1.25rem;
   font-weight: 500;
 }
@@ -84,16 +84,16 @@
 .award_item_info h2,
 h3,
 h4 {
-  font-family: "Bebas Neue";
+  font-family: var(--font-header);
   margin: 0;
 }
 
 .award_item_info h3 {
-  font-family: "Teko", sans-serif;
+  font-family: var(--font-sub-header);
   font-weight: 400;
 }
 
 .award_item_info h4 {
-  font-family: "Rajdhani", sans-serif;
+  font-family: var(--font-main);
   font-weight: 300;
 }

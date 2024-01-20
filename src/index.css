@@ -16,6 +16,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
+  --font-header: "Bebas Neue";
+  --font-sub-header: "Teko";
+  --font-main: 'Rajdhani';
+
   --color-bg: #031327;
   --color-nav: #002654;
   --color-white: rgb(245, 245, 252);

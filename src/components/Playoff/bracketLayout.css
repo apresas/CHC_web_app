@@ -170,7 +170,7 @@
 
 .champions_item h2 {
     margin: 0;
-    font-family: "Bebas Neue";
+    font-family: var(--font-header);
     line-height: 1;
 }
 
@@ -188,7 +188,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: "Bebas Neue";
+    font-family: var(--font-header);
     color: white;
     height: 8rem;
     width: 100%;

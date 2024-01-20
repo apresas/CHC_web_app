@@ -7,7 +7,7 @@
 }
 
 .awards_container h1, .awards_container h2{
-    font-family: "Bebas Neue";
+    font-family: var(--font-header);
 }
 
 .section_container {
@@ -27,7 +27,7 @@
     background-color: rgb(245, 245, 252);
     color: var(--color-bg);
     margin-top: 2rem;
-    font-family: 'Rajdhani', sans-serif;
+    font-family: var(--font-main);
 }
 
 .first_team_container, .second_team_container {

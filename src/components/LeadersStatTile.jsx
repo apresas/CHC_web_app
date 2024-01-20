@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import LeaderStatsItem from "./LeaderStatsItem";
 import { FiChevronsDown } from "react-icons/fi";
 
@@ -8,7 +8,12 @@ function LeadersStatTile({ stats, type, division }) {
   const [typeTitle, setTypeTitle] = useState("");
   const [typeAttribute, setTypeAttribute] = useState("");
   const [total, setTotal] = useState();
+  const selectedStat = useRef();
+  const [statsArray, setStatsArray] = useState([])
+  const [selectedClass, setSelectedClass] = useState('select_item')
   // console.log(total);
+
+  console.log(statsArray)
 
   const setSV = (stat) => {
     setTotal(Number.parseFloat(stat).toFixed(3))
@@ -19,6 +24,7 @@ function LeadersStatTile({ stats, type, division }) {
   }
 
   const onStatsHover = (stats, type) => {
+    // setSelectedClass("select_item_active")
     if (type === "POINTS") {
       setTotal(stats.points);
     }
@@ -154,14 +160,17 @@ function LeadersStatTile({ stats, type, division }) {
         {testData
           .sort((a, b) => (a.typeAttribute > b.typeAttribute ? -1 : 1))
           .map((stats, index) => {
+            // statsArray.push(stats)
             return(
             <div
+              ref={selectedStat}
               key={stats.key}
               onMouseEnter={() => {
                 onStatsHover(stats, type);
               }}
             >
               <LeaderStatsItem
+              selected={selectedClass}
                 key={stats.playerID}
                 stats={stats}
                 index={index}

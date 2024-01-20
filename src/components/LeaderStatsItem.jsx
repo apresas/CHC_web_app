@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import "./leaderStatsItem.css"
 
 function LeaderStatsItem({
     stats,
     index,
-    type
+    type,
+    selected
 }) {
     const listIndex = index += 1;
     let stat = 0
@@ -19,7 +20,7 @@ function LeaderStatsItem({
     }
   return (
     <div className='leader_stats_item'>
-        {/* <div className="select_item"></div> */}
+        <div className={selected}></div>
         <div className="position_number">{listIndex}.</div>
         <div className="leader_name">{stats.firstName} {stats.lastName}</div>
         <div className="leader_stat">{`${stat}`}</div>

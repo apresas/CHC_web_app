@@ -15,7 +15,7 @@
     background-color: rgb(245, 245, 252);
     color: var(--color-bg);
     margin-top: 2rem;
-    font-family: 'Rajdhani', sans-serif;
+    font-family: var(--font-main);
     padding-bottom: 2rem;
     /* padding: 0 6.5rem 2rem; */
     
@@ -24,7 +24,7 @@
 }
 
 .schedule_content_container h1 {
-    font-family: "Bebas Neue", sans-serif;
+    font-family: var(--font-header);
 }
 
 

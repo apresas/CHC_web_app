@@ -8,7 +8,7 @@
 }
 
 .bracket_title {
-    font-family: "Bebas Neue";
+    font-family: var(--font-header);
     font-size: 2.25rem;
     margin-top: 0;
 }
@@ -22,7 +22,7 @@
     background-color: rgb(245, 245, 252);
     color: var(--color-bg);
     margin-top: 2rem;
-    font-family: 'Rajdhani', sans-serif;
+    font-family: var(--font-main);
     /* border: 1rem solid var(--color-nav); */
     /* padding: 2rem 4rem; */
     

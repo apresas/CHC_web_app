@@ -29,7 +29,7 @@
 
 .sponcer_bar_content_container p{
     margin: 0rem 0.5rem;
-    font-family: 'Rajdhani', sans-serif;
+    font-family: var(--font-main);
     font-size: 0.75rem;
 }
 

@@ -21,11 +21,11 @@
 }
 
 .all_division_header h2 {
-    font-family: "Bebas Neue";
+    font-family: var(--font-header);
 }
 
 .all_division_header h3 {
-    font-family: "Teko";
+    font-family: var(--font-sub-header);
     font-weight: 300;
 }
 
@@ -102,11 +102,11 @@
 }
 
 .all_division_info h2 {
-    font-family: "Bebas Neue";
+    font-family: var(--font-header);
 
 }
 
 .all_division_info h3 { 
-    font-family: "Teko";
+    font-family: var(--font-sub-header);
     font-weight: 300;
 }

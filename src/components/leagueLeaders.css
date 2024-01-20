@@ -12,7 +12,7 @@
 }
 
 .leagueLeaders_dvision_title {
-    font-family: "Bebas Neue";
+    font-family: var(--font-header);
     font-size: 1.25rem;
     margin: 0.5rem 0;
     letter-spacing: 0.02rem;
@@ -30,7 +30,7 @@ margin: 0 0 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: "Bebas Neue";
+    font-family: var(--font-header);
     color: var(--color-bg);
 }
 
@@ -90,10 +90,7 @@ margin: 0 0 1rem;
 }
 
 .stats_name_title {
-    /* font-family: "Bebas Neue"; */
-    /* font-family: "Roboto"; */
-    font-family: 'Rajdhani', sans-serif;
-    /* font-family: 'Teko', sans-serif; */
+    font-family: var(--font-main);
     font-size: 1rem;
     font-weight: 600;
     letter-spacing: 0.02rem;
@@ -101,7 +98,7 @@ margin: 0 0 1rem;
 }
 
 .stats_points_title {
-    font-family: "Bebas Neue";
+    font-family: var(--font-header);
     font-size: 1rem;
     line-height: 1;
     letter-spacing: 0.02rem;
@@ -111,7 +108,7 @@ margin: 0 0 1rem;
 .stats_point_total {
     margin: 0;
     font-size: 2rem;
-    font-family: "Bebas Neue";
+    font-family: var(--font-header);
     line-height: 1;
 
 }
