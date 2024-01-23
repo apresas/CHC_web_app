@@ -1,0 +1,35 @@
+.allstar_player_container {
+    background-color: white;
+    border: 1px solid lightgray;
+    padding: 1rem;
+    width: 5.5rem;
+    border-radius: 7px;
+    box-shadow: var(--dropshadow-main);
+    transition: var(--transition-fast);
+}
+
+.allstar_player_container:hover {
+    transform: scale(1.05);
+    transition: var(--transition-fast);
+}
+
+.allstar_player_container img{
+    height: 3.5rem;
+    aspect-ratio: 1/1;
+}
+
+.allstar_player_firstName, .allstar_player_lastName {
+    font-family: var(--font-sub-header);
+}
+.allstar_player_lastName {
+    font-weight: 400;
+}
+
+.allstar_player_firstName {
+    font-weight: 300;
+}
+
+.allstar_player_container small {
+    font-family: var(--font-sub-header);
+    font-weight: 300;
+}

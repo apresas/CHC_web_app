@@ -16,6 +16,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
+  --dropshadow-main: 0px 3px 5px rgba(0, 0, 0, 0.2);
+
   --font-header: "Bebas Neue";
   --font-sub-header: "Teko";
   --font-main: 'Rajdhani';

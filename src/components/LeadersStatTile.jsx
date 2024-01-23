@@ -13,7 +13,7 @@ function LeadersStatTile({ stats, type, division }) {
   const [selectedClass, setSelectedClass] = useState('select_item')
   // console.log(total);
 
-  console.log(statsArray)
+  // console.log(statsArray)
 
   const setSV = (stat) => {
     setTotal(Number.parseFloat(stat).toFixed(3))

@@ -11,11 +11,33 @@
     height: 100%;
 }
 
-.leagueLeaders_dvision_title {
+.leagueLeaders_division_title {
     font-family: var(--font-header);
     font-size: 1.25rem;
     margin: 0.5rem 0;
     letter-spacing: 0.02rem;
+    position: relative;
+}
+
+.leagueLeaders_division_title::after {
+    content: "";
+    width: 35%;
+    height: 5px;
+    border-radius: 20px;
+    background-color: red;
+    position: absolute;
+    top: 35%;
+    right: 8%;
+}
+.leagueLeaders_division_title::before {
+    content: "";
+    width: 35%;
+    height: 5px;
+    border-radius: 20px;
+    background-color: red;
+    position: absolute;
+    top: 35%;
+    left: 8%;
 }
 
 .leagueLeaders_title {

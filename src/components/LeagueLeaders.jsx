@@ -22,7 +22,7 @@ function LeagueLeaders() {
             </div>
           </a>
         </h2>
-        <h3 className="leagueLeaders_dvision_title">Red Division</h3>
+        <h3 className="leagueLeaders_division_title">Red Division</h3>
         <div className="stats_tile">
           <LeadersStatTile stats={LeaderStats} division="RED" type="POINTS" />
           <LeadersStatTile stats={LeaderStats} division="RED" type="GOALS" />
@@ -52,7 +52,7 @@ function LeagueLeaders() {
             </div>
           </div>
         </Link>
-        <h3 className="leagueLeaders_dvision_title">White Division</h3>
+        <h3 className="leagueLeaders_division_title">White Division</h3>
         <div className="stats_tile">
           <LeadersStatTile stats={LeaderStats} division="WHITE" type="POINTS" />
           <LeadersStatTile stats={LeaderStats} division="WHITE" type="GOALS" />
@@ -82,7 +82,7 @@ function LeagueLeaders() {
             </div>
           </div>
         </Link>
-        <h3 className="leagueLeaders_dvision_title">Blue Division</h3>
+        <h3 className="leagueLeaders_division_title">Blue Division</h3>
         <div className="stats_tile">
           <LeadersStatTile stats={LeaderStats} division="BLUE" type="POINTS" />
           <LeadersStatTile stats={LeaderStats} division="BLUE" type="GOALS" />
