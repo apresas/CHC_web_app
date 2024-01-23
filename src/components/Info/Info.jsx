@@ -30,7 +30,7 @@ function Info() {
             39-1-1.
           </p>
           <p>
-            COLUMBUS, Ohio – Olentangy Liberty’s senior forward Charlie Hughes
+            <span>COLUMBUS, Ohio</span> – Olentangy Liberty’s senior forward Charlie Hughes
             scored a state record four goals as the Patriots defeated University
             School 6-2 in the 2023 OHSAA Ice Hockey State Final on at Nationwide
             Arena on Sunday. This was Liberty’s first appearance in the state

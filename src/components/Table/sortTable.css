@@ -1,0 +1,11 @@
+.sort_table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.sort_table_cell {
+    border: 1px solid lightgray;
+    text-align: left;
+    padding: 8px;
+}

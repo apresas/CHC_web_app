@@ -20,8 +20,17 @@
     padding-bottom: 4rem;
 }
 
+.info_content_container h2 {
+    font-family: var(--font-header);
+    font-size: 2.25rem;
+}
+
 .league_info_container {
     width: 80%;
+}
+
+.league_info_container p span {
+    font-weight: bold;
 }
 
 .league_info_container img{
@@ -64,6 +73,14 @@
 
 .league_contacts_table td:nth-of-type(2), .league_contacts_table td:nth-of-type(3) {
     text-align: center;
+}
+
+.team_history_table tbody td, .league_championship_table tbody td, .total_championship_table tbody td, .league_contacts_table tbody td{
+    padding: 0.5rem 0;
+}
+
+.team_history_table thead td, .league_championship_table thead td, .total_championship_table thead td, .league_contacts_table thead td{
+    padding: 0.5rem 0;
 }
 
 .team_history_table thead th, .league_championship_table thead th, .total_championship_table thead th, .league_contacts_table thead th{
