@@ -91,10 +91,12 @@
 
 .allstar_forward_grid, .allstar_goalies_grid {
     grid-template-columns: repeat(3, max-content);
+    padding-top: 0;
 }
 
 .allstar_defense_grid {
     grid-template-columns: repeat(2, max-content);
+    padding-top: 0;
 }
 
 .allstar_goalies_grid {

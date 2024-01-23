@@ -31,7 +31,7 @@ function Footer() {
           <a href="" className="footer_link">
             Team Columbus
           </a>
-          <Link to="/history" className="footer_link">
+          <Link to="/info" className="footer_link">
             League History
           </Link>
           <Link to="/archive" className="footer_link">

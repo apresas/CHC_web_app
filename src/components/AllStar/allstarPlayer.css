@@ -1,8 +1,10 @@
 .allstar_player_container {
+    display: grid;
+    justify-items: center;
     background-color: white;
     border: 1px solid lightgray;
     padding: 1rem;
-    width: 5.5rem;
+    width: 6rem;
     border-radius: 7px;
     box-shadow: var(--dropshadow-main);
     transition: var(--transition-fast);
@@ -15,11 +17,13 @@
 
 .allstar_player_container img{
     height: 3.5rem;
+    padding: 0 0.5rem 0.5rem;
     aspect-ratio: 1/1;
 }
 
 .allstar_player_firstName, .allstar_player_lastName {
     font-family: var(--font-sub-header);
+    line-height: 1;
 }
 .allstar_player_lastName {
     font-weight: 400;
